@@ -21,11 +21,6 @@ namespace _01_This的一种用法
         //1_2-2.age自动属性
         public int Age { get; set; }
 
-        //1_1.无参的构造函数
-        public Person()
-        {
-
-        }
         //1_2.有一个参数的构造函数
         public Person(string name):this(name,0)
         {
@@ -38,9 +33,12 @@ namespace _01_This的一种用法
         }
     }
 
-    public class Student
+    public class Student:Person
     {
         //2_1.如果无继承关系,Student调用的是自己默认的无参数的构造函数,编译不会报错
+        //2_2.当有继承关系,子类调用的无参的构造函数实际是父类的无参构造函数,父类中又没有无参构造函数,所以编译报错
+        //严重性	说明错误	“Person”不包含采用 0 个参数的构造函数
+
         //2_知识点2.如果子类继承父类,子类中调用的构造函数,实际上是调用的父类中的无参数的构造函数
     }
 }
