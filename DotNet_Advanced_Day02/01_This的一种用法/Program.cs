@@ -20,7 +20,11 @@ namespace _01_This的一种用法
         public string Name { get; set; }
         //1_2-2.age自动属性
         public int Age { get; set; }
+        //2_3.解决方法是:在父类中加入无参构造函数的声明
+        public Person()
+        {
 
+        }
         //1_2.有一个参数的构造函数
         public Person(string name):this(name,0)
         {
