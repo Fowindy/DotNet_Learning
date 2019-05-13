@@ -10,6 +10,7 @@ namespace _01_This的一种用法
     {
         static void Main(string[] args)
         {
+            Student stu = new Student();
         }
     }
 
@@ -35,5 +36,11 @@ namespace _01_This的一种用法
             this.Name = name;
             this.Age = age;
         }
+    }
+
+    public class Student
+    {
+        //2_1.如果无继承关系,Student调用的是自己默认的无参数的构造函数,编译不会报错
+        //2_知识点2.如果子类继承父类,子类中调用的构造函数,实际上是调用的父类中的无参数的构造函数
     }
 }
