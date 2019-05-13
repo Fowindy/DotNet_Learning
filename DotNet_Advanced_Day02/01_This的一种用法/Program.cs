@@ -26,9 +26,8 @@ namespace _01_This的一种用法
 
         }
         //1_2.有一个参数的构造函数
-        public Person(string name)
+        public Person(string name):this(name,0)
         {
-            this.Name = name;
         }
         //1_3.两个参数的构造函数
         public Person(string name,int age)
