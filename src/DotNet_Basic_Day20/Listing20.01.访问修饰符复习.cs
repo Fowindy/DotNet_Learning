@@ -42,7 +42,8 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_01
             Teacher teacher = new Teacher();
             teacher.T();//父类的方法
 
-            //在其他类里面不能访问到
+            //在其他类里面不能访问到protected修饰的成员
+            _Name = "在其他类里面不能访问到protected修饰的成员";
         }
     }
 }
