@@ -7,7 +7,7 @@ namespace DotNet_Basic_Day20_20_01_Protected不同项目访问测试
     {
         public new  void T()
         {
-            //可以在不同的项目中通过继承,访问到protected修饰的成员
+            //在不同的项目可以通过继承,访问到protected修饰的成员,但不可以访问到internal修饰的成员
             _name = "可以在不同的项目中通过继承,访问到protected修饰的成员";
         }
     }
