@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Fowindy.DotNet_Basic_Day20.Listing20_01
 {
-    internal class Person
+    public class Person
     {
+        protected string _name;
         public void T()
         {
             Console.WriteLine("父类方法");
@@ -19,6 +20,8 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_01
         public new void T()
         {
             Console.WriteLine("子类方法");
+            //子类中可以访问父类protected修饰的成员
+            _name = "子类可以访问";
         }
     }
     public class Program
@@ -38,6 +41,8 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_01
 
             Teacher teacher = new Teacher();
             teacher.T();//父类的方法
+
+            //在其他类里面不能访问到
         }
     }
 }
