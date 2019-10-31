@@ -51,17 +51,19 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_03
     ///<![CDATA[电脑类思路:
     ///电脑不知道哪一个设备会插在电脑上,因此只能对存储设备父类进行处理;__屏蔽各个子类间的差异;
     ///#有两种方式实现:
-    ///#1.通过传参的方式将父类传进来;]]>
+    ///#1.通过传参的方式将父类传进来;
+    ///#2.在电脑类中声明父类类型的属性;]]>
     public class Computer
     {
+        public MobileStorage MS { get; set; }
         public void Read(MobileStorage ms)
         {
-            ms.Read();
+            this.MS.Read();
         }
 
         public void Write(MobileStorage ms)
         {
-            ms.Write();
+            this.MS.Write();
         }
     }
 
