@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Fowindy.DotNet_Basic_Day20.Listing20_01
 {
-    public class Person
+    internal class Person
     {
         public void T()
         {
@@ -12,6 +12,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_01
         }
     }
 
+    //注意2:子类的访问权限不能高于父类的访问权限;
     public class Teacher : Person
     {
         //子类存在和父类同名的方法；子类将会屏蔽父类的方法；
