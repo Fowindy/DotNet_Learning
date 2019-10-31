@@ -6,6 +6,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_01
 {
     public class Person
     {
+        internal int _age;
         protected string _name;
         public void T()
         {
@@ -14,7 +15,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_01
     }
 
     //注意2:子类的访问权限不能高于父类的访问权限;
-    public class Teacher : Person
+    internal class Teacher : Person
     {
         //子类存在和父类同名的方法；子类将会屏蔽父类的方法；
         public new void T()
@@ -43,7 +44,11 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_01
             teacher.T();//父类的方法
 
             //在其他类里面不能访问到protected修饰的成员
-            _Name = "在其他类里面不能访问到protected修饰的成员";
+            //_Name = "在其他类里面不能访问到protected修饰的成员";
+
+            //在同一项目的不同类中可以访问到internal修饰的成员,但不可以访问到protected修饰的成员;
+            Person p = new Person();
+            p._age = 18;
         }
     }
 }
