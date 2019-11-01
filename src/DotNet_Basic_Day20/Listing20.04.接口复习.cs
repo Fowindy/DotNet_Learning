@@ -18,7 +18,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_04
 
         public abstract void Test();
 
-        public abstract void Test1(string name);
+        public abstract double Test1(string name);
     }
 
     public class Student : Person
@@ -29,9 +29,9 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_04
             
         }
 
-        public override void Test1(string name)//括号中的签名和父类抽象方法保存一致
+        public override double Test1(string name)//括号中的签名和父类抽象方法保存一致
         {
-            throw new NotImplementedException();
+            return 123;
         }
         //子类可以重写父类中的虚方法,也可以不重写父类中的虚方法
     }
