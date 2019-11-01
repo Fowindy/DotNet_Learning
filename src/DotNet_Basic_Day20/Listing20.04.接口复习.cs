@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Fowindy.DotNet_Basic_Day20.Listing20_04
 {
+    //抽象类注意1:抽象成员必须在抽象类中;
     //但如果父类是抽象类
     public abstract class Person
     {
