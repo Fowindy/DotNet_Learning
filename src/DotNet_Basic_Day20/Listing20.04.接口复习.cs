@@ -15,6 +15,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_04
 
     public class Student : Person
     {
+        //子类可以重写父类中的虚方法,也可以不重写父类中的虚方法
     }
     public class Program
     {
