@@ -56,12 +56,12 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_03
     public class Computer
     {
         public MobileStorage MS { get; set; }
-        public void Read(MobileStorage ms)
+        public void Read()
         {
             this.MS.Read();
         }
 
-        public void Write(MobileStorage ms)
+        public void Write()
         {
             this.MS.Write();
         }
@@ -96,8 +96,10 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_03
 
             Computer computer = new Computer();
             //子类可以赋值给父类;相当于将移动存储设备插到了电脑上
-            computer.MS = mobileDisk;
-
+            //只需要更改此处就可以实现不同移动存储设备插在电脑上的动作
+            computer.MS = mp3/*mobileDisk*/;
+            computer.Read();
+            computer.Write();
         }
     }
 }
