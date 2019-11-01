@@ -7,9 +7,34 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_04
     //抽象类注意1:抽象成员必须在抽象类中;
     //抽象类注意2:抽象方法不能有任何实现;
     //抽象类注意3:子类重写父类的抽象方法,必须和父类抽象方法有相同的签名;(传参和返回值的类型个数一致)
+    //抽象类注意4：抽象类中不都是抽象成员;字段,属性,函数,虚方法都可以;
     //但如果父类是抽象类
     public abstract class Person
     {
+        private string _name;
+
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+
+            set
+            {
+                _name = value;
+            }
+        }
+        //有参的构造函数
+        public Person(string name)
+        {
+            this.Name = name;
+        }
+
+        public Person()
+        {
+        }
+
         //父类中如果有方法需要让子类重写,则可以将该方法标记为virtual
         //虚方法在父类中必须有实现,哪怕是空实现;(有方法体无内容)
         public virtual void SayHello()
@@ -21,6 +46,9 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_04
         public abstract double Test1(string name);
     }
 
+    /// <summary>
+    /// 子类会调用父类默认的无参的构造函数
+    /// </summary>
     public class Student : Person
     {
         //则子类必须重写父类中的抽象成员
