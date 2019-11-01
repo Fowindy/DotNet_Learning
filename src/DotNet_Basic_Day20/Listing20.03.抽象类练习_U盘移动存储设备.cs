@@ -88,6 +88,16 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_03
     {
         public static void Main()
         {
+            #region 移动存储设备的实例化
+            MobileDisk mobileDisk = new MobileDisk();
+            UDisk uDisk = new UDisk();
+            Mp3 mp3 = new Mp3();
+            #endregion
+
+            Computer computer = new Computer();
+            //子类可以赋值给父类;相当于将移动存储设备插到了电脑上
+            computer.MS = mobileDisk;
+
         }
     }
 }
