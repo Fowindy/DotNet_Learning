@@ -11,6 +11,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_04
     //抽象类注意5.由于抽象成员没有任何实现,所以子类必须将抽象成员重写;
     //抽象类注意6.抽象类不可以实例化;静态类也不能实例化;
     //抽象类的作用:抽象类的作用就是为了让子类继承;重写抽象方法;
+    //抽象类注意7.抽象方法不能用static修饰;调用抽象方法时必须用子类去调,如果static可以修饰则类名也可以调用;
     //但如果父类是抽象类
     public abstract class Person
     {
@@ -47,6 +48,8 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_04
         public abstract void Test();
 
         public abstract double Test1(string name);
+
+        public abstract static double Test(string name);
     }
 
     /// <summary>
