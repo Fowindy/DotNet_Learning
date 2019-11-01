@@ -49,7 +49,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_04
 
         public abstract double Test1(string name);
 
-        public abstract static double Test(string name);
+        //public abstract static double Test(string name);
     }
 
     /// <summary>
