@@ -54,6 +54,12 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_06
             this.Property = property;
             this.BloodType = bloodType;
         }
+
+        //父类中加入打招呼的方法,因为不同儿女都有不同的打招呼;更合乎情理
+        public void SayHello()
+        {
+            Console.WriteLine("我叫{0},我有{1}元钱,我是{2}型血",this.LastName,this.Property,this.BloodType);
+        }
     }
     /// <summary>
     /// 子类继承了父类,需要调用父类的构造函数对子类的构造函数进行赋值初始化
