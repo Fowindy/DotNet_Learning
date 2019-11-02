@@ -19,7 +19,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_05
     /// <summary>
     /// 麻雀
     /// </summary>
-    public class MaQue :Bird, IFlyable
+    public class MaQue :Bird, IFlyable//多继承,父类在前接口在后
     {
         public void Fly()
         {
