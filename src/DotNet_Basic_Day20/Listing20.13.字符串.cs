@@ -40,6 +40,18 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_13
             //需要重新实例化一个字符串
             s = new string(chs);//abcHefg
             Console.WriteLine(s);
+
+            //4.Equals()函数;比较两个字符串是否相同,不忽略大小写
+            string s1 = "c#";
+            string s2 = "C#";
+            if (s1.Equals(s2))
+            {
+                Console.WriteLine("相同");
+            }
+            else
+            {
+                Console.WriteLine("不相同");
+            }
         }
     }
 }
