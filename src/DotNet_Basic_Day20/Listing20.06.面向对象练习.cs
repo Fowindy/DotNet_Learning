@@ -55,17 +55,25 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_06
             this.BloodType = bloodType;
         }
     }
-
+    /// <summary>
+    /// 子类继承了父类,需要调用父类的构造函数对子类的构造函数进行赋值初始化
+    /// </summary>
     public class Son:Father
     {
+        public Son(string lastName, decimal property, string bloodType) : base(lastName, property, bloodType)
+        {
+            //里面不需要写任何代码
+        }
         public void PlayGame()
         {
             Console.WriteLine("儿子喜欢玩游戏.");
         }
     }
-
     public class Daughter : Father
     {
+        public Daughter(string lastName, decimal property, string bloodType) : base(lastName, property, bloodType)
+        {
+        }
         public void Dance()
         {
             Console.WriteLine("女儿喜欢跳舞.");
