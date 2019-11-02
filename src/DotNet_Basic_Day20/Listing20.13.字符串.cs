@@ -41,10 +41,10 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_13
             s = new string(chs);//abcHefg
             Console.WriteLine(s);
 
-            //4.Equals()函数;比较两个字符串是否相同,不忽略大小写
+            //4.Equals()函数;比较两个字符串是否相同,忽略大小写
             string s1 = "c#";
             string s2 = "C#";
-            if (s1.Equals(s2))
+            if (s1.Equals(s2,StringComparison.OrdinalIgnoreCase))
             {
                 Console.WriteLine("相同");
             }
