@@ -21,12 +21,24 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_08
             Console.WriteLine("经理十一点打卡");
         }
     }
+
+    public class Programmer : Employee
+    {
+        public override void DaKa()
+        {
+            Console.WriteLine("程序猿不打卡");
+        }
+    }
     public class Program
     {
         public static void Main()
         {
             //作业:员工类、部门经理类 程序猿类
             //（部门经理也是员工，所以要继承自员工类。员工有上班打卡的方法。用类来模拟。
+
+            //实例化完成
+            Employee employee = new Programmer();/*new Manager();*//*new Employee();*/
+            employee.DaKa();
         }
     }
 }
