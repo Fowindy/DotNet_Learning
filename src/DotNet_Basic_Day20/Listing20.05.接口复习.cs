@@ -15,12 +15,20 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_05
     /// </summary>
     public class Bird
     {
+        public void Fly()
+        {
+            Console.WriteLine("大多数鸟类都会飞");
+        }
     }
     /// <summary>
     /// 麻雀
     /// </summary>
     public class MaQue :Bird, IFlyable//多继承,父类在前接口在后
     {
+        /// <summary>
+        /// 这个函数是父类的?还是子类自己的?还是实现接口的?
+        /// 从语法上:子类必须实现接口,如果没有实现,则语法通不过;现在语法通过,说明是接口的
+        /// </summary>
         public void Fly()
         {
             Console.WriteLine("麻雀会飞");
