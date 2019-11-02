@@ -52,6 +52,13 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_13
             {
                 Console.WriteLine("不相同");
             }
+
+            //5.Substring();截取字符串,两个重载,举例如下:
+            string s3 = "abcdefg";
+            string s3New = s3.Substring(3);//从包含序标3截取到最后
+            Console.WriteLine(s3New);//defg
+            string s3New1 = s3.Substring(3, 3);//从包含序标3截取3个字符
+            Console.WriteLine(s3New1);//def
         }
     }
 }
