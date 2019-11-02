@@ -29,7 +29,17 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_13
             //我们可以通过下标访问字符串中的某一个字符
             Console.WriteLine(s[3]);//d
             //但是我们不能改变某一个字符,如下操作不允许:
-            s[3] = 'H';//因为是只读的
+            //s[3] = 'H';//因为是只读的
+
+            //如果要改变字符串中的某一个字符,通过下面方法实现:
+            //首先将字符串通过ToCharArray()方法转换成字符数组
+            char[] chs = s.ToCharArray();
+            chs[3] = 'H';
+            //然后再将改变后的char数组转换成字符串,达到更改字符串的目的
+            //s = chs.ToString();//注意:不能通过这种方式实现
+            //需要重新实例化一个字符串
+            s = new string(chs);//abcHefg
+            Console.WriteLine(s);
         }
     }
 }
