@@ -92,6 +92,16 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_06
             //作业：定义父亲类Father(姓lastName,财产property,血型bloodType),
             //儿子Son类(玩游戏PlayGame方法),女儿Daughter类(跳舞Dance方法)，
             //调用父类构造函数(:base())给子类字段赋值
+
+            //实例化
+            Son son = new Son("张三", 10m, "AB");
+            //调用父类打招呼的方法,实际上是自己的打招呼;因为继承;
+            son.SayHello();
+            son.PlayGame();
+
+            Daughter daughter = new Daughter("张梅梅", 100m, "O");
+            daughter.SayHello();
+            daughter.Dance();
         }
     }
 }
