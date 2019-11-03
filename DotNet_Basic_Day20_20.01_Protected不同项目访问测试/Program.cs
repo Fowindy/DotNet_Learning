@@ -17,7 +17,9 @@ namespace DotNet_Basic_Day20_20_01_Protected不同项目访问测试
         {
             //可以访问到不同项目的public修饰的成员
             Person p = new Person();
+            p.T();
             Console.WriteLine("Hello World!");
+            Console.ReadKey();
         }
     }
 }
