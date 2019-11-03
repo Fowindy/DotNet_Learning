@@ -64,6 +64,15 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_13
             string str = "abcd , , fd, fdafd   [[  ---";//去除除字母之外的字符
             //将不需要的字符放在字符数组中转换成空格,然后删除所有空格
             string[] strNew = str.Split(new char[] { ',', ' ', '[', '-' }, StringSplitOptions.RemoveEmptyEntries);
+            str = string.Join("", strNew);//将字符串数组用""分隔连接起来返回字符串
+            Console.WriteLine(str);//abcdfdfdafd
+            //7.Join();字符串数组连接符
+            string[] str1 = { "张三", "王五", "李四", "赵六" };
+            string str2 = string.Join("|", 'c', true, 3.13, 100, 1000m, "张三");
+            //用"|"隔开,返回字符串
+            str = string.Join("|", str1);
+            Console.WriteLine(str);//张三|王五|李四|赵六
+            Console.WriteLine(str2);//c|True|3.13|100|1000|张三
         }
     }
 }
