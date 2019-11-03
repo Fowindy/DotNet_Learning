@@ -4,11 +4,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Fowindy.Shared
 {
-    [ExcludeFromCodeCoverage]
     public class Program
     {
         public static void Main(string[] args)
@@ -18,7 +16,6 @@ namespace Fowindy.Shared
             string regexMatch = Regex.Match(assembly.GetName().Name, "\\d{1,2}").Value;
 
             int chapterNumber = int.Parse(regexMatch);
-
             string listing;
             IEnumerable<string> stringArguments = null;
             if (args.Length == 0)
@@ -34,28 +31,20 @@ namespace Fowindy.Shared
 
             Console.WriteLine();
             Console.WriteLine("____________________________");
+            //Console.WriteLine(GetCurSourceFileName());
             Console.WriteLine();
             ConsoleColor originalColor = Console.ForegroundColor;
 
             try
             {
-                listing = ParseListingName(listing);
+                //string chapterName = "";
+                listing = ParseListingName(listing/*, out chapterName*/);
 
-                Regex reg = new Regex($"{listing}\\.Program");
-                Type target = assembly.GetTypes().Last(type =>
-                {
-                    return reg.IsMatch(type.FullName);
-                });
-                //MethodInfo[] methods = target.GetMethods();
-                MethodInfo method = target.GetMethods().First();
-                //foreach (var item in methods)
-                //{
-                //    if (item.Name == "Main")
-                //    {
-                //        method = item;
-                //    }
-                //}
-                string[] arguments;
+                //assembly = Assembly.Load(new AssemblyName(chapterName));
+                Type target = assembly.GetTypes().Last(type => (type.FullName.Contains("Listing" + listing + "." + "Listing" + listing)) || (type.FullName.Contains("Listing" + listing + "." + "Program")));
+                var method = (MethodInfo)target.GetMember("Main").First();
+
+                object[] arguments;
                 if (!method.GetParameters().Any())
                 {
                     arguments = null;
@@ -64,35 +53,23 @@ namespace Fowindy.Shared
                 {
                     if (stringArguments == null)
                     {
-                        arguments = GetArguments();
+                        arguments = new object[] { GetArguments() };
                     }
                     else
                     {
-                        arguments = stringArguments.ToArray();
+                        arguments = new object[] { stringArguments.ToArray() };
                     }
                 }
                 if (method.GetCustomAttributes(typeof(STAThreadAttribute), false).Any())
                 {
-                    object result = "";
-
-                    Thread thread = new Thread(() => result = method.Invoke(null, arguments));
+                    Thread thread = new Thread(() => method.Invoke(null, arguments));
                     //thread.SetApartmentState(ApartmentState.STA);
                     thread.Start();
                     thread.Join();
-
-                    if (!(method.ReturnType == typeof(void)))
-                    {
-                        Console.WriteLine($"Result: {result}");
-                    }
                 }
                 else
                 {
-                    var result = method.Invoke(null, arguments);
-
-                    if (!(method.ReturnType == typeof(void)))
-                    {
-                        Console.WriteLine($"Result: {result}");
-                    }
+                    method.Invoke(null, arguments);
                 }
             }
             catch (TargetParameterCountException exception)
@@ -173,7 +150,7 @@ namespace Fowindy.Shared
             return args;
         }
 
-        private static string ParseListingName(string listing)
+        private static string ParseListingName(string listing/*, out string chapterName*/)
         {
             var appendices = new List<string> { "A", "B", "C", "D" };
 
@@ -209,6 +186,18 @@ namespace Fowindy.Shared
             }
 
             return listing.Replace('.', '_');
+        }
+
+        /// <summary>
+        /// 取当前源码的源文件名
+        /// </summary>
+        /// <returns></returns>
+        public static string GetCurSourceFileName()
+        {
+            System.Diagnostics.StackTrace st = new System.Diagnostics.StackTrace(1, true);
+
+            return st.GetFrame(0).GetFileName();
+
         }
     }
 }

@@ -59,19 +59,14 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_11
         }
     }
 
-    public class Parrot:Bird,IFlyable
-    {
-        public Parrot(string name) : base(name)
-        {
-        }
 
-        public void Fly()
-        {
-            Console.WriteLine("{0]}能飞",Name);
-        }
-    }
-    public class Program
+
+    public class Listing20_11
     {
+        private static void ABC()
+        {
+            Console.WriteLine();
+        }
         public static void Main()
         {
             //作业:鸟-麻雀sparrow['spærəu] ，鸵鸟ostrich['ɔstritʃ] ，
@@ -83,10 +78,25 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_11
             ///
 
             //实例化
-            IFlyable flyable = new Sparrow("麻雀");/*new Penguin();*//*new Ostrich();*//*new Parrot();*/
-            Bird bird = new Sparrow("麻雀");
+            IFlyable flyable = new Parrot("鹦鹉");/*new Sparrow("麻雀");*//*new Penguin();*//*new Ostrich();*/
+            Bird bird = new Parrot("鹦鹉");/*new Sparrow("麻雀");*/
             bird.SayHello();
             flyable.Fly();
+            ABC();
         }
     }
+
+    public class Parrot : Bird, IFlyable
+    {
+        public Parrot(string name) : base(name)
+        {
+        }
+
+        public void Fly()
+        {
+            Console.WriteLine("{0}能飞", Name);
+        }
+    }
+
+
 }
