@@ -73,6 +73,13 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_13
             str = string.Join("|", str1);
             Console.WriteLine(str);//张三|王五|李四|赵六
             Console.WriteLine(str2);//c|True|3.13|100|1000|张三
+            //8.Replace();将字符串中的指定字符替换成目标字符;
+            str2 = str2.Replace("张三", "**");
+            Console.WriteLine(str2);//c|True|3.13|100|1000|**
+            //9.Trim(),去除两端的空格;TrimStart()去除首空格;TrimEnd()去除尾空格
+            string str3 = " 分公司答复 惹我日本恢复 就好地方 ";
+            str3 = str3.Trim();//去除两端的空格
+            Console.WriteLine(str3);//分公司答复 惹我日本恢复 就好地方
         }
     }
 }
