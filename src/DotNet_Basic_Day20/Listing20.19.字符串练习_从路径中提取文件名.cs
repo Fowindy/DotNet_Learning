@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Fowindy.DotNet_Basic_Day20.Listing20_19
@@ -17,7 +18,8 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_19
             #endregion
 #elif true
             #region 方法2:Path.GetFileName()实现
-
+            string fileName = Path.GetFileName(path);
+            Console.WriteLine("文件名为:{0}",fileName);
             #endregion
 #endif
         }
