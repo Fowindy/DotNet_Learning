@@ -59,6 +59,11 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_13
             Console.WriteLine(s3New);//defg
             string s3New1 = s3.Substring(3, 3);//从包含序标3截取3个字符
             Console.WriteLine(s3New1);//def
+
+            //6.Split();分隔字符串
+            string str = "abcd , , fd, fdafd   [[  ---";//去除除字母之外的字符
+            //将不需要的字符放在字符数组中转换成空格,然后删除所有空格
+            string[] strNew = str.Split(new char[] { ',', ' ', '[', '-' }, StringSplitOptions.RemoveEmptyEntries);
         }
     }
 }
