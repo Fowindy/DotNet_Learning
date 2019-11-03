@@ -23,6 +23,21 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_22
                 Console.WriteLine(item);
             }
             #endregion
+
+            #region 2.Hashtable
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add(1, "AAA");
+            hashtable.Add(2, "BBB");
+            hashtable.Add(3, "CCC");
+
+            string s = (string)hashtable[1];
+            if (hashtable.Contains(1)) //判断哈希表是否包含特定键,其返回值为true或false
+                Console.WriteLine("the 1 key exist");
+            hashtable.Remove(3);//移除一个keyvalue键值对
+            Console.WriteLine(hashtable[1]);//此处输出AAA
+            hashtable.Clear();//移除所有元素
+            Console.WriteLine(hashtable[1]); //此处将不会有任何输出
+            #endregion
         }
     }
 }
