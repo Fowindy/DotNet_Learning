@@ -67,6 +67,23 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_22
                 }
             }
             #endregion
+
+            #region 4.集合:Dictionary
+            Console.WriteLine("----------------------------");
+            Dictionary<int, string> dic = new Dictionary<int, string>();
+            //添加键值对
+            dic.Add(1, "张三");
+            dic.Add(2, "李四");
+            dic.Add(3, "王五");
+            dic.Add(4, "赵六");
+            //添加键值对的另一种方式
+            dic[4] = "还是赵六";//会覆盖
+            //遍历键值对集合中的所有元素
+            foreach (KeyValuePair<int,string> kv in dic)
+            {
+                Console.WriteLine("{0}------{1}",kv.Key,kv.Value);
+            }
+            #endregion
         }
     }
 }
