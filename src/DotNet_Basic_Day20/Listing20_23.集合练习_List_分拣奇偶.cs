@@ -56,6 +56,19 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_23
                 Console.WriteLine(item);
             }
             #endregion
+
+            #region 集合案例3.从List集合中获取最大值
+            Console.WriteLine("---------------------------");
+            //集合初始化器
+            List<int> list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //假设最大值为第一个
+            int max = list[0];
+            for (int i = 0; i < list.Count; i++)
+            {
+                max = list[i] >= max ? list[i] : max;
+            }
+            Console.WriteLine("最大值为:{0}",max);
+            #endregion
         }
     }
 }
