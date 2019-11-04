@@ -69,6 +69,38 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_23
             }
             Console.WriteLine("最大值为:{0}",max);
             #endregion
+
+            #region 集合案例3_1.对象初始化器
+
+            #region 对象初始化方法3:对象初始化
+            Person person = new Person() { Name = "张三", Age = 19, Gender = '男' }; 
+            #endregion
+#if false
+            #region 对象初始化方法2:实例化对象后赋值
+            Person person = new Person();
+            person.Name = "张三";
+            person.Age = 18;
+            person.Gender = '男';
+            #endregion
+#endif
+            #endregion
         }
+    }
+    //对象初始化有三种方式:
+    public class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public char Gender { get; set; }
+#if false
+        #region 对象初始化方法1:构造函数法
+        public Person(string name, int age, char gender)
+        {
+            this.Name = name;
+            this.Age = age;
+            this.Gender = gender;
+        }
+        #endregion  
+#endif
     }
 }
