@@ -37,6 +37,25 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_23
                 Console.WriteLine(item);
             }
             #endregion
+
+            #region 集合案例2.从集合中取出集合转换成数组
+            Console.WriteLine("---------------------------");
+            List<int> listJi1 = new List<int>();
+            //遍历添加奇数
+            foreach (var item in nums)
+            {
+                if (item % 2 != 0)
+                {
+                    listJi1.Add(item);
+                }
+            }
+            //集合转换成数组
+            int[] numsJi = listJi1.ToArray();
+            foreach (var item in numsJi)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
         }
     }
 }
