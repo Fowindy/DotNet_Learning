@@ -73,7 +73,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_23
             #region 集合案例3_1.对象初始化器
 
             #region 对象初始化方法3:对象初始化
-            Person person = new Person() { Name = "张三", Age = 19, Gender = '男' }; 
+            Person person = new Person() { Name = "张三", Age = 19, Gender = '男' };
             #endregion
 #if false
             #region 对象初始化方法2:实例化对象后赋值
@@ -83,6 +83,34 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_23
             person.Gender = '男';
             #endregion
 #endif
+            #endregion
+
+            #region 4.集合案例.阿拉伯数字和大写转换(不是阿拉伯则原样输出)
+            Console.WriteLine("---------------------------");
+            string str = "1壹 2贰 3叁 4肆 5伍 6陆 7柒 8捌 9玖";
+            //首先去除字符串中的空格
+            string[] strNew = str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            //声明键值对集合对象
+            Dictionary<char, char> dic = new Dictionary<char, char>();
+            //将键与值加入键值对集合
+            for (int i = 0; i < strNew.Length; i++)
+            {
+                dic.Add(strNew[i][0], strNew[i][1]);
+            }
+            //用户输入
+            Console.Write("请输入阿拉伯数字:");
+            str = Console.ReadLine();
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (dic.ContainsKey(str[i]))
+                {
+                    Console.Write(dic[str[i]]);
+                }
+                else
+                {
+                    Console.Write(str[i]);
+                }
+            }
             #endregion
         }
     }
