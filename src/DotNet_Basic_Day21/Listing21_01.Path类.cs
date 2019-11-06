@@ -19,6 +19,9 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_01
             #region $1.3.GetDirectoryName方法:得到文件所在文件夹的路径
             Console.WriteLine(Path.GetDirectoryName(path));//J:\Documents\学习笔记\文档
             #endregion
+            #region $1.4.GetExtension方法:得到文件的扩展名
+            Console.WriteLine(Path.GetExtension(path));//.txt
+            #endregion
             #endregion
 
             #region $1.2.Combine方法:将两个路径合成一个路径，比用+好，可以方便解决不加斜线的问题
