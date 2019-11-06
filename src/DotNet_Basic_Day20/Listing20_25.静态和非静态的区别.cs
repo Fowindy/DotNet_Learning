@@ -47,5 +47,11 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_25
     {
         //对于静态类而言,只能写静态成员;
         private static string _name;
+
+        //静态构造函数不允许有访问修饰符
+        static Student()
+        {
+
+        }
     }
 }
