@@ -3,12 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.438
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{25FEE0A2-D5A3-43EB-B2DA-B3F713425229}"
-	ProjectSection(SolutionItems) = preProject
-		Shared\Program.cs = Shared\Program.cs
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day21", "src\DotNet_Basic_Day21\DotNet_Basic_Day21.csproj", "{A2B4F882-5163-4966-89C7-8E139DBCA063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day21", "src\DotNet_Basic_Day21\DotNet_Basic_Day21.csproj", "{A2B4F882-5163-4966-89C7-8E139DBCA063}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20", "src\DotNet_Basic_Day20\DotNet_Basic_Day20.csproj", "{602C3E72-BAB4-4366-961F-39E84C3ED44B}"
 EndProject
@@ -28,15 +23,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A2B4F882-5163-4966-89C7-8E139DBCA063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2B4F882-5163-4966-89C7-8E139DBCA063}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2B4F882-5163-4966-89C7-8E139DBCA063}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2B4F882-5163-4966-89C7-8E139DBCA063}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{602C3E72-BAB4-4366-961F-39E84C3ED44B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{602C3E72-BAB4-4366-961F-39E84C3ED44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{602C3E72-BAB4-4366-961F-39E84C3ED44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
