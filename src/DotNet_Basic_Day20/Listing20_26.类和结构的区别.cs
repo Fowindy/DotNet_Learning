@@ -31,6 +31,9 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_26
              */
             //类new对象的3作用:1.在堆中开辟空间;2.在开辟的堆空间中创建对象;3.调用对象的额构造函数进行初始化
             PersonClass personClass = new PersonClass();
+
+            //结构是否可以new?可以,1.在栈中开辟空间(值类型);结构的new的1作用:调用结构的构造函数
+            PersonStruct personStruct = new PersonStruct();
         }
     }
     //类
