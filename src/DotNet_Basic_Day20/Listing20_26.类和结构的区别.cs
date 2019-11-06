@@ -23,8 +23,8 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_26
              * 类:class
              * 
              * 3.从构造函数的赋值来看:
-             * 在类中:构造函数里,既可以给字段赋值,也可以给属性赋值;
-             * 在结构中:构造函数里,只能给字段赋值,不可以给属性赋值;
+             * 在类中:构造函数里,既可以给字段赋值,也可以给属性赋值;构造函数可以重载;
+             * 在结构中:构造函数里,只能给字段赋值,不可以给属性赋值;在结构构造函数中,需要给全部的字段赋值,不能选择性的给字段赋值;也即不可以重载;
              */
         }
     }
@@ -108,5 +108,11 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_26
             this._name = name;
             this._gender = gender;
         }
+
+        //尝试在结构中,构造函数重载_失败
+        //public PersonStruct(string name)
+        //{
+        //    this._name = name;
+        //}
     }
 }
