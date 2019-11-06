@@ -15,7 +15,12 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_01
         {
             #region $1.1.ChangeExtension方法:修改文件的后缀，“修改”支持字符串层面的，没有真的给文件改名
             string path = @"J:\Documents\学习笔记\文档\应用程序临时文件路径更改.txt";
-            Console.WriteLine(Path.ChangeExtension(path, "jpg")); 
+            Console.WriteLine(Path.ChangeExtension(path, "jpg"));
+            #endregion
+
+            #region $1.2.Combine方法:将两个路径合成一个路径，比用+好，可以方便解决不加斜线的问题
+            string s = Path.Combine(@"c:\temp", "a.jpg");
+            Console.WriteLine(s);//c:\temp\a.jpg
             #endregion
         }
     }
