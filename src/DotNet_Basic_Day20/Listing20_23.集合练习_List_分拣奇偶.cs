@@ -114,12 +114,14 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_23
             Console.WriteLine();
             #endregion
 
-            #region 集合练习5:计算字符串中每种字符出现的次数(面试题)_DIY
+            #region 集合练习5:计算字符串中每种字符出现的次数(面试题)
             Console.WriteLine("---------------------------");
             //“Welcome to China world”，不区分大小写，打印“W2”“e 2”“o 3”…… 
             string str2 = "Welcome to China world";
             //找到对应的字符就找到当前字符对应的次数,把字符作为键,次数作为值
             Dictionary<char, int> dic1 = new Dictionary<char, int>();
+#if false
+            #region 集合练习5:计算字符串中每种字符出现的次数(面试题)_DIY
             //将字符串分隔成字符串数组(移除空格)
             string[] strNew1 = str2.ToLower().Split(' ', StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < strNew1.Length; i++)
@@ -132,10 +134,35 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_23
                     }
                     else
                     {
-                        dic1[strNew1[i][j]]++;   
+                        dic1[strNew1[i][j]]++;
                     }
                 }
             }
+            #endregion  
+#elif true
+            #region 集合练习5:计算字符串中每种字符出现的次数(面试题)_推荐课堂方案
+            //转换成小写
+            str2 = str2.ToLower();
+            for (int i = 0; i < str2.Length; i++)
+            {
+                //如果是空格则不计算
+                if (str2[i] == ' ')
+                {
+                    continue;
+                }
+                //如果已经包含则加1
+                if (dic1.ContainsKey(str2[i]))
+                {
+                    dic1[str2[i]]++;
+                }
+                //如果不包含则添加置1
+                else
+                {
+                    dic1.Add(str2[i], 1);
+                }
+            }
+            #endregion
+#endif
 
             foreach (KeyValuePair<char,int> kv in dic1)
             {
