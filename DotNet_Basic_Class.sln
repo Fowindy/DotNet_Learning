@@ -10,9 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5E2628
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20", "src\DotNet_Basic_Day20\DotNet_Basic_Day20.csproj", "{602C3E72-BAB4-4366-961F-39E84C3ED44B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20_20_01_Protected不同项目访问测试", "DotNet_Basic_Day20_20.01_Protected不同项目访问测试\DotNet_Basic_Day20_20_01_Protected不同项目访问测试.csproj", "{059C0552-88D5-4CBC-B0B4-ADFE976F65CA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页", "src\DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页\DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页.csproj", "{D6A26993-505A-47FE-A76C-BF6819B41737}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20_20_01_Protected不同项目访问测试", "src\DotNet_Basic_Day20_20.01_Protected不同项目访问测试\DotNet_Basic_Day20_20_01_Protected不同项目访问测试.csproj", "{25183C38-5767-4B6A-A0A6-3B7F62024EBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,14 +24,14 @@ Global
 		{602C3E72-BAB4-4366-961F-39E84C3ED44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{602C3E72-BAB4-4366-961F-39E84C3ED44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{602C3E72-BAB4-4366-961F-39E84C3ED44B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{059C0552-88D5-4CBC-B0B4-ADFE976F65CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{059C0552-88D5-4CBC-B0B4-ADFE976F65CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{059C0552-88D5-4CBC-B0B4-ADFE976F65CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{059C0552-88D5-4CBC-B0B4-ADFE976F65CA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6A26993-505A-47FE-A76C-BF6819B41737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D6A26993-505A-47FE-A76C-BF6819B41737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6A26993-505A-47FE-A76C-BF6819B41737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6A26993-505A-47FE-A76C-BF6819B41737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25183C38-5767-4B6A-A0A6-3B7F62024EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25183C38-5767-4B6A-A0A6-3B7F62024EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25183C38-5767-4B6A-A0A6-3B7F62024EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25183C38-5767-4B6A-A0A6-3B7F62024EBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
