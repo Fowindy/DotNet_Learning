@@ -71,6 +71,7 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_26
         {
             Console.WriteLine("我是结构中的静态方法");
         }
+        //在结构中可以写非静态函数
         public void M2()
         {
             Console.WriteLine("我是结构中的非静态方法");
