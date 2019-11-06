@@ -28,6 +28,20 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_25
         //对于非静态类而言,既可以写静态成员,也可以写非静态成员;
         private static string _gender;
         private int _age;
+
+        public void M1()
+        {
+            //非静态方法既可以访问静态成员
+            _gender = "男";
+            //也可以访问非静态成员
+            _age = 18;
+        }
+
+        public static void M2()
+        {
+            //只可以访问静态成员
+            _gender = "女";
+        }
     }
     public static class Student
     {
