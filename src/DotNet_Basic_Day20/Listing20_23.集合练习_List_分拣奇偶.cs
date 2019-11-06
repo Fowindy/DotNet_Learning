@@ -111,6 +111,36 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_23
                     Console.Write(str[i]);
                 }
             }
+            Console.WriteLine();
+            #endregion
+
+            #region 集合练习5:计算字符串中每种字符出现的次数(面试题)_DIY
+            Console.WriteLine("---------------------------");
+            //“Welcome to China world”，不区分大小写，打印“W2”“e 2”“o 3”…… 
+            string str2 = "Welcome to China world";
+            //找到对应的字符就找到当前字符对应的次数,把字符作为键,次数作为值
+            Dictionary<char, int> dic1 = new Dictionary<char, int>();
+            //将字符串分隔成字符串数组(移除空格)
+            string[] strNew1 = str2.ToLower().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            for (int i = 0; i < strNew1.Length; i++)
+            {
+                for (int j = 0; j < strNew1[i].Length; j++)
+                {
+                    if (!dic1.ContainsKey(strNew1[i][j]))
+                    {
+                        dic1.Add(strNew1[i][j], 1);
+                    }
+                    else
+                    {
+                        dic1[strNew1[i][j]]++;   
+                    }
+                }
+            }
+
+            foreach (KeyValuePair<char,int> kv in dic1)
+            {
+                Console.WriteLine("{0}出现:{1}次",kv.Key,kv.Value);
+            }
             #endregion
         }
     }
