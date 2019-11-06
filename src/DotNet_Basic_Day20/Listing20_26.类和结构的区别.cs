@@ -22,6 +22,9 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_26
              * 结构:struct
              * 类:class
              * 
+             * 3.从构造函数的赋值来看:
+             * 在类中:构造函数里,既可以给字段赋值,也可以给属性赋值;
+             * 在结构中:构造函数里,只能给字段赋值,不可以给属性赋值;
              */
         }
     }
@@ -63,9 +66,24 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_26
             }
         }
 
-        private int _age;
+        public char Gender
+        {
+            get
+            {
+                return _gender;
+            }
 
-        public char Gender { get; set; }
+            set
+            {
+                _gender = value;
+            }
+        }
+
+        private int _age;
+        //结构中不可以写自动属性
+        //public char Gender { get; set; }
+
+        private char _gender;
         //在结构中可以写静态函数
         public static void M1()
         {
@@ -75,6 +93,20 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_26
         public void M2()
         {
             Console.WriteLine("我是结构中的非静态方法");
+        }
+        //尝试在结构中声明构造函数
+        //在结构中:构造函数里,只能给字段赋值,不可以给属性赋值;
+        public PersonStruct(string name, int age,char gender)
+        {
+            //不可以给属性赋值:
+            //this.Name = name;
+            //this.Age = age;
+            //this.Gender = gender;
+
+            //给字段赋值
+            this._age = age;
+            this._name = name;
+            this._gender = gender;
         }
     }
 }
