@@ -20,6 +20,8 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_25
              * 4.在静态方法中不可以直接访问实例成员;在实例方法中:可以直接访问实例成员;
              * 5.静态:调用前初始化;非静态:实例化对象的时候初始化;
              */
+            //逐步调试发现,并没有进入静态类构造函数,但是输出的时候却有;说明静态调用Test之前静态类已经初始化
+            Student.Test();
         }
     }
 
@@ -42,6 +44,12 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_25
             //只可以访问静态成员
             _gender = "女";
         }
+
+        public Person()
+        {
+            Console.WriteLine("非静态类构造函数");
+        }
+
     }
     public static class Student
     {
@@ -51,7 +59,12 @@ namespace Fowindy.DotNet_Basic_Day20.Listing20_25
         //静态构造函数不允许有访问修饰符
         static Student()
         {
+            Console.WriteLine("静态类构造函数");
+        }
 
+        public static void Test()
+        {
+            Console.WriteLine("我是静态类中的静态方法");
         }
     }
 }
