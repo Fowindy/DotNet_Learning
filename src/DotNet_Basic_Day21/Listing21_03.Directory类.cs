@@ -15,7 +15,12 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_03
         {
             #region $3.1.CreateDirectory:创建文件夹
             Directory.CreateDirectory(@"C:\Users\Administrator\Desktop\文件夹");
+            File.Create(@"C:\Users\Administrator\Desktop\文件夹\new.txt");
             Console.WriteLine("OK");
+            #endregion
+
+            #region $3.2.1Delete:删除文件夹(目录不为空则异常)
+            Directory.Delete(@"C:\Users\Administrator\Desktop\文件夹");
             #endregion
         }
     }
