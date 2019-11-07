@@ -31,9 +31,9 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_03
             #region $3.2.2.Delete:删除文件夹(目录不为空不异常,永久删除)
             Directory.Delete(@"C:\Users\Administrator\Desktop\文件夹2", true);
             #endregion
-
-            #region $3.4.1.GetFiles:获取目录中的所有文件的全路径
-            string[] path = Directory.GetFiles(@"J:\Documents\学习笔记\Music");
+            
+            #region $3.4.2.GetFiles:获取目录中的指定类型文件的全路径
+            string[] path = Directory.GetFiles(@"J:\Documents\学习笔记\Music","*.lrc");
             for (int i = 0; i < path.Length; i++)
             {
                 Console.WriteLine(path[i]);
