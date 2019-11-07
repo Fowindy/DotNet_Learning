@@ -19,8 +19,8 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_03
             Console.WriteLine("OK");
             #endregion
 
-            #region $3.2.1Delete:删除文件夹(目录不为空则异常)
-            Directory.Delete(@"C:\Users\Administrator\Desktop\文件夹");
+            #region $3.2.2.Delete:删除文件夹(目录不为空不异常,永久删除)
+            Directory.Delete(@"C:\Users\Administrator\Desktop\文件夹", true);
             #endregion
         }
     }
