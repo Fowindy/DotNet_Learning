@@ -33,6 +33,10 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
             #region $2.4.文件的剪切
             File.Move(@"C:\Users\Administrator\Desktop\new.txt", @"C:\Users\Administrator\Desktop\old.txt");
             #endregion
+
+            #region $2.5.File类读取文件
+
+            #endregion
         }
     }
 }
