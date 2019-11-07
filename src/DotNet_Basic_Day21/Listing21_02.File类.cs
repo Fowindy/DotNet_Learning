@@ -60,7 +60,12 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
             #endregion
 
             #region $2.6.File类写入文件
-
+            string str2 = "今天是最后一天复习了";
+            //把需要写入的字符串解码成字节数组
+            byte[] buffer1 = Encoding.Default.GetBytes(str2);
+            #region @2.6.1.WriteAllBytes:以字节写入(覆盖)
+            File.WriteAllBytes(@"C:\Users\Administrator\Desktop\old.txt", buffer1);
+            #endregion
             #endregion
         }
     }
