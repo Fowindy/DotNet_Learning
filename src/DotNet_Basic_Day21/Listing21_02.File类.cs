@@ -51,6 +51,11 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
                 Console.WriteLine(strNew[i]);
             }
             #endregion
+
+            #region @2.5.3.File类读取文件_ReadAllText:读取文件并关闭文件
+            string str1 = File.ReadAllText(@"C:\Users\Administrator\Desktop\old.txt", Encoding.Default);
+            Console.WriteLine(str);
+            #endregion
             #endregion
         }
     }
