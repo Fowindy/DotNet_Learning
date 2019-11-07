@@ -44,6 +44,23 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_05
                 Console.WriteLine("写入成功");
             }
             #endregion
+
+            #region @5.1.3.文件流的读取文件_FileStream+StreamReader
+            //FileStream:读数据
+            using (FileStream fsRead = new FileStream(@"J:\Documents\学习笔记\文档\应用程序临时文件路径更改.txt", FileMode.OpenOrCreate, FileAccess.Read))
+            {
+                //StreamReader:读FileStream
+                using (StreamReader sr = new StreamReader(fsRead,Encoding.Default))
+                {
+                    //如果没有到文件流的末尾
+                    while (!sr.EndOfStream)
+                    {
+                        //读取一行,输出一行
+                        Console.WriteLine(sr.ReadLine());
+                    }
+                }
+            }
+            #endregion
             #endregion
         }
     }
