@@ -70,6 +70,10 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
             #region @2.6.2.WriteAllLines:以行写入(覆盖)
             File.WriteAllLines(@"C:\Users\Administrator\Desktop\old.txt", new string[] { "张三", "李四", "王五", "赵六" });
             #endregion
+
+            #region @2.6.3.WriteAllText:以文本写入(覆盖)
+            File.WriteAllText(@"C:\Users\Administrator\Desktop\old.txt", "今天还是比较凉快的");
+            #endregion
             #endregion
         }
     }
