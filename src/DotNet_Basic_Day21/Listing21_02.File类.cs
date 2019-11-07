@@ -4,6 +4,7 @@
  * ==============================================================================*/
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Fowindy.DotNet_Basic_Day21.Listing21_02
@@ -12,6 +13,11 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
     {
         public static void Main()
         {
+            //操作文件的复制,剪切,创建,移除
+            #region $2.1文件的创建
+            File.Create(@"C:\Users\Administrator\Desktop\new.txt");
+            Console.WriteLine("创建成功");
+            #endregion
         }
     }
 }
