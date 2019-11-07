@@ -13,7 +13,10 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_03
     {
         public static void Main()
         {
-
+            #region $3.1.CreateDirectory:创建文件夹
+            Directory.CreateDirectory(@"C:\Users\Administrator\Desktop\文件夹");
+            Console.WriteLine("OK");
+            #endregion
         }
     }
 }
