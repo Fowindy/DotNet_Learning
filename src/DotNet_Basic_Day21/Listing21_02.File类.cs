@@ -23,6 +23,7 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
 
             #region $2.2.文件的删除
             File.Delete(@"C:\Users\Administrator\Desktop\new.txt");
+            File.Delete(@"C:\Users\Administrator\Desktop\old.txt");
             Console.WriteLine("删除成功");
             #endregion
 
@@ -56,6 +57,10 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
             string str1 = File.ReadAllText(@"C:\Users\Administrator\Desktop\old.txt", Encoding.Default);
             Console.WriteLine(str);
             #endregion
+            #endregion
+
+            #region $2.6.File类写入文件
+
             #endregion
         }
     }
