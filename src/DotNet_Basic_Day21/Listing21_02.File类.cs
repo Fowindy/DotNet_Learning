@@ -29,6 +29,10 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
             #region $2.3.文件的复制
             File.Copy(@"J:\Documents\学习笔记\文档\Program_Prefect.cs", @"C:\Users\Administrator\Desktop\new.txt");
             #endregion
+
+            #region $2.4.文件的剪切
+            File.Move(@"C:\Users\Administrator\Desktop\new.txt", @"C:\Users\Administrator\Desktop\old.txt");
+            #endregion
         }
     }
 }
