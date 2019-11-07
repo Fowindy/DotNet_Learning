@@ -66,6 +66,10 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
             #region @2.6.1.WriteAllBytes:以字节写入(覆盖)
             File.WriteAllBytes(@"C:\Users\Administrator\Desktop\old.txt", buffer1);
             #endregion
+
+            #region @2.6.2.WriteAllLines:以行写入(覆盖)
+            File.WriteAllLines(@"C:\Users\Administrator\Desktop\old.txt", new string[] { "张三", "李四", "王五", "赵六" });
+            #endregion
             #endregion
         }
     }
