@@ -39,6 +39,8 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
             byte[] buffer = File.ReadAllBytes(@"C:\Users\Administrator\Desktop\old.txt");
             //将读取到的字节数组按指定的解码方式解码成字符串
             string str = Encoding.Default.GetString(buffer, 0, buffer.Length);//解码buffer,从第0个开始解码buffer.Length长度
+            ///<![CDATA[Encoding.Default:采取什么编码来读取
+            ///编码:把字符串以怎样的形式存储为二进制]]>
             Console.WriteLine(str);
             #endregion
             #endregion
