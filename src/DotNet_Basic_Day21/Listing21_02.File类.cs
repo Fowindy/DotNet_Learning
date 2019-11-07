@@ -43,6 +43,14 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
             ///编码:把字符串以怎样的形式存储为二进制;ASCII,GBK,GB2312,UTF-8]]>
             Console.WriteLine(str);
             #endregion
+
+            #region @2.5.2.File类读取文件_ReadAllLines:以行读取
+            string[] strNew = File.ReadAllLines(@"C:\Users\Administrator\Desktop\old.txt",Encoding.Default);
+            for (int i = 0; i < strNew.Length; i++)
+            {
+                Console.WriteLine(strNew[i]);
+            }
+            #endregion
             #endregion
         }
     }
