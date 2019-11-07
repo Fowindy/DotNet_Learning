@@ -28,7 +28,21 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_05
                 //将字节解码成字符串
                 string str = Encoding.Default.GetString(buffer, 0, r);
                 Console.WriteLine(str);
-            } 
+            }
+            #endregion
+
+            #region @5.1.2.文件流的写入文件_FileStream
+            //FileMode.Append:以追加的方式写入,不会覆盖原文件
+            using (FileStream fsWrite = new FileStream(@"J:\Documents\学习笔记\文档\应用程序临时文件路径更改.txt",FileMode.Append,FileAccess.Write))
+            {
+                //要写入的字符串
+                string str = "\n今天天气好晴朗";
+                //将要写入的字符串解码成字节数组
+                byte[] buffer = Encoding.Default.GetBytes(str);
+                //将字节缓存写入文件
+                fsWrite.Write(buffer, 0, buffer.Length);
+                Console.WriteLine("写入成功");
+            }
             #endregion
             #endregion
         }
