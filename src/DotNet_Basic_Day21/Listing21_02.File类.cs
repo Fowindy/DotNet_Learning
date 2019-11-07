@@ -74,6 +74,10 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_02
             #region @2.6.3.WriteAllText:以文本写入(覆盖)
             File.WriteAllText(@"C:\Users\Administrator\Desktop\old.txt", "今天还是比较凉快的");
             #endregion
+
+            #region @2.6.4.AppendAllText:以追加文本写入(不覆盖)
+            File.AppendAllText(@"C:\Users\Administrator\Desktop\old.txt", "\n没有覆盖哟");
+            #endregion
             #endregion
         }
     }
