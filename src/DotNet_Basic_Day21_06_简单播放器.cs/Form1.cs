@@ -16,16 +16,17 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
         {
             InitializeComponent();
         }
+        //播放按钮
         private void button1_Click(object sender, EventArgs e)
         {
             MusicPlayer.Ctlcontrols.play();
         }
-
+        //暂停按钮
         private void button2_Click(object sender, EventArgs e)
         {
             MusicPlayer.Ctlcontrols.pause();
         }
-
+        //停止按钮
         private void button3_Click(object sender, EventArgs e)
         {
             MusicPlayer.Ctlcontrols.stop();
