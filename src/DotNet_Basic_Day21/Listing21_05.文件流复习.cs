@@ -61,6 +61,15 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_05
                 }
             }
             #endregion
+
+            #region @5.1.4.文件流的写入文件_StreamWriter
+            //true:以Append的方式写入
+            using (StreamWriter sw = new StreamWriter(@"J:\Documents\学习笔记\文档\应用程序临时文件路径更改.txt",true))
+            {
+                string str = "\n中华人民共和国";
+                sw.Write(str);
+            }
+            #endregion
             #endregion
         }
     }
