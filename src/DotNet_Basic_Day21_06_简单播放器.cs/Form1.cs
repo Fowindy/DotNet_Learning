@@ -40,6 +40,8 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
         {
             //$7.2.在程序加载的时候,取消播放器默认的自动播放功能_没能成功_因为Url赋值即触发播放
             MusicPlayer.settings.autoStart = false;
+            //$7.3.在程序加载的时候,取消播放器默认的自动播放功能_成功_先取消自动播放,后对URL赋值
+            MusicPlayer.URL = @"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\周杰伦 - 给我一首歌的时间.mp3";
         }
     }
 }
