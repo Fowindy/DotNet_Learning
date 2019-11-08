@@ -14,7 +14,7 @@ namespace Fowindy.DotNet_Basic_Day21.Listing21_06
     {
         public static void Main()
         {
-            #region #6.将对象序列化成二进制
+            #region $6.1.将对象序列化成二进制
             //要将序列化对象的类,标记为可以被序列化的
             Person p = new Person();
             p.Name = "张三";
