@@ -44,6 +44,7 @@
             this.MusicPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MusicPlayer.OcxState")));
             this.MusicPlayer.Size = new System.Drawing.Size(512, 316);
             this.MusicPlayer.TabIndex = 0;
+            this.MusicPlayer.Enter += new System.EventHandler(this.MusicPlayer_Enter);
             // 
             // button1
             // 

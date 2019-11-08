@@ -31,5 +31,15 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
         {
             MusicPlayer.Ctlcontrols.stop();
         }
+        /// <summary>
+        /// 程序加载
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MusicPlayer_Enter(object sender, EventArgs e)
+        {
+            //$7.2.在程序加载的时候,取消播放器默认的自动播放功能_没能成功_因为Url赋值即触发播放
+            MusicPlayer.settings.autoStart = false;
+        }
     }
 }
