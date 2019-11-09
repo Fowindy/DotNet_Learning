@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,7 +64,8 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 btnPlayOrPause.Text = "播放";
             }
         }
-
+        //声明一个泛型集合,用于音乐的路径
+        List<string> listPath = new List<string>();
         /// <summary>
         /// $7.8.加载音乐对话框
         /// </summary>
@@ -83,6 +85,22 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             openFileDialog.Multiselect = true;
             //显示对话窗口
             openFileDialog.ShowDialog();
+
+            //获得在文本框中选择文件的全路径
+            string[] path = openFileDialog.FileNames;
+
+            #region $7.9.将音乐加载进界面显示
+            //循坏将全路径加载进泛型集合
+            for (int i = 0; i < path.Length; i++)
+            {
+                //将音乐文件的全路径存储到泛型集合中
+                listPath.Add(path[i]);
+
+                //将音乐文件的文件名存储到ListBox中
+                MusicList.Items.Add(Path.GetFileName(path[i]));
+            } 
+            #endregion
+
         }
     }
 }

@@ -37,6 +37,7 @@
             this.MusicPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnLoadMusic = new System.Windows.Forms.Button();
+            this.MusicList = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).BeginInit();
             this.SuspendLayout();
@@ -123,11 +124,21 @@
             this.btnLoadMusic.UseVisualStyleBackColor = true;
             this.btnLoadMusic.Click += new System.EventHandler(this.btnLoadMusic_Click);
             // 
+            // MusicList
+            // 
+            this.MusicList.FormattingEnabled = true;
+            this.MusicList.ItemHeight = 12;
+            this.MusicList.Location = new System.Drawing.Point(536, 204);
+            this.MusicList.Name = "MusicList";
+            this.MusicList.Size = new System.Drawing.Size(252, 232);
+            this.MusicList.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.MusicList);
             this.Controls.Add(this.btnLoadMusic);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnPlayOrPause);
@@ -151,6 +162,7 @@
         private System.Windows.Forms.Button btnPlayOrPause;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Button btnLoadMusic;
+        private System.Windows.Forms.ListBox MusicList;
     }
 }
 
