@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnPlayOrPause = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -90,11 +91,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "老版播放器";
             // 
+            // btnPlayOrPause
+            // 
+            this.btnPlayOrPause.Location = new System.Drawing.Point(22, 335);
+            this.btnPlayOrPause.Name = "btnPlayOrPause";
+            this.btnPlayOrPause.Size = new System.Drawing.Size(75, 23);
+            this.btnPlayOrPause.TabIndex = 5;
+            this.btnPlayOrPause.Text = "播放";
+            this.btnPlayOrPause.UseVisualStyleBackColor = true;
+            this.btnPlayOrPause.Click += new System.EventHandler(this.btnPlayOrPause_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPlayOrPause);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.MusicPlayer);
             this.Name = "Form1";
@@ -112,6 +124,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnPlayOrPause;
     }
 }
 
