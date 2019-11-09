@@ -63,5 +63,26 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 btnPlayOrPause.Text = "播放";
             }
         }
+
+        /// <summary>
+        /// $7.8.加载音乐对话框
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLoadMusic_Click(object sender, EventArgs e)
+        {
+            //创建打开文件对话框的窗口
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            //默认打开路径
+            openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\Music";
+            //打开文件类型
+            openFileDialog.Filter = "Mp3文件|*.mp3|Wav文件|*.wav|所有文件|*.*";
+            //打开文件标题
+            openFileDialog.Title = "请选择音乐文件";
+            //可以多选
+            openFileDialog.Multiselect = true;
+            //显示对话窗口
+            openFileDialog.ShowDialog();
+        }
     }
 }

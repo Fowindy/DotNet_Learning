@@ -36,6 +36,7 @@
             this.btnPlayOrPause = new System.Windows.Forms.Button();
             this.MusicPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.btnStop = new System.Windows.Forms.Button();
+            this.btnLoadMusic = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).BeginInit();
             this.SuspendLayout();
@@ -112,11 +113,22 @@
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.button3_Click);
             // 
+            // btnLoadMusic
+            // 
+            this.btnLoadMusic.Location = new System.Drawing.Point(536, 175);
+            this.btnLoadMusic.Name = "btnLoadMusic";
+            this.btnLoadMusic.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadMusic.TabIndex = 7;
+            this.btnLoadMusic.Text = "加载音乐";
+            this.btnLoadMusic.UseVisualStyleBackColor = true;
+            this.btnLoadMusic.Click += new System.EventHandler(this.btnLoadMusic_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLoadMusic);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnPlayOrPause);
             this.Controls.Add(this.groupBox1);
@@ -138,6 +150,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnPlayOrPause;
         private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button btnLoadMusic;
     }
 }
 
