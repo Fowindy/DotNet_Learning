@@ -43,7 +43,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             //$7.2.在程序加载的时候,取消播放器默认的自动播放功能_没能成功_因为Url赋值即触发播放
             MusicPlayer.settings.autoStart = false;
             //$7.3.在程序加载的时候,取消播放器默认的自动播放功能_成功_先取消自动播放,后对URL赋值
-            MusicPlayer.URL = @"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\周杰伦 - 给我一首歌的时间.mp3";
+            //MusicPlayer.URL = @"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\周杰伦 - 给我一首歌的时间.mp3";
         }
         /// <summary>
         /// $7.5.一个按钮实现播放暂停切换
@@ -101,6 +101,33 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             } 
             #endregion
 
+        }
+        /// <summary>
+        /// $7.10.为MusicList注册双击播放事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MusicList_DoubleClick(object sender, EventArgs e)
+        {
+            //异常处理1:如果列表为空
+            if (MusicList.Items.Count == 0)
+            {
+                MessageBox.Show("请首先选择音乐文件");
+                //结束本次方法,不执行下面的操作
+                return;
+            }
+
+            //异常处理2:当在列表空白的地方双击时,抛异常;
+            //拿到双击对象的URL
+            try
+            {
+                MusicPlayer.URL = listPath[MusicList.SelectedIndex];
+                MusicPlayer.Ctlcontrols.play();
+                btnPlayOrPause.Text = "暂停";
+            }
+            catch
+            {
+            }
         }
     }
 }

@@ -132,6 +132,7 @@
             this.MusicList.Name = "MusicList";
             this.MusicList.Size = new System.Drawing.Size(252, 232);
             this.MusicList.TabIndex = 8;
+            this.MusicList.DoubleClick += new System.EventHandler(this.MusicList_DoubleClick);
             // 
             // Form1
             // 
