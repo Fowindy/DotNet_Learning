@@ -132,6 +132,7 @@
             this.MusicList.ItemHeight = 12;
             this.MusicList.Location = new System.Drawing.Point(536, 204);
             this.MusicList.Name = "MusicList";
+            this.MusicList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.MusicList.Size = new System.Drawing.Size(252, 232);
             this.MusicList.TabIndex = 8;
             this.MusicList.DoubleClick += new System.EventHandler(this.MusicList_DoubleClick);
