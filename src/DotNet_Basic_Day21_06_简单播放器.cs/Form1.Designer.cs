@@ -29,25 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.MusicPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnPlayOrPause = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).BeginInit();
+            this.MusicPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.btnStop = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).BeginInit();
             this.SuspendLayout();
-            // 
-            // MusicPlayer
-            // 
-            this.MusicPlayer.Enabled = true;
-            this.MusicPlayer.Location = new System.Drawing.Point(12, 12);
-            this.MusicPlayer.Name = "MusicPlayer";
-            this.MusicPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MusicPlayer.OcxState")));
-            this.MusicPlayer.Size = new System.Drawing.Size(512, 316);
-            this.MusicPlayer.TabIndex = 0;
-            this.MusicPlayer.Enter += new System.EventHandler(this.MusicPlayer_Enter);
             // 
             // button1
             // 
@@ -101,18 +92,39 @@
             this.btnPlayOrPause.UseVisualStyleBackColor = true;
             this.btnPlayOrPause.Click += new System.EventHandler(this.btnPlayOrPause_Click);
             // 
+            // MusicPlayer
+            // 
+            this.MusicPlayer.Enabled = true;
+            this.MusicPlayer.Location = new System.Drawing.Point(12, 12);
+            this.MusicPlayer.Name = "MusicPlayer";
+            this.MusicPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MusicPlayer.OcxState")));
+            this.MusicPlayer.Size = new System.Drawing.Size(512, 316);
+            this.MusicPlayer.TabIndex = 0;
+            this.MusicPlayer.Enter += new System.EventHandler(this.MusicPlayer_Enter);
+            // 
+            // btnStop
+            // 
+            this.btnStop.Location = new System.Drawing.Point(103, 335);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(75, 23);
+            this.btnStop.TabIndex = 6;
+            this.btnStop.Text = "停止";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnPlayOrPause);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.MusicPlayer);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -125,6 +137,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnPlayOrPause;
+        private System.Windows.Forms.Button btnStop;
     }
 }
 
