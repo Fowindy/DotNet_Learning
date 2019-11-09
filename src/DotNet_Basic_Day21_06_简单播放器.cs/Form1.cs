@@ -32,6 +32,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
         {
             MusicPlayer.Ctlcontrols.stop();
             btnPlayOrPause.Text = "播放";
+            this.btnStop.Enabled = false;
             IsPlay = false;
         }
         /// <summary>
@@ -47,7 +48,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             //MusicPlayer.URL = @"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\周杰伦 - 给我一首歌的时间.mp3";
         }
         bool IsPlay = false;
-        int PreIndex = -1;
+        int PreIndex = 0;
         /// <summary>
         /// $7.5.一个按钮实现播放暂停切换
         /// </summary>
@@ -94,6 +95,9 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 }
                 btnPlayOrPause.Text = "播放";
             }
+            this.btnStop.Enabled = true;
+            btnNext.Enabled = true;
+            btnForward.Enabled = true;
         }
         //声明一个泛型集合,用于音乐的路径
         List<string> listPath = new List<string>();
@@ -157,10 +161,60 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 IsPlay = true;
                 PreIndex = MusicList.SelectedIndex;
                 btnPlayOrPause.Text = "暂停";
+                btnNext.Enabled = true;
+                btnForward.Enabled = true;
+                this.btnStop.Enabled = true;
             }
             catch
             {
             }
+        }
+        /// <summary>
+        /// 上一曲
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnForward_Click(object sender, EventArgs e)
+        {
+            int index = PreIndex;
+            index--;
+            if (index == -1)
+            {
+                index = listPath.Count-1;
+            }
+            MusicPlayer.URL = listPath[index];
+            MusicList.SelectedIndex = index;
+            PreIndex = index;
+            MusicPlayer.Ctlcontrols.play();
+            btnPlayOrPause.Text = "暂停";
+            this.btnStop.Enabled = true;
+            IsPlay = true;
+        }
+        /// <summary>
+        /// 下一曲
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            int index = PreIndex;
+            index++;
+            if (index == listPath.Count)
+            {
+                index = 0;
+            }
+            MusicPlayer.URL = listPath[index];
+            MusicList.SelectedIndex = index;
+            PreIndex = index;
+            MusicPlayer.Ctlcontrols.play();
+            btnPlayOrPause.Text = "暂停";
+            this.btnStop.Enabled = true;
+            IsPlay = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.btnStop.Enabled = false;
         }
     }
 }

@@ -38,6 +38,8 @@
             this.btnStop = new System.Windows.Forms.Button();
             this.btnLoadMusic = new System.Windows.Forms.Button();
             this.MusicList = new System.Windows.Forms.ListBox();
+            this.btnForward = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).BeginInit();
             this.SuspendLayout();
@@ -134,11 +136,35 @@
             this.MusicList.TabIndex = 8;
             this.MusicList.DoubleClick += new System.EventHandler(this.MusicList_DoubleClick);
             // 
+            // btnForward
+            // 
+            this.btnForward.Enabled = false;
+            this.btnForward.Location = new System.Drawing.Point(185, 334);
+            this.btnForward.Name = "btnForward";
+            this.btnForward.Size = new System.Drawing.Size(75, 23);
+            this.btnForward.TabIndex = 9;
+            this.btnForward.Text = "上一曲";
+            this.btnForward.UseVisualStyleBackColor = true;
+            this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Enabled = false;
+            this.btnNext.Location = new System.Drawing.Point(266, 334);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.TabIndex = 10;
+            this.btnNext.Text = "下一曲";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnForward);
             this.Controls.Add(this.MusicList);
             this.Controls.Add(this.btnLoadMusic);
             this.Controls.Add(this.btnStop);
@@ -147,6 +173,7 @@
             this.Controls.Add(this.MusicPlayer);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).EndInit();
             this.ResumeLayout(false);
@@ -164,6 +191,8 @@
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Button btnLoadMusic;
         private System.Windows.Forms.ListBox MusicList;
+        private System.Windows.Forms.Button btnForward;
+        private System.Windows.Forms.Button btnNext;
     }
 }
 
