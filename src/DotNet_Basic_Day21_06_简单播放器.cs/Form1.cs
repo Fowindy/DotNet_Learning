@@ -30,6 +30,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
         private void button3_Click(object sender, EventArgs e)
         {
             MusicPlayer.Ctlcontrols.stop();
+            btnPlayOrPause.Text = "播放";
         }
         /// <summary>
         /// 程序加载
