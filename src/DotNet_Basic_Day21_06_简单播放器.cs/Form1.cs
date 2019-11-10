@@ -72,7 +72,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                     PreIndex = 0;
                     IsPlay = true;
                 }
-                else if(!IsPlay)
+                else if (!IsPlay)
                 {
                     MusicPlayer.URL = listPath[MusicList.SelectedIndex];
                     PreIndex = MusicList.SelectedIndex;
@@ -80,6 +80,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 }
                 MusicPlayer.Ctlcontrols.play();
                 btnPlayOrPause.Text = "暂停";
+                this.btnStop.Enabled = true;
             }
             else
             {
@@ -87,15 +88,16 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 {
                     MusicPlayer.Ctlcontrols.stop();
                     IsPlay = false;
+                    this.btnStop.Enabled = false;
                 }
                 else
                 {
                     MusicPlayer.Ctlcontrols.pause();
                     IsPlay = true;
+                    this.btnStop.Enabled = true;
                 }
                 btnPlayOrPause.Text = "播放";
             }
-            this.btnStop.Enabled = true;
             btnNext.Enabled = true;
             btnForward.Enabled = true;
         }
@@ -133,9 +135,11 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
 
                 //将音乐文件的文件名存储到ListBox中
                 MusicList.Items.Add(Path.GetFileName(path[i]));
-            } 
+            }
             #endregion
-
+            MusicList.SelectedIndex = 0;
+            btnNext.Enabled = true;
+            btnForward.Enabled = true;
         }
         /// <summary>
         /// $7.10.为MusicList注册双击播放事件
@@ -147,11 +151,10 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             //异常处理1:如果列表为空
             if (MusicList.Items.Count == 0)
             {
-                MessageBox.Show("请首先选择音乐文件");
+                MessageBox.Show("音乐列表为空,请先选择音乐文件");
                 //结束本次方法,不执行下面的操作
                 return;
             }
-
             //异常处理2:当在列表空白的地方双击时,抛异常;
             //拿到双击对象的URL
             try
@@ -177,10 +180,12 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
         private void btnForward_Click(object sender, EventArgs e)
         {
             int index = PreIndex;
+            //清空所有选中项的索引
+            MusicList.SelectedIndices.Clear();
             index--;
             if (index == -1)
             {
-                index = listPath.Count-1;
+                index = listPath.Count - 1;
             }
             MusicPlayer.URL = listPath[index];
             MusicList.SelectedIndex = index;
@@ -198,6 +203,8 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
         private void btnNext_Click(object sender, EventArgs e)
         {
             int index = PreIndex;
+            //清空所有选中项的索引
+            MusicList.SelectedIndices.Clear();
             index++;
             if (index == listPath.Count)
             {
@@ -215,6 +222,90 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
         private void Form1_Load(object sender, EventArgs e)
         {
             this.btnStop.Enabled = false;
+        }
+        /// <summary>
+        /// $7.13.3.多选删除_点击删除选中项
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //int count = MusicList.Items.Count;
+            //for循环删除
+            for (int i = 0; i < MusicList.Items.Count; i++)
+            {
+                if (MusicList.SelectedIndices.Contains(i))
+                {
+                    if (PreIndex > MusicList.SelectedIndex)
+                    {
+                        PreIndex--;
+                    }
+                    else if (PreIndex == MusicList.SelectedIndex && MusicList.SelectedIndex == MusicList.Items.Count-1)
+                    {
+                        PreIndex--;
+                        MusicPlayer.Ctlcontrols.stop();
+                        IsPlay = false;
+                        btnPlayOrPause.Text = "播放";
+                        this.btnStop.Enabled = false;
+                    }
+                    else if (PreIndex == MusicList.SelectedIndex && MusicList.SelectedIndex == 0)
+                    {
+                        MusicPlayer.Ctlcontrols.stop();
+                        IsPlay = false;
+                        btnPlayOrPause.Text = "播放";
+                        this.btnStop.Enabled = false;
+                    }
+                    else if (PreIndex == MusicList.SelectedIndex && 0 < MusicList.SelectedIndex && MusicList.SelectedIndex < MusicList.Items.Count - 1)
+                    {
+                        MusicPlayer.Ctlcontrols.stop();
+                        IsPlay = false;
+                        btnPlayOrPause.Text = "播放";
+                        this.btnStop.Enabled = false;
+                    }
+                    //一定先删MusicList之外的listPath列表(listPath存了所有歌曲的全路径),因为是根据MusicList的选中index删除的;如果先删MusicList,index也发生了变化,再删集合的时候容易出错
+                    listPath.RemoveAt(i);
+                    //if (i == MusicList.Items.Count-1)
+                    //{
+                    //    MusicList.SelectedIndex = 0;
+                    //}
+                    //再删MusicList列表
+                    MusicList.Items.RemoveAt(i);
+                    i--;
+                    //清空所有选中项的索引
+                    //MusicList.SelectedIndices.Clear();
+                }
+
+            }
+            if (MusicList.Items.Count != 0 && PreIndex != MusicList.SelectedIndex)
+            {
+                MusicList.SelectedIndex = PreIndex;
+                this.btnStop.Enabled = false;
+            }
+            if (MusicList.SelectedIndex == -1 || MusicList.Items.Count == 0)
+            {
+                try
+                {
+                    if (MusicList.Items.Count != 0)
+                    {
+                        MusicList.SelectedIndex = PreIndex;
+                        MusicPlayer.Ctlcontrols.stop();
+                        IsPlay = false;
+                        btnPlayOrPause.Text = "播放";
+                        this.btnStop.Enabled = true;
+                    }
+                    else
+                    {
+                        this.btnStop.Enabled = false;
+                    }
+
+                }
+                catch
+                {
+                    this.btnStop.Enabled = false;
+                    this.btnForward.Enabled = false;
+                    this.btnNext.Enabled = false;
+                }
+            }
         }
     }
 }
