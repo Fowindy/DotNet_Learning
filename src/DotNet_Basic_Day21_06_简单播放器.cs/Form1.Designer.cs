@@ -39,10 +39,11 @@
             this.btnStop = new System.Windows.Forms.Button();
             this.btnLoadMusic = new System.Windows.Forms.Button();
             this.MusicList = new System.Windows.Forms.ListBox();
-            this.btnForward = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnForward = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -108,7 +109,6 @@
             this.MusicPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MusicPlayer.OcxState")));
             this.MusicPlayer.Size = new System.Drawing.Size(512, 316);
             this.MusicPlayer.TabIndex = 0;
-            this.MusicPlayer.Enter += new System.EventHandler(this.MusicPlayer_Enter);
             // 
             // btnStop
             // 
@@ -142,6 +142,20 @@
             this.MusicList.TabIndex = 8;
             this.MusicList.DoubleClick += new System.EventHandler(this.MusicList_DoubleClick);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.删除ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
             // btnForward
             // 
             this.btnForward.Enabled = false;
@@ -164,25 +178,21 @@
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // contextMenuStrip1
+            // label1
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.删除ToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
-            // 
-            // 删除ToolStripMenuItem
-            // 
-            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
-            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.删除ToolStripMenuItem.Text = "删除";
-            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            this.label1.Location = new System.Drawing.Point(347, 334);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 23);
+            this.label1.TabIndex = 11;
+            this.label1.Tag = "1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnForward);
             this.Controls.Add(this.MusicList);
@@ -216,6 +226,7 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }
 

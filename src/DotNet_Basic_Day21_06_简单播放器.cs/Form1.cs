@@ -35,18 +35,6 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             this.btnStop.Enabled = false;
             IsPlay = false;
         }
-        /// <summary>
-        /// 程序加载
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void MusicPlayer_Enter(object sender, EventArgs e)
-        {
-            //$7.2.在程序加载的时候,取消播放器默认的自动播放功能_没能成功_因为Url赋值即触发播放
-            MusicPlayer.settings.autoStart = false;
-            //$7.3.在程序加载的时候,取消播放器默认的自动播放功能_成功_先取消自动播放,后对URL赋值
-            //MusicPlayer.URL = @"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\周杰伦 - 给我一首歌的时间.mp3";
-        }
         bool IsPlay = false;
         int PreIndex = 0;
         /// <summary>
@@ -218,10 +206,20 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             this.btnStop.Enabled = true;
             IsPlay = true;
         }
-
+        /// <summary>
+        /// 程序加载
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
+            //$7.2.在程序加载的时候,取消播放器默认的自动播放功能_没能成功_因为Url赋值即触发播放
+            MusicPlayer.settings.autoStart = false;
+            //$7.3.在程序加载的时候,取消播放器默认的自动播放功能_成功_先取消自动播放,后对URL赋值
+            //MusicPlayer.URL = @"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\周杰伦 - 给我一首歌的时间.mp3";
             this.btnStop.Enabled = false;
+            //$7.14.在程序加载的时候显示放音icon
+            label1.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\放音.png");
         }
         /// <summary>
         /// $7.13.3.多选删除_点击删除选中项
@@ -305,6 +303,37 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                     this.btnForward.Enabled = false;
                     this.btnNext.Enabled = false;
                 }
+            }
+        }
+
+        /// <summary>
+        /// 静音or放音点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void label1_Click(object sender, EventArgs e)
+        {
+            //label1的tag属性:可以标注状态;将tag属性默认标记为:1;表示放音;
+            //对tag属性进行判断
+            //如果现在显示的是放音,那么点击的目的是静音
+            if (label1.Tag.ToString() == "1")
+            {
+                //播放器静音操作
+                MusicPlayer.settings.mute = true;
+                //将tag属性标记为静音:2
+                label1.Tag = "2";
+                //并且切换静音图标
+                label1.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\静音.png");
+            }
+            //如果现在显示的是静音,那么点击的目的是放音
+            else
+            {
+                //播放器放音操作
+                MusicPlayer.settings.mute = false;
+                //将tag属性标记为放音:1
+                label1.Tag = "1";
+                //并且将图标切换放音图标
+                label1.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\放音.png");
             }
         }
     }
