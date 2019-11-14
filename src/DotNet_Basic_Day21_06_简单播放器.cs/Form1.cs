@@ -359,6 +359,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 double NowTime = MusicPlayer.Ctlcontrols.currentPosition;
                 if ((NowTime + 1) >= EndTime)
                 {
+                    //$7.16.2.自动下一曲完成(调用下一曲按钮事件)
                     btnNext_Click(null, null);
                 }
             }
