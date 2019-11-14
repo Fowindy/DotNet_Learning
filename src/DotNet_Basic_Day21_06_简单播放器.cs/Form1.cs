@@ -336,5 +336,10 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 label1.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\放音.png");
             }
         }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            MusicPlayer.settings.volume = trackBar1.Value;
+        }
     }
 }
