@@ -101,7 +101,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             //创建打开文件对话框的窗口
             OpenFileDialog openFileDialog = new OpenFileDialog();
             //默认打开路径
-            openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\Music";
+            openFileDialog.InitialDirectory = @"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\Music";
             //打开文件类型
             openFileDialog.Filter = "Mp3文件|*.mp3|Wav文件|*.wav|所有文件|*.*";
             //打开文件标题
@@ -222,10 +222,10 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             //$7.2.在程序加载的时候,取消播放器默认的自动播放功能_没能成功_因为Url赋值即触发播放
             MusicPlayer.settings.autoStart = false;
             //$7.3.在程序加载的时候,取消播放器默认的自动播放功能_成功_先取消自动播放,后对URL赋值
-            //MusicPlayer.URL = @"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\周杰伦 - 给我一首歌的时间.mp3";
+            //MusicPlayer.URL = @"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\周杰伦 - 给我一首歌的时间.mp3";
             this.btnStop.Enabled = false;
             //$7.14.在程序加载的时候显示放音icon
-            label1.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\放音.png");
+            label1.Image = Image.FromFile(@"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\放音.png");
 
         }
         /// <summary>
@@ -330,7 +330,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 //将tag属性标记为静音:2
                 label1.Tag = "2";
                 //并且切换静音图标
-                label1.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\静音.png");
+                label1.Image = Image.FromFile(@"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\静音.png");
             }
             //如果现在显示的是静音,那么点击的目的是放音
             else
@@ -340,7 +340,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 //将tag属性标记为放音:1
                 label1.Tag = "1";
                 //并且将图标切换放音图标
-                label1.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\放音.png");
+                label1.Image = Image.FromFile(@"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\放音.png");
             }
         }
 
@@ -392,6 +392,8 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                             break;
                         //单曲循环
                         case "4":
+                            MusicPlayer.URL = listPath[MusicList.SelectedIndex];
+                            MusicPlayer.Ctlcontrols.play();
                             break;
                     }
                 }
@@ -411,25 +413,25 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                     //列表顺序
                     label3.Text = "列表顺序";
                     label2.Tag = "2";
-                    label2.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\列表顺序.png");
+                    label2.Image = Image.FromFile(@"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\列表顺序.png");
                     break;
                 case "2":
                     //列表随机
                     label3.Text = "列表随机";
                     label2.Tag = "3";
-                    label2.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\列表随机.png");
+                    label2.Image = Image.FromFile(@"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\列表随机.png");
                     break;
                 case "3":
                     //单曲循环
                     label3.Text = "单曲循环";
                     label2.Tag = "4";
-                    label2.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\单曲循环.png");
+                    label2.Image = Image.FromFile(@"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\单曲循环.png");
                     break;
                 case "4":
                     //列表循环
                     label3.Text = "列表循环";
                     label2.Tag = "1";
-                    label2.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\列表循环.png");
+                    label2.Image = Image.FromFile(@"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\列表循环.png");
                     break;
             }
         }

@@ -102,5 +102,13 @@
   <ItemGroup>
     <None Include="Resources\循环播放.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\列表循环.png" />
+    <Content Include="Resources\列表随机.png" />
+    <Content Include="Resources\列表顺序.png" />
+    <Content Include="Resources\单曲循环.png" />
+    <Content Include="Resources\放音.png" />
+    <Content Include="Resources\静音.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
