@@ -382,6 +382,13 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                             break;
                         //列表随机
                         case "3":
+                            //Random r = new Random();
+                            //r.Next
+                            //清空所有选中项的索引
+                            MusicList.SelectedIndices.Clear();
+                            MusicList.SelectedIndex = new Random().Next(0, MusicList.Items.Count);
+                            MusicPlayer.URL = listPath[MusicList.SelectedIndex];
+                            MusicPlayer.Ctlcontrols.play();
                             break;
                         //单曲循环
                         case "4":
