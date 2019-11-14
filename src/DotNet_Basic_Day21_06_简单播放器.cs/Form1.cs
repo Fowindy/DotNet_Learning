@@ -341,5 +341,27 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
         {
             MusicPlayer.settings.volume = trackBar1.Value;
         }
+        /// <summary>
+        /// $7.16.1.下一曲加入定时器监测是否播放完成
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        ///<![CDATA[注意:
+        ///1.默认timer处于false状态,需要属性里面true]]>
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //判断是否处于播放状态;
+            if (MusicPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                lblInformation.Text = /*MusicPlayer.currentMedia.duration.ToString() + "\r\n" + */MusicPlayer.currentMedia.durationString + "\r\n"/* + MusicPlayer.Ctlcontrols.currentPosition.ToString() + "\r\n" */+ MusicPlayer.Ctlcontrols.currentPositionString;
+                //时间转换为double类型便于计算比较
+                double EndTime = MusicPlayer.currentMedia.duration;
+                double NowTime = MusicPlayer.Ctlcontrols.currentPosition;
+                if ((NowTime + 1) >= EndTime)
+                {
+                    btnNext_Click(null, null);
+                }
+            }
+        }
     }
 }
