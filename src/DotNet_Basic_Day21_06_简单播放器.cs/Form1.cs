@@ -125,9 +125,15 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 MusicList.Items.Add(Path.GetFileName(path[i]));
             }
             #endregion
-            MusicList.SelectedIndex = 0;
+            if (MusicList.SelectedIndex == -1)
+            {
+                MusicList.SelectedIndex = 0;
+            }
             btnNext.Enabled = true;
             btnForward.Enabled = true;
+            //默认列表循环
+            label3.Text = "列表循环";
+            label2.Enabled = true;
         }
         /// <summary>
         /// $7.10.为MusicList注册双击播放事件
@@ -220,6 +226,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
             this.btnStop.Enabled = false;
             //$7.14.在程序加载的时候显示放音icon
             label1.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\放音.png");
+
         }
         /// <summary>
         /// $7.13.3.多选删除_点击删除选中项
@@ -359,9 +366,64 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 double NowTime = MusicPlayer.Ctlcontrols.currentPosition;
                 if ((NowTime + 1) >= EndTime)
                 {
-                    //$7.16.2.自动下一曲完成(调用下一曲按钮事件)
-                    btnNext_Click(null, null);
+                    switch (label2.Tag.ToString())
+                    {
+                        //默认列表循环
+                        case "1":
+                            //$7.16.2.自动下一曲完成(调用下一曲按钮事件)
+                            btnNext_Click(null, null);
+                            break;
+                        //列表播放
+                        case "2":
+                            if (MusicList.SelectedIndex == MusicList.Items.Count-1)
+                                button3_Click(null, null);
+                            else
+                                btnNext_Click(null, null);
+                            break;
+                        //列表随机
+                        case "3":
+                            break;
+                        //单曲循环
+                        case "4":
+                            break;
+                    }
                 }
+            }
+        }
+        /// <summary>
+        /// $7.17.1.点击切换播放模式
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void label2_Click(object sender, EventArgs e)
+        {
+            switch (label2.Tag)
+            {
+                //列表循环
+                case "1":
+                    //列表顺序
+                    label3.Text = "列表顺序";
+                    label2.Tag = "2";
+                    label2.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\列表顺序.png");
+                    break;
+                case "2":
+                    //列表随机
+                    label3.Text = "列表随机";
+                    label2.Tag = "3";
+                    label2.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\列表随机.png");
+                    break;
+                case "3":
+                    //单曲循环
+                    label3.Text = "单曲循环";
+                    label2.Tag = "4";
+                    label2.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\单曲循环.png");
+                    break;
+                case "4":
+                    //列表循环
+                    label3.Text = "列表循环";
+                    label2.Tag = "1";
+                    label2.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\传智播客C#案例资料\Day21\简单播放器\列表循环.png");
+                    break;
             }
         }
     }

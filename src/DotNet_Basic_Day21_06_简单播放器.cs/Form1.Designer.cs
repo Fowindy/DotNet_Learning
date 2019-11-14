@@ -47,6 +47,8 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.lblInformation = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -209,7 +211,7 @@
             // 
             this.lblInformation.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblInformation.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblInformation.Location = new System.Drawing.Point(12, 12);
+            this.lblInformation.Location = new System.Drawing.Point(13, 27);
             this.lblInformation.Name = "lblInformation";
             this.lblInformation.Size = new System.Drawing.Size(68, 30);
             this.lblInformation.TabIndex = 13;
@@ -220,11 +222,33 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label2
+            // 
+            this.label2.Enabled = false;
+            this.label2.Image = global::DotNet_Basic_Day21_06_简单播放器.cs.Properties.Resources.循环播放;
+            this.label2.Location = new System.Drawing.Point(490, 334);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 23);
+            this.label2.TabIndex = 14;
+            this.label2.Tag = "1";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label3.Location = new System.Drawing.Point(12, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 15);
+            this.label3.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblInformation);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.label1);
@@ -267,6 +291,8 @@
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Label lblInformation;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
