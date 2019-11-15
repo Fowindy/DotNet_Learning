@@ -49,6 +49,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblLrc = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MusicPlayer)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -242,11 +243,21 @@
             this.label3.Size = new System.Drawing.Size(69, 15);
             this.label3.TabIndex = 15;
             // 
+            // lblLrc
+            // 
+            this.lblLrc.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblLrc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblLrc.Location = new System.Drawing.Point(183, 254);
+            this.lblLrc.Name = "lblLrc";
+            this.lblLrc.Size = new System.Drawing.Size(287, 23);
+            this.lblLrc.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblLrc);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblInformation);
@@ -293,6 +304,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblLrc;
     }
 }
 

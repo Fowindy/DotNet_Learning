@@ -245,7 +245,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                     {
                         PreIndex--;
                     }
-                    else if (PreIndex == MusicList.SelectedIndex && MusicList.SelectedIndex == MusicList.Items.Count-1)
+                    else if (PreIndex == MusicList.SelectedIndex && MusicList.SelectedIndex == MusicList.Items.Count - 1)
                     {
                         PreIndex--;
                         MusicPlayer.Ctlcontrols.stop();
@@ -364,6 +364,15 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                 //时间转换为double类型便于计算比较
                 double EndTime = MusicPlayer.currentMedia.duration;
                 double NowTime = MusicPlayer.Ctlcontrols.currentPosition;
+                //显示歌词
+                IsExistLrc(listPath[MusicList.SelectedIndex]);
+                string[] times = MusicPlayer.Ctlcontrols.currentPositionString.Split(new char[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
+                int time = int.Parse(times[0]) * 60 + int.Parse(times[1]);
+                if (dicLrc.Keys.Contains(time))
+                {
+                    lblLrc.Text = dicLrc[time];
+                }
+
                 if ((NowTime + 1) >= EndTime)
                 {
                     switch (label2.Tag.ToString())
@@ -375,7 +384,7 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                             break;
                         //列表播放
                         case "2":
-                            if (MusicList.SelectedIndex == MusicList.Items.Count-1)
+                            if (MusicList.SelectedIndex == MusicList.Items.Count - 1)
                                 button3_Click(null, null);
                             else
                                 btnNext_Click(null, null);
@@ -433,6 +442,49 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
                     label2.Tag = "1";
                     label2.Image = Image.FromFile(@"J:\Documents\Source\Repos\DotNet_Learning\DotNet_Basic_Class\src\DotNet_Basic_Day21_06_简单播放器.cs\Resources\列表循环.png");
                     break;
+            }
+        }
+
+        /// <summary>
+        /// 判断在音乐路径是否存在歌词文件
+        /// </summary>
+        /// <param name="musicPath"></param>
+        private void IsExistLrc(string musicPath)
+        {
+            string extension = Path.GetExtension(musicPath);
+            string lrcPath = musicPath.Replace(extension, ".lrc");
+            if (File.Exists(lrcPath))
+            {
+                //读取歌词
+                string[] lrcText = File.ReadAllLines(lrcPath,Encoding.Default);
+                //格式化歌词
+                FormateLrc(lrcText);
+            }
+            else//不存在歌词
+            {
+                lblLrc.Text = "------歌词未找到------";
+            }
+        }
+        Dictionary<int, string> dicLrc = new Dictionary<int, string>();
+        /// <summary>
+        /// 格式化歌词
+        /// </summary>
+        private void FormateLrc(string[] lrcText)
+        {
+            for (int i = 0; i < lrcText.Length; i++)
+            {
+                //截取时间和歌词,[00:15.22]喝纯白的豆浆
+                string[] lrcTemp = lrcText[i].Split(new char[] { '[', ']' }, StringSplitOptions.RemoveEmptyEntries);
+                //00:15.22  喝纯白的豆浆
+                if (lrcTemp.Length == 2)
+                {
+                    if (lrcTemp[1] != null)
+                    {
+                        string[] timeTemp = lrcTemp[0].Split(new char[] { ':','.' }, StringSplitOptions.RemoveEmptyEntries);
+                        int time = int.Parse(timeTemp[0]) * 60 + int.Parse(timeTemp[1]);
+                        dicLrc[time] = lrcTemp[1];
+                    }
+                }
             }
         }
     }
