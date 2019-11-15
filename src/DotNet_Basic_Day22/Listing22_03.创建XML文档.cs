@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml;
 
 namespace Fowindy.DotNet_Basic_Day22.Listing22_03
 {
@@ -12,7 +13,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_03
     {
         public static void Main()
         {
-           //$3.1.代码创建xlm文档
+            //$3.1.代码创建xlm文档
+            //$3.1.1.创建xml实例对象
+            XmlDocument doc = new XmlDocument();
         }
     }
 }
