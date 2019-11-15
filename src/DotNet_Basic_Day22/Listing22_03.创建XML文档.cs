@@ -24,7 +24,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_03
             XmlElement Books = doc.CreateElement("Books");
             //$3.1.5.把根节点添加到doc中
             doc.AppendChild(Books);
-
+            //$3.1.6.保存xml文档
+            doc.Save("Books.xml");
+            Console.WriteLine("保存成功");
         }
     }
 }
