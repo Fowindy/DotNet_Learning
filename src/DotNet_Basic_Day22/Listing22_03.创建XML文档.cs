@@ -27,7 +27,7 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_03
 
             //$3.1.7.给Books添加子节点Book1
             XmlElement Book1 = doc.CreateElement("Book1");
-            doc.AppendChild(Book1);
+            Books.AppendChild(Book1);
             //@3.1.7.1.给Book1添加名字属性节点
             XmlElement Name1 = doc.CreateElement("Name1");
             Name1.InnerText = "金瓶梅";
@@ -36,6 +36,10 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_03
             XmlElement Price1 = doc.CreateElement("Price1");
             Price1.InnerText = "10";
             Book1.AppendChild(Price1);
+            //@3.1.7.3.给Book1添加描述属性节点
+            XmlElement Des1 = doc.CreateElement("Des1");
+            Des1.InnerText = "好看,不解释";
+            Book1.AppendChild(Des1);
 
 
             //$3.1.6.保存xml文档
