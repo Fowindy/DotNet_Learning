@@ -26,8 +26,13 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_03
             doc.AppendChild(Books);
 
             //$3.1.7.给Books添加子节点Book1
-            XmlElement Book1 = doc.CreateElement("Book");
+            XmlElement Book1 = doc.CreateElement("Book1");
             doc.AppendChild(Book1);
+            //@3.1.7.1.给Book1添加名字属性节点
+            XmlElement Name1 = doc.CreateElement("Name1");
+            Name1.InnerText = "金瓶梅";
+            Book1.AppendChild(Name1);
+
 
             //$3.1.6.保存xml文档
             doc.Save("Books.xml");
