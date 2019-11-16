@@ -52,7 +52,10 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_03
             XmlElement Price2 = doc.CreateElement("Price2");
             Price2.InnerText = "90";
             Book2.AppendChild(Price2);
-
+            //@3.1.8.3.给Book2添加描述属性节点
+            XmlElement Des2 = doc.CreateElement("Des2");
+            Des2.InnerText = "108个拆迁户";
+            Book2.AppendChild(Des2);
 
             //$3.1.6.保存xml文档
             doc.Save("Books.xml");
