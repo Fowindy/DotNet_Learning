@@ -41,6 +41,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_03
             Des1.InnerText = "好看,不解释";
             Book1.AppendChild(Des1);
 
+            //$3.1.8.给Books添加子节点Book2
+            XmlElement Book2 = doc.CreateElement("Book2");
+            Books.AppendChild(Book2);
 
             //$3.1.6.保存xml文档
             doc.Save("Books.xml");
