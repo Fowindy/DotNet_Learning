@@ -48,6 +48,10 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_03
             XmlElement Name2 = doc.CreateElement("Name2");
             Name2.InnerText = "水浒传";
             Book2.AppendChild(Name2);
+            //@3.1.8.2.给Book2添加价格属性节点
+            XmlElement Price2 = doc.CreateElement("Price2");
+            Price2.InnerText = "90";
+            Book2.AppendChild(Price2);
 
 
             //$3.1.6.保存xml文档
