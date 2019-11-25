@@ -21,6 +21,8 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_05
             {
                 //@5.1.1.加载该xml文件到实例对象
                 doc.Load("Books.xml");
+                //@5.1.2.获取该xml文件的根节点
+                XmlElement books = doc.DocumentElement;
             }
         }
     }
