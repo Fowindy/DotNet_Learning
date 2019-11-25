@@ -30,6 +30,10 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_04
 
             XmlElement Items = doc.CreateElement("Items");
 
+            //$4.2.创建属性子节点
+            XmlElement OrderItem1 = doc.CreateElement("OrderItem");
+
+            Items.AppendChild(OrderItem1);
             Order.AppendChild(Items);
             doc.Save("Order.xml");
         }
