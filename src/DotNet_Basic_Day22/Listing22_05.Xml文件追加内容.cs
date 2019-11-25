@@ -41,6 +41,11 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_05
 
                 doc.Save("Books.xml");
             }
+            //#5.2.如果文件不存在,则创建xml文件
+            else
+            {
+
+            }
         }
     }
 }
