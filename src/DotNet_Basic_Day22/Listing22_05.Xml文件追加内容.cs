@@ -19,6 +19,8 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_05
             //#5.1.如果文件已经存在
             if (File.Exists("Books.xml"))
             {
+                //@5.1.1.加载该xml文件到实例对象
+                doc.Load("Books.xml");
             }
         }
     }
