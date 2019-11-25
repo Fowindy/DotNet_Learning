@@ -29,10 +29,10 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_05
             //#5.2.如果文件不存在,则创建xml文件
             else
             {
-                //@5.2.2.创建描述信息
+                //@5.2.1.创建描述信息
                 XmlDeclaration dec = doc.CreateXmlDeclaration("1.0", "utf-8", null);
                 doc.AppendChild(dec);
-                //@5.2.1.创建根节点
+                //@5.2.2.创建根节点
                 books = doc.CreateElement("Books");
                 doc.AppendChild(books);
             }
