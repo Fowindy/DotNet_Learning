@@ -29,12 +29,14 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_04
             Order.AppendChild(OrderNumber);
 
             XmlElement Items = doc.CreateElement("Items");
+            Order.AppendChild(Items);
 
             //$4.2.创建属性子节点
             XmlElement OrderItem1 = doc.CreateElement("OrderItem");
-
+            //#4.2.1.给子节点添加属性
+            OrderItem1.SetAttribute("Name", "码表");
+            OrderItem1.SetAttribute("Count", "10");
             Items.AppendChild(OrderItem1);
-            Order.AppendChild(Items);
             doc.Save("Order.xml");
         }
     }
