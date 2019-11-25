@@ -23,6 +23,23 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_05
                 doc.Load("Books.xml");
                 //@5.1.2.获取该xml文件的根节点
                 XmlElement books = doc.DocumentElement;
+                //@5.1.3.在该根节点上添加子节点
+                XmlElement book3 = doc.CreateElement("book3");
+                books.AppendChild(book3);
+
+                XmlElement name3 = doc.CreateElement("Name3");
+                name3.InnerText = "三国演义";
+                book3.AppendChild(name3);
+
+                XmlElement price3 = doc.CreateElement("Price3");
+                price3.InnerText = "198";
+                book3.AppendChild(price3);
+
+                XmlElement des3 = doc.CreateElement("Des3");
+                des3.InnerText = "乱世出英雄";
+                book3.AppendChild(des3);
+
+                doc.Save("Books.xml");
             }
         }
     }
