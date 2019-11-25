@@ -37,6 +37,16 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_04
             OrderItem1.SetAttribute("Name", "码表");
             OrderItem1.SetAttribute("Count", "10");
             Items.AppendChild(OrderItem1);
+
+            XmlElement OrderItem2 = doc.CreateElement("OrderItem");
+            OrderItem2.SetAttribute("Name", "雨衣");
+            OrderItem2.SetAttribute("Count", "40");
+            Items.AppendChild(OrderItem2);
+
+            XmlElement OrderItem3 = doc.CreateElement("OrderItem");
+            OrderItem3.SetAttribute("Name", "手套");
+            OrderItem3.SetAttribute("Count", "1");
+            Items.AppendChild(OrderItem3);
             doc.Save("Order.xml");
         }
     }
