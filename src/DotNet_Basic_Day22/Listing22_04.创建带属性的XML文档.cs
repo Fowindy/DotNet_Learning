@@ -21,11 +21,13 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_04
             doc.AppendChild(Order);
 
             XmlElement CustomerName = doc.CreateElement("CustomerName");
-            CustomerName.InnerText = "刘洋";
+            //创建标签用InnerXml
+            CustomerName.InnerXml = "<p>我是一个标签</p>";
             Order.AppendChild(CustomerName);
 
             XmlElement OrderNumber = doc.CreateElement("OrderNumber");
-            OrderNumber.InnerText = "bj0000001";
+            //创建文本用InnerText
+            OrderNumber.InnerText = "<p>我是一个标签</p>";
             Order.AppendChild(OrderNumber);
 
             XmlElement Items = doc.CreateElement("Items");
