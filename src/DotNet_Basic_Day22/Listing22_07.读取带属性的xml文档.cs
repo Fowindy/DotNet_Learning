@@ -13,6 +13,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_07
     {
         public static void Main()
         {
+            //#7.1.创建xml实例对象并加载xml文档
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load("Order.xml");
         }
     }
 }
