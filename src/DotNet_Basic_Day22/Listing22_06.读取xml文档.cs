@@ -20,6 +20,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_06
             //#6.2.获取该文档的节点
             XmlElement books = doc.DocumentElement;
 
+            //#6.3.获取该节点的所有子节点
+            XmlNodeList xmlNodeList = books.ChildNodes;
+
         }
     }
 }
