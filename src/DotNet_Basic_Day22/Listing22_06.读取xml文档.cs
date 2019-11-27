@@ -24,9 +24,21 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_06
             XmlNodeList xmlNodeList = books.ChildNodes;
 
             //#6.4.遍历读取所有子节点的属性并打印输出
+            int index;
             foreach (XmlNode item in xmlNodeList)
             {
                 Console.WriteLine(item.InnerText);
+                XmlNodeList itemList = item.ChildNodes;
+                index = 0;
+                //@6.4.1.遍历读取所有子节点单项属性并打印输出
+                foreach (XmlNode itemChild in item)
+                {
+                    if (index == 0)
+                    {
+                        Console.WriteLine(itemChild.InnerText);
+                    }
+                    index++;
+                }
             }
         }
     }
