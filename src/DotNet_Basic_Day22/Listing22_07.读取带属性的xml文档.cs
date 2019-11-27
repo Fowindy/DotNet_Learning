@@ -19,6 +19,12 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_07
 
             //#7.2.获取目标子节点
             XmlNodeList xmlNodeList = xmlDocument.SelectNodes("/Order/Items/OrderItem");
+            //@7.2.1.遍历目标子节点的相关属性
+            foreach (XmlNode item in xmlNodeList)
+            {
+                Console.WriteLine("Name:"+item.Attributes["Name"].Value+ ",Count:"+item.Attributes["Count"].Value);
+            }
+
         }
     }
 }

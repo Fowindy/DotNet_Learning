@@ -27,6 +27,10 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_06
             int index;
             foreach (XmlNode item in xmlNodeList)
             {
+                for (int i = 0; i < item.ChildNodes.Count; i++)
+                {
+                    Console.WriteLine(item.ChildNodes[i].InnerText);
+                }
                 Console.WriteLine(item.InnerText);
                 XmlNodeList itemList = item.ChildNodes;
                 index = 0;
