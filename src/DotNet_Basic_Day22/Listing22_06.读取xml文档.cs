@@ -17,6 +17,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_06
             XmlDocument doc = new XmlDocument();
             doc.Load("Books.xml");
 
+            //#6.2.获取该文档的节点
+            XmlElement books = doc.DocumentElement;
+
         }
     }
 }
