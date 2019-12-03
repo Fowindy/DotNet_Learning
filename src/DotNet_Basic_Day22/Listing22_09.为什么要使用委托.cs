@@ -26,6 +26,8 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_09
             ProstrAddQuotes(names);
         }
 
+        //注意:不能使用重载,因为参数一样
+
         //因为字符串属于引用类型,因此不需要返回值
         /// <summary>
         /// 转换成大写
@@ -52,7 +54,10 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_09
                 Console.WriteLine(strs[i]);
             }
         }
-
+        /// <summary>
+        /// 加双引号
+        /// </summary>
+        /// <param name="strs"></param>
         public static void ProstrAddQuotes(string[] strs)
         {
             for (int i = 0; i < strs.Length; i++)
