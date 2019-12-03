@@ -26,6 +26,8 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_09
             ProstrAddQuotes(names);
         }
 
+        //方案:将一个方法作为参数传递给另外一个方法,方法的类型为委托类型
+
         //注意:不能使用重载,因为参数一样
 
         //因为字符串属于引用类型,因此不需要返回值
