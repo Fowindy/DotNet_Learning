@@ -113,27 +113,32 @@ namespace DotNet_Basic_Day21_06_简单播放器.cs
 
             //获得在文本框中选择文件的全路径
             string[] path = openFileDialog.FileNames;
-
-            #region $7.9.将音乐加载进界面显示
-            //循坏将全路径加载进泛型集合
-            for (int i = 0; i < path.Length; i++)
+            try
             {
-                //将音乐文件的全路径存储到泛型集合中
-                listPath.Add(path[i]);
+                #region $7.9.将音乐加载进界面显示
+                //循坏将全路径加载进泛型集合
+                for (int i = 0; i < path.Length; i++)
+                {
+                    //将音乐文件的全路径存储到泛型集合中
+                    listPath.Add(path[i]);
 
-                //将音乐文件的文件名存储到ListBox中
-                MusicList.Items.Add(Path.GetFileName(path[i]));
+                    //将音乐文件的文件名存储到ListBox中
+                    MusicList.Items.Add(Path.GetFileName(path[i]));
+                }
+                #endregion
+                if (MusicList.SelectedIndex == -1)
+                {
+                    MusicList.SelectedIndex = 0;
+                }
+                btnNext.Enabled = true;
+                btnForward.Enabled = true;
+                //默认列表循环
+                label3.Text = "列表循环";
+                label2.Enabled = true;
             }
-            #endregion
-            if (MusicList.SelectedIndex == -1)
+            catch (Exception)
             {
-                MusicList.SelectedIndex = 0;
             }
-            btnNext.Enabled = true;
-            btnForward.Enabled = true;
-            //默认列表循环
-            label3.Text = "列表循环";
-            label2.Enabled = true;
         }
         /// <summary>
         /// $7.10.为MusicList注册双击播放事件
