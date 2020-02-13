@@ -39,9 +39,10 @@ namespace Fowindy.Shared
             {
                 //string chapterName = "";
                 listing = ParseListingName(listing/*, out chapterName*/);
-
                 //assembly = Assembly.Load(new AssemblyName(chapterName));
-                Type target = assembly.GetTypes().Last(type => (type.FullName.Contains("Listing" + listing + "." + "Listing" + listing)) || (type.FullName.Contains("Listing" + listing + "." + "Program")));
+                ///<![CDATA[200213_Listing22_11.匿名函数
+                ///将下行Last修改为First:用以解决委托异常_验证22天所有_兼容性OK]]>
+                Type target = assembly.GetTypes().First(type => (type.FullName.Contains("Listing" + listing + "." + "Listing" + listing)) || (type.FullName.Contains("Listing" + listing + "." + "Program")));
                 var method = (MethodInfo)target.GetMember("Main").First();
 
                 object[] arguments;
