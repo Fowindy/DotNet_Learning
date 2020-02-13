@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Movies>
+  <Movie>
+    <Name>金瓶梅</Name>
+    <Price>10</Price>
+    <Des>好看,不解释</Des>
+  </Movie>
+
+  <Movie>
+    <Name>水浒传</Name>
+    <Price>90</Price>
+    <Des>108个拆迁户</Des>
+  </Movie>
+</Movies>

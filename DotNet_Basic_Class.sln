@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4399D6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day22", "src\DotNet_Basic_Day22\DotNet_Basic_Day22.csproj", "{E8540CA7-2F82-4D73-9C96-B50037A5029E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day22_02_单例模式", "src\DotNet_Basic_Day22_01_单例模式\DotNet_Basic_Day22_02_单例模式.csproj", "{0F14C6E2-60DC-4319-847C-3E2794995B81}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day21_06_简单播放器.cs", "src\DotNet_Basic_Day21_06_简单播放器.cs\DotNet_Basic_Day21_06_简单播放器.cs.csproj", "{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}"
 EndProject
 Global
@@ -43,6 +45,11 @@ Global
 		{25183C38-5767-4B6A-A0A6-3B7F62024EBA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E8540CA7-2F82-4D73-9C96-B50037A5029E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8540CA7-2F82-4D73-9C96-B50037A5029E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8540CA7-2F82-4D73-9C96-B50037A5029E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F14C6E2-60DC-4319-847C-3E2794995B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F14C6E2-60DC-4319-847C-3E2794995B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F14C6E2-60DC-4319-847C-3E2794995B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F14C6E2-60DC-4319-847C-3E2794995B81}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
