@@ -18,12 +18,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_12
     {
         public static void Main()
         {
-            ///<![CDATA[第三种调用方式:采用匿名函数_推荐次用法]]>
-            DelSayHi delSayHi3 = delegate (string name)
-            {
-                Console.WriteLine("你好," + name);
-            };
-            delSayHi3("张三");
+            ///<![CDATA[第四种调用方式:采用Lamda表达式_第三种方法的补充_强力推介]]>
+            DelSayHi delSayHi4 = (string name) => { Console.WriteLine("你好," + name); };
+            delSayHi4("张三");
         }
     }
 }
