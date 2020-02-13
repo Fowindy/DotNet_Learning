@@ -13,6 +13,15 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_11
     public delegate string DelProStr(string name);
     public class Listing22_11
     {
+        ///<remarks=把方法作为参数传递到此公共方法,方法传递的类型:委托类型
+        public static void ProStr(string[] names, DelProStr delProStr)
+        {
+            for (int i = 0; i < names.Length; i++)
+            {
+                //调用委托函数
+                names[i] = delProStr(names[i]);
+            }
+        }
         ///<![CDATA[课题引入:
         ///三个需求使用了三个函数,三个函数只有调用的处理方法不一样---能不能合并调用一个函数解决?]]>
         public static void Main()
@@ -26,29 +35,43 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_11
             //ProStrToUpper(names);
             //调用和公共方法:子方法可以直接赋值给委托函数;直接调用子方法名即可
             //ProStr(names, StrToUpper);
+            #region 委托的推荐用法
+            ProStr(names, delegate (string name)
+            {
+                return name.ToUpper();
+            });
+            for (int i = 0; i < names.Length; i++)
+            {
+                Console.WriteLine(names[i]);
+            }
+            #endregion
             Console.WriteLine("-------转换成小写-------");
             //ProStrToLower(names);
             //转换小写
             //ProStr(names, StrToLower);
+            ProStr(names, delegate (string name)
+            {
+                return name.ToLower();
+            });
+            for (int i = 0; i < names.Length; i++)
+            {
+                Console.WriteLine(names[i]);
+            }
             Console.WriteLine("-------添加引号-------");
             //ProstrAddQuotes(names);
             //加双引号
-            ProStr(names, StrAddQuotes);
+            //ProStr(names, StrAddQuotes);
+            ProStr(names, delegate (string name)
+            {
+                return "\"" + name + "\"";
+            });
             for (int i = 0; i < names.Length; i++)
             {
                 Console.WriteLine(names[i]);
             }
         }
 
-        ///<remarks=把方法作为参数传递到此公共方法,方法传递的类型:委托类型
-        public static void ProStr(string[] names,DelProStr delProStr)
-        {
-            for (int i = 0; i < names.Length; i++)
-            {
-                //调用委托函数
-                names[i] = delProStr(names[i]);
-            }
-        }
+
 
         public static string StrToUpper(string name)
         {
