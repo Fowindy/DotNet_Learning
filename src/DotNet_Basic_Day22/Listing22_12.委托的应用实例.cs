@@ -18,18 +18,12 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_12
     {
         public static void Main()
         {
-            ///<![CDATA[第二种调用方式:创建委托对象,赋值给委托对象]]>
-            DelSayHi delSayHi2 = SayHiEnglish;
-            delSayHi2("Mark");
-        }
-        public static void SayHiChinese(string name)
-        {
-            Console.WriteLine("你好," + name);
-        }
-
-        public static void SayHiEnglish(string name)
-        {
-            Console.WriteLine("Hello," + name);
+            ///<![CDATA[第三种调用方式:采用匿名函数_推荐次用法]]>
+            DelSayHi delSayHi3 = delegate (string name)
+            {
+                Console.WriteLine("你好," + name);
+            };
+            delSayHi3("张三");
         }
     }
 }
