@@ -19,7 +19,7 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_12
         public static void Main()
         {
             ///<![CDATA[第一种调用方式:函数赋值给委托]]>
-            //SayHi("张三", SayHiChinese);
+            SayHi("张三", SayHiChinese);
         }
 
         ///<![CDATA[把函数传进来需要声明委托类型]]>
