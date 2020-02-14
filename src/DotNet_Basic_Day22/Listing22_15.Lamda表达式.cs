@@ -36,6 +36,12 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_15
 
             ///<![CDATA[6.案例1:移除集合中大于4的元素后打印集合]]>
             List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, };
+            ///<![CDATA[分析:采用RemoveAll方法+委托解决]]>
+            list.RemoveAll(n => n > 4);
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
         }
     }
 }
