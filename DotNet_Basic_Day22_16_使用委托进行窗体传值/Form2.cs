@@ -27,6 +27,8 @@ namespace DotNet_Basic_Day22_16_使用委托进行窗体传值
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ///<![CDATA[8.点击窗体2按钮事件时,将TextBox中的值传给委托字段]]>
+            _delShowMsg(textBox1.Text);
         }
 
         ///<![CDATA[5.问题2:怎样将方法从Form1传到Form2中
