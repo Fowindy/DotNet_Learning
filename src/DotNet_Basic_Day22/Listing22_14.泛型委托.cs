@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace Fowindy.DotNet_Basic_Day22.Listing22_14
 {
-    public delegate int DelCompare(object obj1, object obj2);
+    public delegate int DelCompare<T>(T obj1, T obj2);
     public class Listing22_14
     {
         ///<![CDATA[问题的提出1:如13节涉及到强制转换object,就是容易出现拆装箱
@@ -18,9 +18,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_14
         {
         }
 
-        public static object GetMax(object[] nums,DelCompare delCompare)
+        public static T GetMax<T>(T[] nums,DelCompare<T> delCompare)
         {
-            object max = nums[0];
+            T max = nums[0];
             for (int i = 0; i < nums.Length; i++)
             {
                 if (delCompare(max,nums[i]) < 0)
