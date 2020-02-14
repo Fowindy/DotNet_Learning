@@ -20,6 +20,18 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_13
     {
         public static void Main()
         {
+            ///<![CDATA[调用委托实现功能方法1]]>
+            object[] obj1 = { 1, 2, 3, 4, 5 };
+            ///<![CDATA[此处调用委托的具体方法:分整型int和字符串两种类型
+            ///         因此需要构建委托的具体方法]]>
+            object result1 = GetMax(obj1, Compare1);
+            Console.WriteLine(result1);
+
+            ///<![CDATA[调用委托实现功能方法2]]>
+            object[] obj2 = { "A", "AB", "ABC", "ABCDEF", "ABCD", "ABCDE" };
+            ///<![CDATA[此处调用委托的具体方法:字符串类型]]>
+            object result2 = GetMax(obj2, Compare2);
+            Console.WriteLine(result2);
         }
 
         ///<remarks=1.因为下面两个函数的参数类型不一致(int[]和string[]),所有两者构成重载
@@ -49,6 +61,28 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_13
                 }
             }
             return max;
+        }
+
+        ///<![CDATA[构建委托具体类型方法1_整型
+        ///         委托具体方法需要和委托有相同的签名]]>
+        public static int Compare1(object obj1, object obj2)
+        {
+            //将object强转为int类型
+            int n1 = (int)obj1;
+            int n2 = (int)obj2;
+            //返回两项的差值
+            return n1 - n2;
+        }
+
+        ///<![CDATA[构建委托具体类型方法2_字符串类型
+        ///         委托具体方法需要和委托有相同的签名]]>
+        public static int Compare2(object obj1, object obj2)
+        {
+            //将object强转为string类型
+            string str1 = (string)obj1;
+            string str2 = (string)obj2;
+            //返回两项字符串长度的差值
+            return str1.Length - str2.Length;
         }
         /// <summary>
         /// 获取字符数组长度最长的字符
