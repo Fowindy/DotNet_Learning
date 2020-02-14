@@ -37,5 +37,8 @@ namespace DotNet_Basic_Day22_16_使用委托进行窗体传值
             //将传进的字符串赋值给label显示
             this.label1.Text = str;
         }
+
+        ///<![CDATA[3.问题1:窗体1有方法没有值str,窗体2有值str没有方法
+        ///           分析:窗体2拿到窗体1的方法_采用委托即可实现]]>
     }
 }
