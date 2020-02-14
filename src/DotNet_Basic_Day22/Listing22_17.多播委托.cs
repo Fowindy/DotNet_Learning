@@ -17,6 +17,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_17
         {
             ///<![CDATA[3.调用委托实现功能]]>
             DelTest delTest = T1;
+            ///<![CDATA[4.多播委托的实现]]>
+            delTest += T2;
+            delTest += T3;
             delTest();
         }
         ///<![CDATA[2.声明可以赋值给委托的函数]]>
