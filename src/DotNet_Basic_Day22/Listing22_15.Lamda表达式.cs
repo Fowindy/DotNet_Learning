@@ -30,6 +30,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_15
 
             ///<![CDATA[4.第二种:有参数无返回值的Lamda表达式调用和匿名函数调用]]>
             DelTwo delTwo = (string name) => { };//delegate(string name){ };
+
+            ///<![CDATA[5.第三种:有参数有返回值的Lamda表达式调用和匿名函数调用]]>
+            DelThree delThree = (string name) => { return name; };//delegate (string name) { return name; };
         }
     }
 }
