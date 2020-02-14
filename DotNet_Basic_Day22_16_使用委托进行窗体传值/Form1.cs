@@ -26,5 +26,9 @@ namespace DotNet_Basic_Day22_16_使用委托进行窗体传值
             Form2 form2 = new Form2();
             form2.Show();
         }
+
+        ///<![CDATA[2.需求介绍如下:
+        ///           弹出窗体2后,在输入框中输入字符串,点击窗体2的按钮,
+        ///           将输入的内容显示在窗体1中]]>
     }
 }
