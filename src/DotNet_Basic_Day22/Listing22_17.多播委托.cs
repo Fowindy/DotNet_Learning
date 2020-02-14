@@ -15,6 +15,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_17
     {
         public static void Main()
         {
+            ///<![CDATA[3.调用委托实现功能]]>
+            DelTest delTest = T1;
+            delTest();
         }
         ///<![CDATA[2.声明可以赋值给委托的函数]]>
         public static void T1()
