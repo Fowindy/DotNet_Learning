@@ -27,6 +27,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_15
 
             ///<![CDATA[3.第一种:无参数无返回值的Lamda表达式调用]]>
             DelOne delOne = () => { };
+
+            ///<![CDATA[4.第二种:有参数无返回值的Lamda表达式调用和匿名函数调用]]>
+            DelTwo delTwo = (string name) => { };//delegate(string name){ };
         }
     }
 }
