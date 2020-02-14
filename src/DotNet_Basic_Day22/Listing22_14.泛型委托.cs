@@ -23,6 +23,14 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_14
                  return n1 - n2;
              });
             Console.WriteLine(result1);
+
+            ///<![CDATA[泛型委托的实现_string类型_Lamada表达式]]>
+            string[] names = { "A", "AB", "ABC", "ABCDEF", "ABCD", "ABCDE" };
+            string result2 = GetMax<string>(names, (string str1,string str2) =>
+             {
+                 return str1.Length - str2.Length;
+             });
+            Console.WriteLine(result2);
         }
 
         public static T GetMax<T>(T[] nums,DelCompare<T> delCompare)
