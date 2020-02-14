@@ -33,6 +33,9 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_15
 
             ///<![CDATA[5.第三种:有参数有返回值的Lamda表达式调用和匿名函数调用]]>
             DelThree delThree = (string name) => { return name; };//delegate (string name) { return name; };
+
+            ///<![CDATA[6.案例1:移除集合中大于4的元素后打印集合]]>
+            List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, };
         }
     }
 }
