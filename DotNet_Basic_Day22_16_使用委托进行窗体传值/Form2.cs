@@ -17,8 +17,11 @@ namespace DotNet_Basic_Day22_16_使用委托进行窗体传值
     {
         ///<![CDATA[6.窗体2中声明一个委托类型的字段,将方法通过参数传进Form2的构造函数中]]>
         public DelShowMsg _delShowMsg;
-        public Form2()
+        ///<![CDATA[7.在Form2的构造函数中传入委托参数变成有参构造函数,并赋值给委托类型字段]]>
+        public Form2(DelShowMsg delShowMsg)
         {
+            //将传入的委托参数赋值给委托类型的字段
+            this._delShowMsg = delShowMsg;
             InitializeComponent();
         }
 
