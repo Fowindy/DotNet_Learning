@@ -16,5 +16,22 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_17
         public static void Main()
         {
         }
+        ///<![CDATA[2.声明可以赋值给委托的函数]]>
+        public static void T1()
+        {
+            Console.WriteLine("我是T1");
+        }
+        public static void T2()
+        {
+            Console.WriteLine("我是T2");
+        }
+        public static void T3()
+        {
+            Console.WriteLine("我是T3");
+        }
+        public static void T4()
+        {
+            Console.WriteLine("我是T4");
+        }
     }
 }
