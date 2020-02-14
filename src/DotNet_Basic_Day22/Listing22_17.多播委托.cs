@@ -20,6 +20,8 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_17
             ///<![CDATA[4.多播委托的实现]]>
             delTest += T2;
             delTest += T3;
+            ///<![CDATA[5.多播委托的重新赋值_上面多播委托内容将被覆盖]]>
+            delTest = T4;
             delTest();
         }
         ///<![CDATA[2.声明可以赋值给委托的函数]]>
