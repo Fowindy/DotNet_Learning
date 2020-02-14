@@ -30,5 +30,12 @@ namespace DotNet_Basic_Day22_16_使用委托进行窗体传值
         ///<![CDATA[2.需求介绍如下:
         ///           弹出窗体2后,在输入框中输入字符串,点击窗体2的按钮,
         ///           将输入的内容显示在窗体1中]]>
+
+        ///<![CDATA[3.解决步骤1:在窗体1中声明显示的方法]]>
+        void ShowMsg(string str)
+        {
+            //将传进的字符串赋值给label显示
+            this.label1.Text = str;
+        }
     }
 }
