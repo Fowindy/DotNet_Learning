@@ -16,5 +16,15 @@ namespace DotNet_Basic_Day22_16_使用委托进行窗体传值
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// 1.注册点击界面1按钮显示界面2的事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
     }
 }
