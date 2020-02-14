@@ -24,13 +24,22 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_13
             object[] obj1 = { 1, 2, 3, 4, 5 };
             ///<![CDATA[此处调用委托的具体方法:分整型int和字符串两种类型
             ///         因此需要构建委托的具体方法]]>
-            object result1 = GetMax(obj1, Compare1);
+            //object result1 = GetMax(obj1, Compare1);
+            ///<![CDATA[匿名委托函数实现1_不需要具体函数]]>
+            object result1 = GetMax(obj1, delegate (object o1, object o2)
+             {
+                 return (int)o1 - (int)o2;
+             });
             Console.WriteLine(result1);
 
             ///<![CDATA[调用委托实现功能方法2]]>
             object[] obj2 = { "A", "AB", "ABC", "ABCDEF", "ABCD", "ABCDE" };
             ///<![CDATA[此处调用委托的具体方法:字符串类型]]>
-            object result2 = GetMax(obj2, Compare2);
+            //object result2 = GetMax(obj2, Compare2);
+            object result2 = GetMax(obj2, delegate (object o1, object o2)
+             {
+                 return ((string)o1).Length - ((string)o2).Length;
+             });
             Console.WriteLine(result2);
         }
 
