@@ -15,6 +15,8 @@ namespace DotNet_Basic_Day22_16_使用委托进行窗体传值
     public delegate void DelShowMsg(string str);
     public partial class Form2 : Form
     {
+        ///<![CDATA[6.窗体2中声明一个委托类型的字段,将方法通过参数传进Form2的构造函数中]]>
+        public DelShowMsg _delShowMsg;
         public Form2()
         {
             InitializeComponent();
