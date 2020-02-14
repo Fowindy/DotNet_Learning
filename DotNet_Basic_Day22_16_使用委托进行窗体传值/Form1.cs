@@ -23,7 +23,8 @@ namespace DotNet_Basic_Day22_16_使用委托进行窗体传值
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            ///<![CDATA[9.将方法在创建Form2对象的时候传进去]]>
+            Form2 form2 = new Form2(ShowMsg);
             form2.Show();
         }
 
