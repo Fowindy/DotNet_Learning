@@ -23,7 +23,10 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_15
         public static void Main()
         {
             ///<![CDATA[2.第一种:无参数无返回值的匿名函数调用]]>
-            DelOne delOne = delegate () { };
+            //DelOne delOne = delegate () { };
+
+            ///<![CDATA[3.第一种:无参数无返回值的Lamda表达式调用]]>
+            DelOne delOne = () => { };
         }
     }
 }
