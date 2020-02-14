@@ -16,6 +16,13 @@ namespace Fowindy.DotNet_Basic_Day22.Listing22_14
         ///         解决的方案1:采用泛型委托来解决拆装箱的问题]]>
         public static void Main()
         {
+            ///<![CDATA[泛型委托的实现_int类型_Lamda表达式]]>
+            int[] nums = { 1, 2, 3, 4, 5 };
+            int result1 = GetMax<int>(nums, (int n1,int n2) =>
+             {
+                 return n1 - n2;
+             });
+            Console.WriteLine(result1);
         }
 
         public static T GetMax<T>(T[] nums,DelCompare<T> delCompare)
