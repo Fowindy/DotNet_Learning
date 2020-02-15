@@ -10,9 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5E2628
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20", "src\DotNet_Basic_Day20\DotNet_Basic_Day20.csproj", "{602C3E72-BAB4-4366-961F-39E84C3ED44B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页", "src\DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页\DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页.csproj", "{D6A26993-505A-47FE-A76C-BF6819B41737}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day20_21_使用StringBuilder来拼接html网页", "src\DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页\DotNet_Basic_Day20_21_使用StringBuilder来拼接html网页.csproj", "{D6A26993-505A-47FE-A76C-BF6819B41737}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20_20_01_Protected不同项目访问测试", "src\DotNet_Basic_Day20_20.01_Protected不同项目访问测试\DotNet_Basic_Day20_20_01_Protected不同项目访问测试.csproj", "{25183C38-5767-4B6A-A0A6-3B7F62024EBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20_01_Protected不同项目访问测试", "src\DotNet_Basic_Day20_20.01_Protected不同项目访问测试\DotNet_Basic_Day20_01_Protected不同项目访问测试.csproj", "{25183C38-5767-4B6A-A0A6-3B7F62024EBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
