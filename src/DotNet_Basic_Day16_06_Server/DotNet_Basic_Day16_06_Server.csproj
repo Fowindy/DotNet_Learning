@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}</ProjectGuid>
+    <ProjectGuid>{C8AB3933-519B-4871-984D-636B1E562370}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>_06_Server</RootNamespace>
     <AssemblyName>06_Server</AssemblyName>
@@ -76,7 +76,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
