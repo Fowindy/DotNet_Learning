@@ -16,6 +16,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4399D6
 		Shared\Program.cs = Shared\Program.cs
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day16", "src\DotNet_Basic_Day16\DotNet_Basic_Day16.csproj", "{6F74AEB1-5919-470F-8A75-E5F9BB09363A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day16_06_Server", "src\DotNet_Basic_Day16_06_Server\DotNet_Basic_Day16_06_Server.csproj", "{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day16_07_Clinet", "src\DotNet_Basic_Day16_07_Clinet\DotNet_Basic_Day16_07_Clinet.csproj", "{EA952553-B332-46C7-BFBD-A4518543F96E}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day22", "src\DotNet_Basic_Day22\DotNet_Basic_Day22.csproj", "{E8540CA7-2F82-4D73-9C96-B50037A5029E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day22_02_单例模式", "src\DotNet_Basic_Day22_01_单例模式\DotNet_Basic_Day22_02_单例模式.csproj", "{0F14C6E2-60DC-4319-847C-3E2794995B81}"
@@ -25,6 +31,24 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day21_06_简单播放器.cs", "src\DotNet_Basic_Day21_06_简单播放器.cs\DotNet_Basic_Day21_06_简单播放器.cs.csproj", "{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA952553-B332-46C7-BFBD-A4518543F96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA952553-B332-46C7-BFBD-A4518543F96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA952553-B332-46C7-BFBD-A4518543F96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA952553-B332-46C7-BFBD-A4518543F96E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
