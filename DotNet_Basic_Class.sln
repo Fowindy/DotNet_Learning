@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20", "src\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页", "src\DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页\DotNet_Basic_Day20_20_21_使用StringBuilder来拼接html网页.csproj", "{D6A26993-505A-47FE-A76C-BF6819B41737}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20_20_01_Protected不同项目访问测试", "src\DotNet_Basic_Day20_20.01_Protected不同项目访问测试\DotNet_Basic_Day20_20_01_Protected不同项目访问测试.csproj", "{25183C38-5767-4B6A-A0A6-3B7F62024EBA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4399D606-EBE0-4D71-AC97-479CA8E4BDAD}"
 	ProjectSection(SolutionItems) = preProject
 		Shared\Program.cs = Shared\Program.cs
@@ -18,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4399D6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day16", "src\DotNet_Basic_Day16\DotNet_Basic_Day16.csproj", "{6F74AEB1-5919-470F-8A75-E5F9BB09363A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day16_06_Server", "src\DotNet_Basic_Day16_06_Server\DotNet_Basic_Day16_06_Server.csproj", "{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day16_06_Server", "src\DotNet_Basic_Day16_06_Server\DotNet_Basic_Day16_06_Server.csproj", "{C8AB3933-519B-4871-984D-636B1E562370}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day16_07_Clinet", "src\DotNet_Basic_Day16_07_Clinet\DotNet_Basic_Day16_07_Clinet.csproj", "{EA952553-B332-46C7-BFBD-A4518543F96E}"
 EndProject
@@ -28,33 +26,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day22", "src\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day22_02_单例模式", "src\DotNet_Basic_Day22_01_单例模式\DotNet_Basic_Day22_02_单例模式.csproj", "{0F14C6E2-60DC-4319-847C-3E2794995B81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day22_16_使用委托进行窗体传值", "src\DotNet_Basic_Day22_16_使用委托进行窗体传值\DotNet_Basic_Day22_16_使用委托进行窗体传值.csproj", "{E6E6C5CB-44A9-4715-BA12-78CB95BF0EA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day22_16_使用委托进行窗体传值", "src\DotNet_Basic_Day22_16_使用委托进行窗体传值\DotNet_Basic_Day22_16_使用委托进行窗体传值.csproj", "{33CE4422-2495-4246-ABAC-6494479DEC97}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_Basic_Day21_06_简单播放器.cs", "src\DotNet_Basic_Day21_06_简单播放器.cs\DotNet_Basic_Day21_06_简单播放器.cs.csproj", "{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Basic_Day20_20_01_Protected不同项目访问测试", "src\DotNet_Basic_Day20_20_01_Protected不同项目访问测试\DotNet_Basic_Day20_20_01_Protected不同项目访问测试.csproj", "{7B94BD92-89A8-4A54-9B26-E62B17B343EC}"
+EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B53B7BB4-4CBA-4C53-AE26-1ABF67EA16CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA952553-B332-46C7-BFBD-A4518543F96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA952553-B332-46C7-BFBD-A4518543F96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA952553-B332-46C7-BFBD-A4518543F96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA952553-B332-46C7-BFBD-A4518543F96E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC2ADE7F-21FD-4752-905F-53EBF636D3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC2ADE7F-21FD-4752-905F-53EBF636D3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC2ADE7F-21FD-4752-905F-53EBF636D3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC2ADE7F-21FD-4752-905F-53EBF636D3FD}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -71,10 +49,14 @@ Global
 		{D6A26993-505A-47FE-A76C-BF6819B41737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6A26993-505A-47FE-A76C-BF6819B41737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6A26993-505A-47FE-A76C-BF6819B41737}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25183C38-5767-4B6A-A0A6-3B7F62024EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25183C38-5767-4B6A-A0A6-3B7F62024EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25183C38-5767-4B6A-A0A6-3B7F62024EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25183C38-5767-4B6A-A0A6-3B7F62024EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F74AEB1-5919-470F-8A75-E5F9BB09363A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8AB3933-519B-4871-984D-636B1E562370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8AB3933-519B-4871-984D-636B1E562370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA952553-B332-46C7-BFBD-A4518543F96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA952553-B332-46C7-BFBD-A4518543F96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2ADE7F-21FD-4752-905F-53EBF636D3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2ADE7F-21FD-4752-905F-53EBF636D3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8540CA7-2F82-4D73-9C96-B50037A5029E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8540CA7-2F82-4D73-9C96-B50037A5029E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8540CA7-2F82-4D73-9C96-B50037A5029E}.Release|Any CPU.Build.0 = Release|Any CPU
@@ -82,14 +64,18 @@ Global
 		{0F14C6E2-60DC-4319-847C-3E2794995B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F14C6E2-60DC-4319-847C-3E2794995B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F14C6E2-60DC-4319-847C-3E2794995B81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E6E6C5CB-44A9-4715-BA12-78CB95BF0EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6E6C5CB-44A9-4715-BA12-78CB95BF0EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E6E6C5CB-44A9-4715-BA12-78CB95BF0EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6E6C5CB-44A9-4715-BA12-78CB95BF0EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33CE4422-2495-4246-ABAC-6494479DEC97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33CE4422-2495-4246-ABAC-6494479DEC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33CE4422-2495-4246-ABAC-6494479DEC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33CE4422-2495-4246-ABAC-6494479DEC97}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D5C3C4A-EE4C-4979-B08A-1654FE6981EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B94BD92-89A8-4A54-9B26-E62B17B343EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B94BD92-89A8-4A54-9B26-E62B17B343EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B94BD92-89A8-4A54-9B26-E62B17B343EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B94BD92-89A8-4A54-9B26-E62B17B343EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
