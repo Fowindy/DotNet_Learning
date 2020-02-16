@@ -13,6 +13,10 @@ namespace Day01_02.外部设备案例
             ///<![CDATA[13.电脑调用读写方法]]>
             computer.CpuRead();
             computer.CpuWrite();
+            ///<![CDATA[14.Mp3自己播放音乐的方法_需要重新实例化Mp3对象获取]]>
+            Mp3 mp3 = new Mp3();
+            mp3.PlayMusic();
+            Console.ReadKey();
         }
     }
 }
