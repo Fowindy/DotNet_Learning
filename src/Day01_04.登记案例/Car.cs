@@ -9,7 +9,11 @@ using System.Xml;
 
 namespace Day01_04.登记案例
 {
-    public class Car
+    public class Car:IDengJi
     {
+        public void DengJi()
+        {
+            Console.WriteLine("车登记了");
+        }
     }
 }
