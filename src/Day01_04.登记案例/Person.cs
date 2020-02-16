@@ -9,7 +9,14 @@ using System.Xml;
 
 namespace Day01_04.登记案例
 {
-    public class Person
+    /// <summary>
+    /// 02.01.Person类继承IDengJi登记接口
+    /// </summary>
+    public class Person:IDengJi
     {
+        public void DengJi()
+        {
+            Console.WriteLine("人登记了");
+        }
     }
 }
