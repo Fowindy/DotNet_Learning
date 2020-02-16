@@ -21,7 +21,8 @@ namespace Day01_03.猜拳
         /// <returns></returns>
         public int Play(string fistName)
         {
-
+            //02.03.将玩家出拳的内容赋值给属性
+            this.FistName = fistName;
         }
     }
 }
