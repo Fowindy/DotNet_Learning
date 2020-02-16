@@ -26,6 +26,7 @@ namespace Day01_03.猜拳
         /// <param name="sender"></param>
         /// <param name="e"></param>
         ///<![CDATA[05.01.石头按钮事件验证完成]]>
+        ///<![CDATA[05.02.三个按钮绑定到一个按钮触发分析:]]>
         private void btnStone_Click(object sender, EventArgs e)
         {
             this.lblPlayerResult.Text = this.btnStone.Text;
