@@ -8,6 +8,8 @@ namespace Day01_02.外部设备案例
         {
             ///<![CDATA[11.电脑读写移动硬盘的功能实现]]>
             Computer computer = new Computer();
+            ///<![CDATA[12.给computer实例移动存储设备属性赋值实例化]]>
+            computer.SD = new Mp3();
         }
     }
 }
