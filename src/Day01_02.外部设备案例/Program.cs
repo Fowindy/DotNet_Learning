@@ -22,5 +22,16 @@ namespace Day01_02.外部设备案例
             Console.ReadKey();
         }
 
+        private static void GetDisk(StorageDevice SD)
+        {
+            ///<![CDATA[16.判断是否为Mp3,如果为Mp3则把父类转为子类]]>
+            if (SD is Mp3)
+            {
+                Mp3 mp3 = SD as Mp3;
+                mp3.Read();
+                mp3.Write();
+                mp3.PlayMusic();
+            }
+        }
     }
 }
