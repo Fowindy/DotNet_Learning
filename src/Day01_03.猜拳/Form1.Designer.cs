@@ -111,6 +111,7 @@
             this.btnScissors.TabIndex = 7;
             this.btnScissors.Text = "剪刀";
             this.btnScissors.UseVisualStyleBackColor = true;
+            this.btnScissors.Click += new System.EventHandler(this.btnStone_Click);
             // 
             // btnCloth
             // 
@@ -120,6 +121,7 @@
             this.btnCloth.TabIndex = 8;
             this.btnCloth.Text = "布";
             this.btnCloth.UseVisualStyleBackColor = true;
+            this.btnCloth.Click += new System.EventHandler(this.btnStone_Click);
             // 
             // Form1
             // 
