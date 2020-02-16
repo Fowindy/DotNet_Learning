@@ -14,6 +14,9 @@ namespace Day01_02.外部设备案例
     /// </summary>
     public class Computer
     {
-
+        /// <summary>
+        /// 08.定义移动存储设备的自动属性
+        /// </summary>
+        public StorageDevice SD { get; set; }
     }
 }
