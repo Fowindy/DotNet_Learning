@@ -6,6 +6,8 @@ namespace Day01_02.外部设备案例
     {
         static void Main(string[] args)
         {
+            ///<![CDATA[11.电脑读写移动硬盘的功能实现]]>
+            Computer computer = new Computer();
         }
     }
 }
