@@ -13,6 +13,10 @@ namespace Day01_04.登记案例
     {
         static void Main(string[] args)
         {
+            //02.02.通过人继承接口实现登记功能
+            Person person = new Person();
+            person.DengJi();
+            Console.ReadKey();
         }
     }
 }
