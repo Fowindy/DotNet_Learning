@@ -14,6 +14,14 @@ namespace Day01_03.猜拳
         /// <summary>
         /// 02.01.定义记录玩家出拳的内容的属性
         /// </summary>
-        public string Fist { get; set; }
+        public string FistName { get; set; }
+        /// <summary>
+        /// 02.02.创建玩家出拳的方法
+        /// </summary>
+        /// <returns></returns>
+        public int Play(string fistName)
+        {
+
+        }
     }
 }
