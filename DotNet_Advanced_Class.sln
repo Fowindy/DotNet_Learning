@@ -8,7 +8,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5E2628
 		Shared\Program.cs = Shared\Program.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day01_01.动物类的继承", "src\Day01_01.动物类的继承\Day01_01.动物类的继承.csproj", "{3423703F-05FC-4E6F-AAD0-8195C28BAD27}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3423703F-05FC-4E6F-AAD0-8195C28BAD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3423703F-05FC-4E6F-AAD0-8195C28BAD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3423703F-05FC-4E6F-AAD0-8195C28BAD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3423703F-05FC-4E6F-AAD0-8195C28BAD27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
