@@ -23,6 +23,16 @@ namespace Day01_03.猜拳
         {
             //02.03.将玩家出拳的内容赋值给属性
             this.FistName = fistName;
+            //02.04.将出拳内容转换成数值返回
+            //定义整型变量num用以记录转换的数值
+            int num = 0;
+            switch (FistName)
+            {
+                case "石头": num = 1;break;
+                case "剪刀": num = 2;break;
+                case "布": num = 3;break;
+            }
+            return num;
         }
     }
 }
