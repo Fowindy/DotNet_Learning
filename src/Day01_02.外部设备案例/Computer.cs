@@ -18,5 +18,14 @@ namespace Day01_02.外部设备案例
         /// 08.定义移动存储设备的自动属性
         /// </summary>
         public StorageDevice SD { get; set; }
+
+        /// <summary>
+        /// 09.定义电脑接收移动存储设备读取的方法
+        /// </summary>
+        public void CpuRead()
+        {
+            ///<![CDATA[SD是抽象父类,实际调用的是子类]]>
+            SD.Read();
+        }
     }
 }
