@@ -16,6 +16,9 @@ namespace Day01_04.登记案例
             //02.02.通过人继承接口实现登记功能
             Person person = new Person();
             person.DengJi();
+            //03.02.通过车继承接口实现登记功能
+            Car car = new Car();
+            car.DengJi();
             Console.ReadKey();
         }
     }
