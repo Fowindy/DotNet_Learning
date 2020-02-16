@@ -20,5 +20,13 @@ namespace Day01_03.猜拳
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// 05.玩家按钮触发事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnStone_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

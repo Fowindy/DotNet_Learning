@@ -101,6 +101,7 @@
             this.btnStone.TabIndex = 6;
             this.btnStone.Text = "石头";
             this.btnStone.UseVisualStyleBackColor = true;
+            this.btnStone.Click += new System.EventHandler(this.btnStone_Click);
             // 
             // btnScissors
             // 
