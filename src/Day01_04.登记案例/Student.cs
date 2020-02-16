@@ -9,7 +9,8 @@ using System.Xml;
 
 namespace Day01_04.登记案例
 {
-    public class Student
+    ///<![CDATA[04.01.学生类继承人类,人类继承接口]]>
+    public class Student:Person
     {
     }
 }
