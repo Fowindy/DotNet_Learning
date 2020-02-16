@@ -23,5 +23,13 @@ namespace Day01_02.外部设备案例
         {
             Console.WriteLine("Mp3写入中...");
         }
+
+        /// <summary>
+        /// 04.Mp3子类自己独有PlayMusic的方法
+        /// </summary>
+        public void PlayMusic()
+        {
+            Console.WriteLine("苍茫的天涯,...,我的爱...");
+        }
     }
 }
