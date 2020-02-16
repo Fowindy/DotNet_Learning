@@ -15,10 +15,13 @@ namespace Day01_04.登记案例
         {
             //02.02.通过人继承接口实现登记功能
             Person person = new Person();
-            person.DengJi();
+            person.DengJi();//人登记了
             //03.02.通过车继承接口实现登记功能
             Car car = new Car();
-            car.DengJi();
+            car.DengJi();//车登记了
+            //04.02.学生类通过继承人类(本身继承登记),最终学生也继承了登记方法_不完美
+            Student student = new Student();
+            student.DengJi();//人登记了
             Console.ReadKey();
         }
     }
