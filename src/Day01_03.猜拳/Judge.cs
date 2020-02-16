@@ -25,5 +25,22 @@ namespace Day01_03.猜拳
         ///玩家赢的量化差值为:-1和2
         ///电脑赢的量化差值为:-2和1
         ///平局的量化差值为:0]]>
+        
+        ///<![CDATA[04.02.裁判判决输赢的方法]]>
+        public string JudgeWin(int playerNum,int computerNum)
+        {
+            if (playerNum - computerNum == 0)
+            {
+                return "你们两个棋逢对手!平了";
+            }
+            else if (playerNum - computerNum == -1 || playerNum - computerNum == 2)
+            {
+                return "玩家赢了,你太牛X了!";
+            }
+            else
+            {
+                return "玩家输了,电脑太厉害了!";
+            }
+        }
     }
 }
