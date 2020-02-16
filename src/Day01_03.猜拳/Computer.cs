@@ -11,5 +11,9 @@ namespace Day01_03.猜拳
 {
     public class Computer
     {
+        /// <summary>
+        /// 03.01.定义记录电脑出拳内容的属性
+        /// </summary>
+        public string ComputerResult { get; set; }
     }
 }
