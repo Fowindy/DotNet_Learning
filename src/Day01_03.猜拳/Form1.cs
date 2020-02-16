@@ -2,6 +2,7 @@
  * 创 建 者：Fowindy
  * 创建日期：2020年2月16日 星期日 15:55:40
  * ==============================================================================*/
+using Day01_03.猜拳;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,9 +31,11 @@ namespace Day01_03.猜拳
         ///05.02.01.首先将剪刀和布按钮触发事件绑定到石头按钮上;]]>
         private void btnStone_Click(object sender, EventArgs e)
         {
-            this.lblPlayerResult.Text = this.btnStone.Text;
+            ///<![CDATA[05.02.02.将sender对象强转为Button对象,sender表示谁触发我,我就是谁]]>
+            Button button = sender as Button;
+            this.lblPlayerResult.Text = button.Text;
             Player player = new Player();
-            player.FistName = this.btnStone.Text;
+            player.FistName = button.Text;
             Computer computer = new Computer();
             Judge judge = new Judge();
             this.lblResult.Text = judge.JudgeWin(player.Play(player.FistName), computer.Play());
