@@ -9,7 +9,12 @@ using System.Xml;
 
 namespace Day01_04.登记案例
 {
-    public class House
+    //05.01.通过房子继承接口实现登记功能
+    public class House:IDengJi
     {
+        public void DengJi()
+        {
+            Console.WriteLine("房子登记了");
+        }
     }
 }
