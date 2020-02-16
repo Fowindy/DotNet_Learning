@@ -11,5 +11,9 @@ namespace Day01_03.猜拳
 {
     public class Player
     {
+        /// <summary>
+        /// 02.01.定义记录玩家出拳的内容的属性
+        /// </summary>
+        public string Fist { get; set; }
     }
 }
