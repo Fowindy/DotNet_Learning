@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day01_01.动物类的继承
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day01_02.外部设备案例", "src\Day01_02.外部设备案例\Day01_02.外部设备案例.csproj", "{A30C251D-BCBE-4233-A576-E4B261B3CD2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day01_03.猜拳", "src\Day01_03.猜拳\Day01_03.猜拳.csproj", "{1FE36685-E0CF-4201-A26F-C4B6167345A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{A30C251D-BCBE-4233-A576-E4B261B3CD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A30C251D-BCBE-4233-A576-E4B261B3CD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A30C251D-BCBE-4233-A576-E4B261B3CD2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE36685-E0CF-4201-A26F-C4B6167345A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE36685-E0CF-4201-A26F-C4B6167345A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE36685-E0CF-4201-A26F-C4B6167345A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE36685-E0CF-4201-A26F-C4B6167345A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
