@@ -10,7 +10,12 @@ using System.Xml;
 namespace Day01_04.登记案例
 {
     ///<![CDATA[04.01.学生类继承人类,人类继承接口]]>
-    public class Student:Person
+    ///<![CDATA[04.03.学生同时继承父类和接口(父类在前,接口在后)]]>
+    public class Student:Person,IDengJi
     {
+        public void DengJi()
+        {
+            Console.WriteLine("学生登记了");
+        }
     }
 }

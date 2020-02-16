@@ -12,11 +12,12 @@ namespace Day01_04.登记案例
     /// <summary>
     /// 02.01.Person类继承IDengJi登记接口
     /// </summary>
-    public class Person:IDengJi
+    public class Person
     {
-        public void DengJi()
+        //解除Person类与接口的关系
+        public void SayHello()
         {
-            Console.WriteLine("人登记了");
+            Console.WriteLine("我是人类");
         }
     }
 }
