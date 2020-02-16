@@ -25,8 +25,16 @@ namespace Day01_03.猜拳
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        ///<![CDATA[05.01.石头按钮事件验证完成]]>
         private void btnStone_Click(object sender, EventArgs e)
         {
+            this.lblPlayerResult.Text = this.btnStone.Text;
+            Player player = new Player();
+            player.FistName = this.btnStone.Text;
+            Computer computer = new Computer();
+            Judge judge = new Judge();
+            this.lblResult.Text = judge.JudgeWin(player.Play(player.FistName), computer.Play());
+            this.lblComputerResult.Text = computer.FirstName;
         }
     }
 }
