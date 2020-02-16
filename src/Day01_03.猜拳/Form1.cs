@@ -33,9 +33,17 @@ namespace Day01_03.猜拳
         {
             ///<![CDATA[05.02.02.将sender对象强转为Button对象,sender表示谁触发我,我就是谁]]>
             Button button = sender as Button;
-            this.lblPlayerResult.Text = button.Text;
+            PlayGame(button.Text);
+        }
+        /// <summary>
+        /// 05.02.03.封装成方法
+        /// </summary>
+        /// <param name="fistName"></param>
+        private void PlayGame(string fistName)
+        {
+            this.lblPlayerResult.Text = fistName;
             Player player = new Player();
-            player.FistName = button.Text;
+            player.FistName = fistName;
             Computer computer = new Computer();
             Judge judge = new Judge();
             this.lblResult.Text = judge.JudgeWin(player.Play(player.FistName), computer.Play());
