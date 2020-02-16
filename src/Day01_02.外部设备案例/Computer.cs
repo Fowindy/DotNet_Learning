@@ -27,5 +27,12 @@ namespace Day01_02.外部设备案例
             ///<![CDATA[SD是抽象父类,实际调用的是子类]]>
             SD.Read();
         }
+        /// <summary>
+        /// 10.定义电脑接收移动存储设备读取的方法
+        /// </summary>
+        public void CpuWrite()
+        {
+            SD.Write();
+        }
     }
 }
