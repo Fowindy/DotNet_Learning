@@ -18,7 +18,7 @@ namespace Day01_02.外部设备案例
             //mp3.PlayMusic();
 
             ///<![CDATA[15.电脑读写移动硬盘的功能实现2]]>
-            GetDisk(new Mp3());
+            GetDisk(new MobileDisk());//new Mp3());
             Console.ReadKey();
         }
 
@@ -31,6 +31,12 @@ namespace Day01_02.外部设备案例
                 mp3.Read();
                 mp3.Write();
                 mp3.PlayMusic();
+            }
+            ///<![CDATA[17.判断不是Mp3,则直接使用父类调用]]>
+            else
+            {
+                SD.Read();
+                SD.Write();
             }
         }
     }
