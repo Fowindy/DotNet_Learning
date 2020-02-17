@@ -29,6 +29,7 @@ namespace Day01_06.文件案例
             }
             Console.ReadKey();  
         }
+        //01.08.这个模式成为简单工厂模式
         //01.03.根据后缀给父类对象赋值对应子类对象
         private static UserFile GetFileOpenTool(string str)
         {
