@@ -13,6 +13,9 @@ namespace Day02_01.this的一种用法
     {
         static void Main(string[] args)
         {
+            //02.09.可以将子类对象赋值给父类,但是将父类强转子类将有可能报异常
+            Person person = new Student();
+            Student student = (Student)person;
         }
         //01.新增类不建议写(嵌套类)在主类里面
         //public class Person
