@@ -34,6 +34,8 @@ namespace Day01_06.文件案例
                 case ".avi": userFile = new AVIFile(str); break;
                 //01.04.加入txt文件的判断
                 case ".txt":userFile = new TXTFile(str); break;
+                //01.05.加入xml文件判断
+                case ".xml":userFile = new XMLFile(str); break;
             }
             return userFile;
         }
