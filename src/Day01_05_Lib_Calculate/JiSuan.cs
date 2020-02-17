@@ -25,5 +25,7 @@ namespace Day01_05_Lib_Calculate
             this.Num1 = num1;
             this.Num2 = num2;
         }
+        //01.03.父类中声明一个获取计算结果的抽象方法
+        public abstract int GetResult();
     }
 }
