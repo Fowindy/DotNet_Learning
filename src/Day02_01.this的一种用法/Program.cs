@@ -15,8 +15,13 @@ namespace Day02_01.this的一种用法
         {
         }
         //01.新增类不建议写(嵌套类)在主类里面
-        public class Person
-        {
-        }
+        //public class Person
+        //{
+        //}
+    }
+    //02.新增Person类
+    public class Person
+    {
+
     }
 }
