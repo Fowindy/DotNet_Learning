@@ -22,7 +22,11 @@ namespace Day01_06.文件案例
 
             //01.02.实例化父类对象,并获取子类对象
             UserFile userFile = GetFileOpenTool(str);
-            userFile.ShowResult();
+            //01.06.Bug修复1:对userFile是否为null进行判断
+            if (userFile != null)
+            {
+                userFile.ShowResult();
+            }
             Console.ReadKey();  
         }
         //01.03.根据后缀给父类对象赋值对应子类对象
