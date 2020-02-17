@@ -25,6 +25,9 @@ namespace Day02_01.this的一种用法
         //02.01.定义姓名,年龄属性
         public string Name { get; set; }
         public int Age { get; set; }
-
+        //02.02.无参构造函数
+        public Person()
+        {
+        }
     }
 }
