@@ -25,6 +25,15 @@ namespace Day01_06.文件案例
             userFile.ShowResult();
             Console.ReadKey();  
         }
-
+        //01.03.根据后缀给父类对象赋值对应子类对象
+        private static UserFile GetFileOpenTool(string str)
+        {
+            UserFile userFile = null;
+            switch (Path.GetExtension(str))
+            {
+                case ".avi": userFile = new AVIFile(str); break;
+            }
+            return userFile;
+        }
     }
 }
