@@ -43,6 +43,9 @@ namespace Day01_05.计算器
             //05.01.错误1.抽象类不能实例化---为了多态
             //JiSuan js = new JiSuan();
 
+            //05.02.正确1.一个对象等于null,代表这个对象在栈空间没有堆里面的地址
+            JiSuan jiSuan = null;
+
         }
     }
 }
