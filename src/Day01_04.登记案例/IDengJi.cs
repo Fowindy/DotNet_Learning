@@ -15,7 +15,7 @@ namespace Day01_04.登记案例
     ///         3.接口中的成员不需要访问修饰符,默认就是public,因为接口的目的就是为了继承多态;
     ///         4.接口的成员不能有实现,接口是为了多态,实现虚方法或抽象方法;
     ///         ]]>
-    interface IDengJi
+    public interface IDengJi
     {
         void DengJi();
     }

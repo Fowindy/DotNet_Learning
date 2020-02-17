@@ -28,7 +28,30 @@ namespace Day01_04.登记案例
             //05.03.可以通过接口(特殊的父类)new出子类对象方法实现
             IDengJi dengJi = new House();
             dengJi.DengJi();//房子登记了
+            //05.04.登记接口的第三种实现方法,强力推荐
+            Console.WriteLine("--------05.04.登记接口的第三种实现方法,强力推荐--------");
+            GetDengJi(new Student());
+            GetDengJi(new Car());
+            GetDengJi(new House());
             Console.ReadKey();
+        }
+        public static void GetDengJi(IDengJi dengJi)
+        {
+            //如果每一个子类中的方法都不一样,并且没有重写,才需要判断
+            //可以省略
+            //if (dengJi is Car)
+            //{
+            //    dengJi = new Car();
+            //}
+            //else if (dengJi is Student)
+            //{
+            //    dengJi = new Student();
+            //}
+            //else if (dengJi is House)
+            //{
+            //    dengJi = new House();
+            //}
+            dengJi.DengJi();
         }
     }
 }
