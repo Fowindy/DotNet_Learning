@@ -16,6 +16,7 @@ namespace Day01_06.文件案例
     public abstract class UserFile
     {
         //05.02.定义文件名和后缀名存储变量属性
+        public string AllFileName { get; set; }
         public string FileName { get; set; }
         public string ExtensionName { get; set; }
         //05.03.初始化构造函数,给属性赋值
@@ -23,6 +24,9 @@ namespace Day01_06.文件案例
         {
             this.FileName = Path.GetFileName(allFileName);
             this.ExtensionName = Path.GetExtension(allFileName);
+            this.AllFileName = allFileName;
         }
+        //05.04.声明显示结果的抽象方法
+        public abstract void ShowResult();
     }
 }
