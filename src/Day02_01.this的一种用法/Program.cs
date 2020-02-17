@@ -43,6 +43,7 @@ namespace Day02_01.this的一种用法
         {
             //给Name,Age属性赋值初始化
             this.Name = name;
+            ///<![CDATA[02.07.this的第二种用法:this指代当前对象]]>
             this.Age = age;
         }
     }
