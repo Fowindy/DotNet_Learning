@@ -4,6 +4,7 @@
  * ==============================================================================*/
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Xml;
 
@@ -17,5 +18,11 @@ namespace Day01_06.文件案例
         //05.02.定义文件名和后缀名存储变量属性
         public string FileName { get; set; }
         public string ExtensionName { get; set; }
+        //05.03.初始化构造函数,给属性赋值
+        public UserFile(string allFileName)
+        {
+            this.FileName = Path.GetFileName(allFileName);
+            this.ExtensionName = Path.GetExtension(allFileName);
+        }
     }
 }
