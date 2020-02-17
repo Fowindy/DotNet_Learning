@@ -23,8 +23,11 @@ namespace Day01_04.登记案例
             Student student = new Student();
             student.DengJi();//学生登记了//人登记了
             //05.02.通过房子继承接口实现登记功能
-            House house = new House();
-            house.DengJi();//房子登记了
+            //House house = new House();
+            //house.DengJi();//房子登记了
+            //05.03.可以通过接口(特殊的父类)new出子类对象方法实现
+            IDengJi dengJi = new House();
+            dengJi.DengJi();//房子登记了
             Console.ReadKey();
         }
     }
