@@ -32,6 +32,7 @@ namespace Day02_01.this的一种用法
         /// <param name="name"></param>
         //02.03.带一个参数的构造函数
         ///<![CDATA[02.05.带一个参数是带两个参数的子集,可以如下合并]]>
+        ///<![CDATA[02.06.this的第一种用法:调一个参数的构造函数相当于调了两个参数的构造函数]]>
         public Person(string name):this(name,0)
         {
             //给Name属性赋值初始化
