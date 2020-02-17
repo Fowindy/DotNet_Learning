@@ -32,6 +32,8 @@ namespace Day01_05.计算器
             }
             Console.WriteLine("{0}{1}{2}={3}",num1,opt,num2,result);
             Console.ReadKey();
+            //04.01.不导入命名空间直接用全名_不推荐此用法
+            //Day01_05_Lib_Calculate.Add();
         }
     }
 }
