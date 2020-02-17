@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Xml;
+///<![CDATA[04.添加引用Day01_05_Lib_Calculate.dll以及导入命名空间]>
+using Day01_05_Lib_Calculate;
 
 namespace Day01_05.计算器
 {

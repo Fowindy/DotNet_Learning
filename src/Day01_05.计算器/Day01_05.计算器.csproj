@@ -9,4 +9,10 @@
     <Folder Include="相关资料\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Day01_05_Lib_Calculate">
+      <HintPath>..\Day01_05_Lib_Calculate\bin\Debug\Day01_05_Lib_Calculate.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
