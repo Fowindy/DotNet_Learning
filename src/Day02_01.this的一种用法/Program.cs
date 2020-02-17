@@ -29,5 +29,11 @@ namespace Day02_01.this的一种用法
         public Person()
         {
         }
+        //02.03.带一个参数的构造函数
+        public Person(string name)
+        {
+            //给Name属性赋值初始化
+            this.Name = name;
+        }
     }
 }
