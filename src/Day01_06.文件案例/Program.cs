@@ -32,6 +32,8 @@ namespace Day01_06.文件案例
             switch (Path.GetExtension(str))
             {
                 case ".avi": userFile = new AVIFile(str); break;
+                //01.04.加入txt文件的判断
+                case ".txt":userFile = new TXTFile(str); break;
             }
             return userFile;
         }
