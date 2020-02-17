@@ -53,6 +53,8 @@ namespace Day01_05.计算器
                 case "+": jiSuan = new Add(num1, num2); break;
                 case "-": jiSuan = new Sub(num1, num2); break;
                 ///<![CDATA[05.05.[问题的提出]如果要添加一个乘法怎样操作?]]>
+                ///<![CDATA[06.03.对乘法操作符进行判断,进行相应计算]]>
+                case "*":jiSuan = new ChengFa(num1,num2); break;
             }
             return jiSuan;
         }
