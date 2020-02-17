@@ -10,7 +10,9 @@ using System.Threading.Tasks;
 
 namespace Day01_05_Lib_Calculate
 {
-    public class JiSuan
+    //01.抽象出一个JiSuan的父类
+    public abstract class JiSuan
     {
+
     }
 }
