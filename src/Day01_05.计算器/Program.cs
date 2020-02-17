@@ -40,7 +40,9 @@ namespace Day01_05.计算器
 
         private static JiSuan GetJiSuanByNumberAndOpt(string opt, int num1, int num2)
         {
-            throw new NotImplementedException();
+            //05.01.错误1.抽象类不能实例化---为了多态
+            //JiSuan js = new JiSuan();
+
         }
     }
 }
