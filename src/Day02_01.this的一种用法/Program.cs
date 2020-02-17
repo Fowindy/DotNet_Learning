@@ -47,4 +47,8 @@ namespace Day02_01.this的一种用法
             this.Age = age;
         }
     }
+    public class Student : Person
+    {
+        //02.08.如果有继承关系了,子类中调用的构造函数,实际上是调用父类中无参数的构造函数
+    }
 }
