@@ -33,7 +33,8 @@ namespace Day01_06.文件案例
         private static UserFile GetFileOpenTool(string str)
         {
             UserFile userFile = null;
-            switch (Path.GetExtension(str))
+            //01.07.Bug修复2.将后缀统一转换为小写,增强兼容性
+            switch (Path.GetExtension(str).ToLower())
             {
                 case ".avi": userFile = new AVIFile(str); break;
                 //01.04.加入txt文件的判断
