@@ -22,6 +22,9 @@ namespace Day02_01.this的一种用法
     //02.新增Person类
     public class Person
     {
+        //02.01.定义姓名,年龄属性
+        public string Name { get; set; }
+        public int Age { get; set; }
 
     }
 }
