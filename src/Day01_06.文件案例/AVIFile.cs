@@ -12,6 +12,7 @@ namespace Day01_06.文件案例
     //02.01.AVI子类继承父类,并实现抽象方法
     public class AVIFile:UserFile
     {
+        //代表把参数传到了父类里面,然后再调用
         public AVIFile(string allFileName) : base(allFileName)
         {
         }

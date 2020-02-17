@@ -4,6 +4,7 @@
  * ==============================================================================*/
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Xml;
 
@@ -18,6 +19,12 @@ namespace Day01_06.文件案例
             string str = Console.ReadLine();
             //获取文件的后缀名
             //判断文件的后缀名
+
+            //01.02.实例化父类对象,并获取子类对象
+            UserFile userFile = GetFileOpenTool(str);
+            userFile.ShowResult();
+            Console.ReadKey();  
         }
+
     }
 }
