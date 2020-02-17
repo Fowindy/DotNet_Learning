@@ -35,7 +35,8 @@ namespace Day01_05.计算器
             //Day01_05_Lib_Calculate.Add();
             //05.调用引用的父类并实例化(新建一个把操作符和数值成员实现计算的方法)
             JiSuan jiSuan = GetJiSuanByNumberAndOpt(opt,num1,num2);
-
+            //05.04.调用父类获取结果函数
+            Console.WriteLine("{0}{1}{2}={3}", num1, opt, num2, jiSuan.GetResult());
             Console.ReadKey();
         }
 
