@@ -22,18 +22,25 @@ namespace Day01_05.计算器
             int num2 = Convert.ToInt32(Console.ReadLine());
             Console.Write("请输入一个操作符(+,-,*,/):");
             string opt = Console.ReadLine();//符号
-            int result = 0;
-            switch (opt)
-            {
-                case "+":result = num1 + num2;break;
-                case "-":result = num1 - num2;break;
-                case "*":result = num1 * num2;break;
-                case "/":result = num1 / num2;break;
-            }
-            Console.WriteLine("{0}{1}{2}={3}",num1,opt,num2,result);
-            Console.ReadKey();
+            //int result = 0;
+            //switch (opt)
+            //{
+            //    case "+":result = num1 + num2;break;
+            //    case "-":result = num1 - num2;break;
+            //    case "*":result = num1 * num2;break;
+            //    case "/":result = num1 / num2;break;
+            //}
+            //Console.WriteLine("{0}{1}{2}={3}",num1,opt,num2,result);
             //04.01.不导入命名空间直接用全名_不推荐此用法
             //Day01_05_Lib_Calculate.Add();
+            Console.ReadKey();
+            //05.调用引用的父类并实例化(新建一个把操作符和数值成员实现计算的方法)
+            JiSuan jiSuan = GetJiSuanByNumberAndOpt(opt,num1,num2);
+        }
+
+        private static JiSuan GetJiSuanByNumberAndOpt(string opt, int num1, int num2)
+        {
+            throw new NotImplementedException();
         }
     }
 }
