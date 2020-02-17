@@ -9,7 +9,16 @@ using System.Xml;
 
 namespace Day01_06.文件案例
 {
-    public class TXTFile
+    //03.01.AVI子类继承父类,并实现抽象方法
+    public class TXTFile:UserFile
     {
+        public TXTFile(string allFileName) : base(allFileName)
+        {
+        }
+
+        public override void ShowResult()
+        {
+            Console.WriteLine("{0}:这个文件后缀为{1},可以通过记事本查看", this.AllFileName, this.ExtensionName);
+        }
     }
 }
