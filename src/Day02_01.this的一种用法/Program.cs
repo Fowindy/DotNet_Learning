@@ -35,5 +35,12 @@ namespace Day02_01.this的一种用法
             //给Name属性赋值初始化
             this.Name = name;
         }
+        //02.04.带两个参数的构造函数
+        public Person(string name,int age)
+        {
+            //给Name,Age属性赋值初始化
+            this.Name = name;
+            this.Age = age;
+        }
     }
 }
