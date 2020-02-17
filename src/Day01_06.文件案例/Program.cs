@@ -13,6 +13,11 @@ namespace Day01_06.文件案例
     {
         static void Main(string[] args)
         {
+            //01.01.简单思路
+            Console.Write("请您输入文件:");
+            string str = Console.ReadLine();
+            //获取文件的后缀名
+            //判断文件的后缀名
         }
     }
 }
