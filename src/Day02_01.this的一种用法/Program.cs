@@ -15,7 +15,19 @@ namespace Day02_01.this的一种用法
         {
             //02.09.可以将子类对象赋值给父类,但是将父类强转子类将有可能报异常
             Person person = new Student();
-            Student student = (Student)person;
+            ///<![CDATA[02.10.is和as的用法:
+            ///         1.如需将父类强转子类,可以使用is和as先行判断;
+            ///         2.is返回的是bool类型;
+            ///         3.as返回的是对象,成功返回对象,失败返回null]]>
+            if (person is Student)
+            {
+                Student student = (Student)person;
+            }
+            Student student1 = person as Student;
+            if (student1 != null)//说明转换成功
+            {
+
+            }
         }
         //01.新增类不建议写(嵌套类)在主类里面
         //public class Person
