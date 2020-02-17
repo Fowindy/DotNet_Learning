@@ -20,7 +20,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day01_05.计算器", "src\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day01_05_Lib_Calculate", "src\Day01_05_Lib_Calculate\Day01_05_Lib_Calculate.csproj", "{1EDFB030-45D7-4133-AD46-61E6514B1E91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day01_06.文件案例", "src\Day01_06.文件案例\Day01_06.文件案例.csproj", "{96BB6FE5-91AC-4844-8218-1996D59A9490}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day01_06.文件案例", "src\Day01_06.文件案例\Day01_06.文件案例.csproj", "{96BB6FE5-91AC-4844-8218-1996D59A9490}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day01_07.作业_车位对应", "src\Day01_07.作业_车位对应\Day01_07.作业_车位对应.csproj", "{623DADEA-E240-4767-AD41-09DD34D36F2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{96BB6FE5-91AC-4844-8218-1996D59A9490}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96BB6FE5-91AC-4844-8218-1996D59A9490}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96BB6FE5-91AC-4844-8218-1996D59A9490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{623DADEA-E240-4767-AD41-09DD34D36F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623DADEA-E240-4767-AD41-09DD34D36F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623DADEA-E240-4767-AD41-09DD34D36F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623DADEA-E240-4767-AD41-09DD34D36F2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
