@@ -29,11 +29,13 @@ namespace Day02_01.this的一种用法
         public Person()
         {
         }
+        /// <param name="name"></param>
         //02.03.带一个参数的构造函数
-        public Person(string name)
+        ///<![CDATA[02.05.带一个参数是带两个参数的子集,可以如下合并]]>
+        public Person(string name):this(name,0)
         {
             //给Name属性赋值初始化
-            this.Name = name;
+            //this.Name = name;
         }
         //02.04.带两个参数的构造函数
         public Person(string name,int age)
