@@ -1,6 +1,6 @@
 ﻿/* ==============================================================================
  * 创 建 者：Fowindy
- * 创建日期：2020年2月17日 星期一 22:12:17
+ * 创建日期：2020年2月17日 星期一 22:35:43
  * ==============================================================================*/
 using System;
 using System.Collections.Generic;
@@ -9,15 +9,15 @@ using System.Xml;
 
 namespace Day01_07.作业_车位对应
 {
-    public abstract class Car
+    public class Benz:Car
     {
-        //02.01.定义品牌,型号,车库属性
-        public string Brand { get; set; }
-        //02.02.初始化构造函数
-        public Car(string brand)
+        public Benz(string brand) : base(brand)
         {
-            this.Brand = brand;
         }
-        public abstract void GetCarGarage();
+
+        public override void GetCarGarage()
+        {
+            Console.WriteLine("您的车品牌为:{0},您的车应该放在一号车库,该车为:{0}S6", this.Brand);
+        }
     }
 }
