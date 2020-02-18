@@ -21,11 +21,20 @@ namespace Day02_06.字符串的特性
             //01_02_这是重新赋值不是改变字符串
             str = "低头思故乡";
             //01_03_大量字符串拼接案例_次方增长爆内存
-            for (int i = 0; i < 27; i++)
+            //for (int i = 0; i < 27; i++)
+            //{
+            //    str += str;//----大量字符串拼接
+            //}
+            //01_04_当需要大量字符串拼接时,采用StringBuilder
+            StringBuilder stringBuilder = new StringBuilder();
+            for (int i = 0; i < 64; i++)
             {
-                str += str;//----大量字符串拼接
+                stringBuilder.Append(str).ToString();
+                if (i == 63)
+                {
+                    Console.WriteLine(stringBuilder.Append(str).ToString());
+                }
             }
-            Console.WriteLine(str);
             Console.ReadKey();
         }
     }
