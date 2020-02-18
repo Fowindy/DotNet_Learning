@@ -28,12 +28,18 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
         public abstract void Shout();
     }
     //04.声明一个Dog类继承Animal
-    public class Dog:Animal
+    //04_01_Dog类继承IFly接口实现飞的功能
+    public class Dog:Animal,IFly
     {
         //重写
         public override void Shout()
         {
             Console.WriteLine("汪汪叫...");
+        }
+
+        public void Fly()
+        {
+            Console.WriteLine("我是哮天犬,我会飞");
         }
     }
     public class Program
