@@ -25,5 +25,21 @@ namespace Day02_04.索引器
         //public int Age { get; set; }
         //02_01_定义Names字符数组
         public string[] Names = { "yzk", "sk", "ml", "jk" };
+        //02_02_将字符数组索引器化
+        public string this[int index]
+        {
+            get
+            {
+                string name = "";
+                switch (index)
+                {
+                    case 0: name = Names[0]; break;
+                    case 1: name = Names[1]; break;
+                    case 2: name = Names[2]; break;
+                    case 3: name = Names[3]; break;
+                }
+                return name;
+            }
+        }
     }
 }
