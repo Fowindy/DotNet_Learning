@@ -9,6 +9,9 @@ using System.Xml;
 
 namespace Day02_02.virtual_abstract_接口的区别和联系
 {
+    ///<![CDATA[07_接口的定义规范:
+    ///         1.不要单接口再继承接口的做法,这样会导致接口污染;
+    ///         2.接口尽可能功能单一,便于继承的单一管控,避免接口污染;]]>
     //06_声明多接口继承多接口实现
     public interface IJieKou : IFly, ISwim
     {
