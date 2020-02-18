@@ -16,6 +16,9 @@ namespace Day02_04.索引器
             //02_实例化Person对象,只能通过.来调用,不能通过索引
             Person person = new Person();
             //person.Name = "张三";
+            //02_03_通过索引调用
+            Console.WriteLine(person[2]);//ml
+            Console.ReadKey();
         }
     }
     //01_声明Person类并定义Name_Age属性
