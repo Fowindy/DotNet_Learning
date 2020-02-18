@@ -22,6 +22,11 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
             Console.WriteLine("我们会飞");
         }
     }
+    //03.声明一个Animal抽象类和叫的抽象方法
+    public abstract class Animal
+    {
+        public abstract void Shout();
+    }
     public class Program
     {
         static void Main(string[] args)
