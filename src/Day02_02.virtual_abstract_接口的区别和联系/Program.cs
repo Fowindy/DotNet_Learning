@@ -15,13 +15,14 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
     }
     //01.声明一个会飞的接口
     //01_01_不建议单接口再继承接口的做法
-    public interface IFly:ISwim
+    public interface IFly
     {
         void Fly();
     }
     //02.声明一个学生类继承会飞的接口
     //02_01_学生类再继承会游泳的接口
-    public class Student:IFly
+    //02_03_学生通过继承多接口来实现继承会飞和会游泳两种能力
+    public class Student:IJieKou
     {
         public void Fly()
         {
