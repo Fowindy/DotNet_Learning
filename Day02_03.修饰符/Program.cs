@@ -21,7 +21,9 @@ namespace Day02_03.修饰符
         //02_02_字段的默认访问修饰符是private私有的,只能在本类中访问
         //private string _name;
         //如果变成protected
-        protected string _name;
+        //protected string _name;
+        //如果变成public
+        public string _name;
     }
     //02_声明一个Student类并继承Person类
     public class Student:Person
@@ -30,6 +32,7 @@ namespace Day02_03.修饰符
         {
             //02_01_在子类中无法调用到父类中默认字段(字段的默认访问修饰符为:private)
             //02_03_protected访问修饰符,在本类和子类中可以访问
+            //02_04_public访问修饰符任何地方都可以访问
             this._name = "张三";
             base._name = "李四";
         }
