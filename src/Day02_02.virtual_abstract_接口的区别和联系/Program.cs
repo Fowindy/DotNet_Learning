@@ -86,6 +86,10 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
     {
         static void Main(string[] args)
         {
+            //09_01_实例化Teacher对象调用SayHello方法_会隐藏父类SayHello方法
+            Teacher teacher = new Teacher();
+            teacher.SayHello();//恭喜发财,红包拿来
+            Console.ReadKey();
         }
     }
 }
