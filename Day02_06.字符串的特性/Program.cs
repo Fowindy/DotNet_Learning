@@ -27,14 +27,14 @@ namespace Day02_06.字符串的特性
             //}
             //01_04_当需要大量字符串拼接时,采用StringBuilder
             StringBuilder stringBuilder = new StringBuilder();
-            for (int i = 0; i < 64; i++)
-            {
-                stringBuilder.Append(str).ToString();
-                if (i == 63)
-                {
-                    Console.WriteLine(stringBuilder.Append(str).ToString());
-                }
-            }
+            //for (int i = 0; i < 64; i++)
+            //{
+            //    stringBuilder.Append(str).ToString();
+            //    if (i == 63)
+            //    {
+            //        Console.WriteLine(stringBuilder.Append(str).ToString());
+            //    }
+            //}
             //01_05_string.IsNullOrEmpty方法的用法
             //01.06.null和""的区别:null在内存没有开空间,""在内存中开空间了;垃圾回收器:null可以被回收
             string str1 = null;
@@ -44,6 +44,11 @@ namespace Day02_06.字符串的特性
             }
             //01.07.修改字符串操作
             string str2 = "今天天气格外好,小赵来到桃花岛,看见了老马在洗澡......";
+            ///<![CDATA[01_08_思路_字符串转成字符数组,然后进行修改再转化成字符串]]>
+            char[] chs = str2.ToCharArray();
+            chs[6] = '坏';
+            str2 = new string(chs);
+            Console.WriteLine(str2);
             Console.ReadKey();
         }
     }
