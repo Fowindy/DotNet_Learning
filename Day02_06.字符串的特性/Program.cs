@@ -15,7 +15,10 @@ namespace Day02_06.字符串的特性
         {
             //01_字符串的不可变性
             string str = "床前明月光";
-
+            //01_01_想改变字符串中的某一个字符_不可行_因为字符串是只读的
+            //str[2] = "阴";
+            Console.WriteLine(str[2]);//明//字符串是只读的
+            Console.ReadKey();
         }
     }
 }
