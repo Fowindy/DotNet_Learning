@@ -18,7 +18,8 @@ namespace Day02_03.修饰符
     //01_声明一个Person类并定义字段
     public class Person
     {
-        string _name;
+        //02_02_字段的默认访问修饰符是private私有的,只能在本类中访问
+        private string _name;
     }
     //02_声明一个Student类并继承Person类
     public class Student:Person
