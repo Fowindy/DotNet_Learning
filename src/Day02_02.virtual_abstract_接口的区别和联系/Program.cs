@@ -68,7 +68,8 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
     //08_声明一个Person类
     public class Person
     {
-        public void SayHello()
+        //09_04_virtual虚方法的用法:如果父类子类有同名方法,则可以将父类方法定义成虚方法,子类重写即可
+        public virtual void SayHello()
         {
             Console.WriteLine("阿尼海塞呦.莎娃迪卡,卡尼七娃..你好");
         }
@@ -77,10 +78,10 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
     public class Teacher:Person
     {
         //09_03_父类和子类中有同名方法,会各自调用各自方法;如果有意这样做,子类使用关键字new(关键字new的一种用法)
-        public new void SayHello()
-        {
-            Console.WriteLine("恭喜发财,红包拿来");
-        }
+        //public new void SayHello()
+        //{
+        //    Console.WriteLine("恭喜发财,红包拿来");
+        //}
     }
 
     public class Program
