@@ -27,6 +27,15 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
     {
         public abstract void Shout();
     }
+    //04.声明一个Dog类继承Animal
+    public class Dog:Animal
+    {
+        //重写
+        public override void Shout()
+        {
+            Console.WriteLine("汪汪叫...");
+        }
+    }
     public class Program
     {
         static void Main(string[] args)
