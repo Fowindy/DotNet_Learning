@@ -20,4 +20,12 @@ namespace Day02_03.修饰符
     {
         string _name;
     }
+    //02_声明一个Student类并继承Person类
+    public class Student:Person
+    {
+        public void Say()
+        {
+
+        }
+    }
 }
