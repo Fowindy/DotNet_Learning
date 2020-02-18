@@ -44,5 +44,21 @@ namespace Day02_04.索引器
                 return name;
             }
         }
+        //02_04_将字符数组索引器化_内容索引
+        public int this[string key]
+        {
+            get
+            {
+                int index = 0;
+                switch (key)
+                {
+                    case "yzk": index = 0; break;
+                    case "sk": index = 1; break;
+                    case "ml": index = 2; break;
+                    case "jk": index = 3; break;
+                }
+                return index;
+            }
+        }
     }
 }
