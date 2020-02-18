@@ -20,6 +20,12 @@ namespace Day02_06.字符串的特性
             Console.WriteLine(str[2]);//明//字符串是只读的
             //01_02_这是重新赋值不是改变字符串
             str = "低头思故乡";
+            //01_03_大量字符串拼接案例_次方增长爆内存
+            for (int i = 0; i < 27; i++)
+            {
+                str += str;//----大量字符串拼接
+            }
+            Console.WriteLine(str);
             Console.ReadKey();
         }
     }
