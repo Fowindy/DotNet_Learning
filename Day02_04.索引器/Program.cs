@@ -15,4 +15,10 @@ namespace Day02_04.索引器
         {
         }
     }
+    //01_声明Person类并定义Name_Age属性
+    public class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
 }
