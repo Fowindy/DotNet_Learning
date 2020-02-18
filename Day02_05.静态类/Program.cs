@@ -20,4 +20,9 @@ namespace Day02_05.静态类
             string s = new string("");
         }
     }
+    //01_03_string是密封类不能被继承
+    //public class Person:String
+    //{
+
+    //}
 }
