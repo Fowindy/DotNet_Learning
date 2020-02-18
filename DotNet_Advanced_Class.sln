@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_03.修饰符", "Day02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_04.索引器", "Day02_04.索引器\Day02_04.索引器.csproj", "{5AA8741B-B57C-43DF-AA1C-AFC860EC02D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_05.静态类", "Day02_05.静态类\Day02_05.静态类.csproj", "{2A191534-74A6-4679-B587-5963058D8F2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{5AA8741B-B57C-43DF-AA1C-AFC860EC02D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AA8741B-B57C-43DF-AA1C-AFC860EC02D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AA8741B-B57C-43DF-AA1C-AFC860EC02D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A191534-74A6-4679-B587-5963058D8F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A191534-74A6-4679-B587-5963058D8F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A191534-74A6-4679-B587-5963058D8F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A191534-74A6-4679-B587-5963058D8F2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
