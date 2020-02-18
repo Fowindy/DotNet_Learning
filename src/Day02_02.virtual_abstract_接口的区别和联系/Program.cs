@@ -9,6 +9,11 @@ using System.Xml;
 
 namespace Day02_02.virtual_abstract_接口的区别和联系
 {
+    //01.声明一个会飞的接口
+    public interface IFly
+    {
+        void Fly();
+    }
     public class Program
     {
         static void Main(string[] args)
