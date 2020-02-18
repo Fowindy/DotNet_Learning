@@ -15,11 +15,17 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
         void Fly();
     }
     //02.声明一个学生类继承会飞的接口
-    public class Student:IFly
+    //02_01_学生类再继承会游泳的接口
+    public class Student:IFly,ISwim
     {
         public void Fly()
         {
             Console.WriteLine("我们会飞");
+        }
+
+        public void Swim()
+        {
+            Console.WriteLine("我们也会游泳");
         }
     }
     //03.声明一个Animal抽象类和叫的抽象方法
