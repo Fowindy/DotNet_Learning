@@ -9,6 +9,10 @@ using System.Xml;
 
 namespace Day02_02.virtual_abstract_接口的区别和联系
 {
+    //06_声明多接口继承多接口实现
+    public interface IJieKou : IFly, ISwim
+    {
+    }
     //01.声明一个会飞的接口
     //01_01_不建议单接口再继承接口的做法
     public interface IFly:ISwim
