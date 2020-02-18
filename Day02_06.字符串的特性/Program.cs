@@ -35,6 +35,12 @@ namespace Day02_06.字符串的特性
                     Console.WriteLine(stringBuilder.Append(str).ToString());
                 }
             }
+            //01_05_string.IsNullOrEmpty方法的用法
+            string str1 = null;
+            if (string.IsNullOrEmpty(str1))
+            {
+
+            }
             Console.ReadKey();
         }
     }
