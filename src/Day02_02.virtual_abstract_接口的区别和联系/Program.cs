@@ -66,6 +66,7 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
         void Swim();
     }
     //08_声明一个Person类
+    //11_显式实现接口和实现接口的区别
     public class Person
     {
         //09_04_virtual虚方法的用法:如果父类子类有同名方法,则可以将父类方法定义成虚方法,子类重写即可
