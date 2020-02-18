@@ -13,6 +13,8 @@ namespace Day02_05.静态类
     {
         static void Main(string[] args)
         {
+            //01_静态类为什么不能被实例化
+            //Console console = new Console();
         }
     }
 }
