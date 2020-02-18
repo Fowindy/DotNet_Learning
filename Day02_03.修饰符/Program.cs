@@ -25,7 +25,7 @@ namespace Day02_03.修饰符
     {
         public void Say()
         {
-
+            //02_01_在子类中无法调用到父类中默认字段(字段的默认访问修饰符为:private)
         }
     }
 }
