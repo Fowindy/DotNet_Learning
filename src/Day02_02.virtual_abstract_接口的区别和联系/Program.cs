@@ -74,8 +74,11 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
         {
             Console.WriteLine("阿尼海塞呦.莎娃迪卡,卡尼七娃..你好");
         }
-
-
+        //11_02_显式实现接口(两种实现接口可以共用)
+        void IFly.Fly()
+        {
+            Console.WriteLine("我是显式实现接口的飞");
+        }
         //11_01_实现接口(常用)
         public void Fly()
         {
