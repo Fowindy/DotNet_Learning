@@ -65,6 +65,15 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
     {
         void Swim();
     }
+    //08_声明一个Person类
+    public class Person
+    {
+        public void SayHello()
+        {
+            Console.WriteLine("阿尼海塞呦.莎娃迪卡,卡尼七娃..你好");
+        }
+    }
+
     public class Program
     {
         static void Main(string[] args)
