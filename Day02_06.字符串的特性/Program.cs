@@ -13,6 +13,9 @@ namespace Day02_06.字符串的特性
     {
         static void Main(string[] args)
         {
+            //01_字符串的不可变性
+            string str = "床前明月光";
+
         }
     }
 }
