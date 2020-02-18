@@ -34,6 +34,7 @@ namespace Day02_03.修饰符
             //02_03_protected访问修饰符,在本类和子类中可以访问
             //02_04_public访问修饰符任何地方都可以访问
             //02_05_类的默认访问修饰符是internal_在当前程序集中可以访问
+            //02_06_protected internal当前程序集或子类中(不同程序集也可以访问)
             this._name = "张三";
             base._name = "李四";
         }
