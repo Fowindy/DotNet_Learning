@@ -18,6 +18,8 @@ namespace Day02_04.索引器
             //person.Name = "张三";
             //02_03_通过索引调用
             Console.WriteLine(person[2]);//ml
+            //02_05_通过索引(内容)调用
+            Console.WriteLine(person["ml"]);//2
             Console.ReadKey();
         }
     }
