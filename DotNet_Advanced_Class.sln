@@ -10,7 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5E2628
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_01.this的一种用法", "src\Day02_01.this的一种用法\Day02_01.this的一种用法.csproj", "{04BF3560-50DC-43FC-9410-EF785206B2B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_02.virtual_abstract_接口的区别和联系", "src\Day02_02.virtual_abstract_接口的区别和联系\Day02_02.virtual_abstract_接口的区别和联系.csproj", "{BDCDD9C6-EFEE-412A-AFBF-47C4F7F2E788}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_02.virtual_abstract_接口的区别和联系", "src\Day02_02.virtual_abstract_接口的区别和联系\Day02_02.virtual_abstract_接口的区别和联系.csproj", "{BDCDD9C6-EFEE-412A-AFBF-47C4F7F2E788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_03.修饰符", "Day02_03.修饰符\Day02_03.修饰符.csproj", "{8FCBDC28-46DD-4169-960B-D59A9EB86766}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{BDCDD9C6-EFEE-412A-AFBF-47C4F7F2E788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDCDD9C6-EFEE-412A-AFBF-47C4F7F2E788}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDCDD9C6-EFEE-412A-AFBF-47C4F7F2E788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCBDC28-46DD-4169-960B-D59A9EB86766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCBDC28-46DD-4169-960B-D59A9EB86766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCBDC28-46DD-4169-960B-D59A9EB86766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCBDC28-46DD-4169-960B-D59A9EB86766}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
