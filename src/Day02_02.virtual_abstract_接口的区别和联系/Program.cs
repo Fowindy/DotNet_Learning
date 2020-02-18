@@ -111,6 +111,8 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
             //09_02_实例化Person对象调用SayHello方法_正常调用父类SayHello方法
             Person person = new Person();
             person.SayHello();//阿尼海塞呦.莎娃迪卡,卡尼七娃..你好
+            //11_03_显式实现接口和实现接口共存的情况下,调用的是实现接口的方法
+            person.Fly();//我是实现接口的飞
             Console.ReadKey();
         }
     }
