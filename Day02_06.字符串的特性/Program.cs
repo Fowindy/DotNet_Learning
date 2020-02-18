@@ -36,6 +36,7 @@ namespace Day02_06.字符串的特性
                 }
             }
             //01_05_string.IsNullOrEmpty方法的用法
+            //01.06.null和""的区别:null在内存没有开空间,""在内存中开空间了;垃圾回收器:null可以被回收
             string str1 = null;
             if (string.IsNullOrEmpty(str1))
             {
