@@ -14,6 +14,14 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
     {
         void Fly();
     }
+    //02.声明一个学生类继承会飞的接口
+    public class Student:IFly
+    {
+        public void Fly()
+        {
+            Console.WriteLine("我们会飞");
+        }
+    }
     public class Program
     {
         static void Main(string[] args)
