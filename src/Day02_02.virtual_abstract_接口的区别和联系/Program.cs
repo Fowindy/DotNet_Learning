@@ -76,7 +76,8 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
     //09_声明一个Teacher类并继承Person类
     public class Teacher:Person
     {
-        public void SayHello()
+        //09_03_父类和子类中有同名方法,会各自调用各自方法;如果有意这样做,子类使用关键字new(关键字new的一种用法)
+        public new void SayHello()
         {
             Console.WriteLine("恭喜发财,红包拿来");
         }
