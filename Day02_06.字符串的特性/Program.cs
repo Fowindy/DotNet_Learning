@@ -49,6 +49,9 @@ namespace Day02_06.字符串的特性
             chs[6] = '坏';
             str2 = new string(chs);
             Console.WriteLine(str2);
+            //01_09_比较两个字符串是否相等(忽略大小写)
+            string str3 = "";
+            str3.Equals(str2);//比较两个字符串是否相等
             Console.ReadKey();
         }
     }
