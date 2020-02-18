@@ -15,4 +15,9 @@ namespace Day02_03.修饰符
         {
         }
     }
+    //01_声明一个Person类并定义字段
+    public class Person
+    {
+        string _name;
+    }
 }
