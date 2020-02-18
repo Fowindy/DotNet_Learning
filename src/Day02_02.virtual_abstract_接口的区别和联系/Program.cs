@@ -45,6 +45,11 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
             Console.WriteLine("我是哮天犬,我会飞");
         }
     }
+    //05_声明一个会游泳的接口
+    public interface ISwim
+    {
+        void Swim();
+    }
     public class Program
     {
         static void Main(string[] args)
