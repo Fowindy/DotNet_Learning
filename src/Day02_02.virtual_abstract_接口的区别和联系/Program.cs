@@ -89,6 +89,9 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
             //09_01_实例化Teacher对象调用SayHello方法_会隐藏父类SayHello方法
             Teacher teacher = new Teacher();
             teacher.SayHello();//恭喜发财,红包拿来
+            //09_02_实例化Person对象调用SayHello方法_正常调用父类SayHello方法
+            Person person = new Person();
+            person.SayHello();//阿尼海塞呦.莎娃迪卡,卡尼七娃..你好
             Console.ReadKey();
         }
     }
