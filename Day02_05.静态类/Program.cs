@@ -16,6 +16,8 @@ namespace Day02_05.静态类
             //01_静态类为什么不能被实例化
             //Console console = new Console();
             //01_01_静态类可以看成是抽象(abstract)的密封(sealed)类,密封类不能被继承
+            //01_02_string是密封类,密封类可以实例化
+            string s = new string("");
         }
     }
 }
