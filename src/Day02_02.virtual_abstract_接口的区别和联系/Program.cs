@@ -82,6 +82,12 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
         //{
         //    Console.WriteLine("恭喜发财,红包拿来");
         //}
+
+        //09_05_重写父类SayHello虚方法_便实现了多态,需要重写的只有两种:虚方法和抽象方法
+        public override void SayHello()
+        {
+            Console.WriteLine("恭喜发财,红包拿来");
+        }
     }
 
     public class Program
