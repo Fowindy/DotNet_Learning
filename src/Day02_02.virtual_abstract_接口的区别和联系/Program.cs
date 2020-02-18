@@ -73,6 +73,14 @@ namespace Day02_02.virtual_abstract_接口的区别和联系
             Console.WriteLine("阿尼海塞呦.莎娃迪卡,卡尼七娃..你好");
         }
     }
+    //09_声明一个Teacher类并继承Person类
+    public class Teacher:Person
+    {
+        public void SayHello()
+        {
+            Console.WriteLine("恭喜发财,红包拿来");
+        }
+    }
 
     public class Program
     {
