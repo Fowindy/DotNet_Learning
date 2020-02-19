@@ -93,7 +93,10 @@ namespace Day02_06.字符串的特性
             int n = str4.IndexOf('帅');//07_01_如果没有找到则返回-1
             Console.WriteLine(n);//6
             Console.WriteLine("--------08_Substring的使用--------");
-
+            string str5 = "文能提笔控萝莉";
+            //08_01_重载一_从下标位置截取后面所有字符
+            str5 = str5.Substring(3);
+            Console.WriteLine(str5);//笔控萝莉
             Console.ReadKey();
         }
     }
