@@ -53,8 +53,13 @@ namespace Day02_06.字符串的特性
             string str3 = "";
             str3.Equals(str2);//比较两个字符串是否相等
             //01_10_比较两个对象是否是同一个对象
-            object.ReferenceEquals();
+            //object.ReferenceEquals();
             Console.ReadKey();
         }
+    }
+    //05_声明Person类并定义属性Name
+    public class Person
+    {
+        public string Name { get; set; }
     }
 }
