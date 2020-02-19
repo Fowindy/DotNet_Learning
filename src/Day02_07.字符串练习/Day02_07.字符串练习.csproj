@@ -10,4 +10,8 @@
     <Compile Include="..\..\Shared\Program.cs" Link="Program.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+
 </Project>
