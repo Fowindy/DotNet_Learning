@@ -21,7 +21,8 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_02
         //07_02_02_封装转换方法
         private static string ReverseByWord(string str)
         {
-            
+            //07_02_02_01_先用空格截取出每一个单词
+            string[] words = str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
         }
     }
 }
