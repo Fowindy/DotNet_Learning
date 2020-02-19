@@ -13,6 +13,11 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_05
     {
         public static void Main()
         {
+            //练习5：123-456---7---89-----123----2把类似的字符串中重复符号”-”去掉，既得到123-456-7-89-123-2
+            string str = "123-456---7---89-----123----2";
+            //07_05_01_先去除分隔符得到字符数组
+            string[] strs = str.Split(new char[] { '-' }, StringSplitOptions.RemoveEmptyEntries);
+
         }
     }
 }
