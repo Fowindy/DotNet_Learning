@@ -20,6 +20,11 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_01
                 Console.Write(str1[i]);//.服衣洗你帮,服征你被样这就
             }
             #endregion
+            #region 07_01_02_第二种方式:声明一个方法进行转换
+            Console.WriteLine("----------------07_01_02_第二种方式:声明一个方法进行转换----------------");
+            string str2 = ReverseString(str2);
+            Console.WriteLine(str2);
+            #endregion
         }
     }
 }
