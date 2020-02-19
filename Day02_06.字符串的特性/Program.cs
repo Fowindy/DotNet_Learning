@@ -131,7 +131,7 @@ namespace Day02_06.字符串的特性
             Console.WriteLine(string.Format("{0}真的是太帅了,{1}真的好猥琐", name1, name2));
             Console.WriteLine("--------13_扩展方法_打印对象_打印的是对象的命名空间--------");
             Person person3 = new Person();
-            Console.WriteLine(person3);//Day02_06.字符串的特性.Person
+            Console.WriteLine(person3);//小杨好帅//Day02_06.字符串的特性.Person
             Console.ReadKey();
         }
     }
@@ -139,5 +139,10 @@ namespace Day02_06.字符串的特性
     public class Person
     {
         public string Name { get; set; }
+        //13_01_重写ToString方法_返回目标字符
+        public override string ToString()
+        {
+            return "小杨好帅";
+        }
     }
 }
