@@ -16,7 +16,7 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_02
             //07_02_01_实现的基本机构
             string str = "I Love You";
             str = ReverseByWord(str);
-            Console.WriteLine(str);
+            Console.WriteLine(str);//I evoL uoY
         }
         //07_02_02_封装转换方法
         private static string ReverseByWord(string str)
@@ -28,17 +28,19 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_02
             {
                 //07_02_02_03_将每一个单词准换成字符数组
                 char[] chs = words[i].ToCharArray();
+                char temp;
                 //07_02_02_04_对每个单词转换成字符串数组后进行反转
                 for (int j = 0; j < chs.Length/2; j++)
                 {
-                    char temp;
-                    temp = chs[i];
-                    chs[i] = chs[chs.Length - 1 - i];
-                    chs[chs.Length - 1 - i] = temp;
+                    temp = chs[j];
+                    chs[j] = chs[chs.Length - 1 - j];
+                    chs[chs.Length - 1 - j] = temp;
                 }
                 //07_02_02_05_重新赋值给当前单词
                 words[i] = new string(chs);
             }
+            //07_02_02_06_将所有反转后的单词组合成字符串
+            return string.Join(" ", words);
         }
     }
 }
