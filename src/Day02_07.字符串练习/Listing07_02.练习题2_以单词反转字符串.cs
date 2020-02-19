@@ -13,6 +13,10 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_02
     {
         public static void Main()
         {
+            //07_02_01_实现的基本机构
+            string str = "I Love You";
+            str = ReverseByWord(str);
+            Console.WriteLine(str);
         }
     }
 }
