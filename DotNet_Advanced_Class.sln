@@ -12,13 +12,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_01.this的一种用�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_02.virtual_abstract_接口的区别和联系", "src\Day02_02.virtual_abstract_接口的区别和联系\Day02_02.virtual_abstract_接口的区别和联系.csproj", "{BDCDD9C6-EFEE-412A-AFBF-47C4F7F2E788}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_03.修饰符", "Day02_03.修饰符\Day02_03.修饰符.csproj", "{8FCBDC28-46DD-4169-960B-D59A9EB86766}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_03.修饰符", "Day02_03.修饰符\Day02_03.修饰符.csproj", "{8FCBDC28-46DD-4169-960B-D59A9EB86766}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_04.索引器", "Day02_04.索引器\Day02_04.索引器.csproj", "{5AA8741B-B57C-43DF-AA1C-AFC860EC02D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_04.索引器", "Day02_04.索引器\Day02_04.索引器.csproj", "{5AA8741B-B57C-43DF-AA1C-AFC860EC02D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_05.静态类", "Day02_05.静态类\Day02_05.静态类.csproj", "{2A191534-74A6-4679-B587-5963058D8F2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_05.静态类", "Day02_05.静态类\Day02_05.静态类.csproj", "{2A191534-74A6-4679-B587-5963058D8F2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_06.字符串的特性", "Day02_06.字符串的特性\Day02_06.字符串的特性.csproj", "{27F5288D-FF43-4D1C-A1D5-93C3F8C74C6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_06.字符串的特性", "Day02_06.字符串的特性\Day02_06.字符串的特性.csproj", "{27F5288D-FF43-4D1C-A1D5-93C3F8C74C6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_07.字符串练习", "Day02_07.字符串练习\Day02_07.字符串练习.csproj", "{E8CBA37E-A0EF-4B18-8FE9-7DB797AE1354}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{27F5288D-FF43-4D1C-A1D5-93C3F8C74C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F5288D-FF43-4D1C-A1D5-93C3F8C74C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27F5288D-FF43-4D1C-A1D5-93C3F8C74C6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CBA37E-A0EF-4B18-8FE9-7DB797AE1354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CBA37E-A0EF-4B18-8FE9-7DB797AE1354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CBA37E-A0EF-4B18-8FE9-7DB797AE1354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CBA37E-A0EF-4B18-8FE9-7DB797AE1354}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
