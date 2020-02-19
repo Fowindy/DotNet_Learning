@@ -35,7 +35,8 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_08
                 sum += salary;
             }
             average = sum / lines.Length;
-            Console.WriteLine("员工最高工资为:{0},最低工资为:{1},平均工资为:{2}", max, min, average);
+            //07_08_03_保留两位有效数字
+            Console.WriteLine("员工最高工资为:{0},最低工资为:{1},平均工资为:{2:0.00}", max, min, average);
         }
     }
 }
