@@ -28,7 +28,14 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_02
             {
                 //07_02_02_03_将每一个单词准换成字符数组
                 char[] chs = words[i].ToCharArray();
-
+                //07_02_02_04_对每个单词转换成字符串数组后进行反转
+                for (int j = 0; j < chs.Length/2; j++)
+                {
+                    char temp;
+                    temp = chs[i];
+                    chs[i] = chs[chs.Length - 1 - i];
+                    chs[chs.Length - 1 - i] = temp;
+                }
             }
         }
     }
