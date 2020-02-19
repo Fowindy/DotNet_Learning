@@ -101,9 +101,11 @@ namespace Day02_06.字符串的特性
             str5 = str5.Substring(1, 2);
             Console.WriteLine(str5);//控萝
             Console.WriteLine("--------09_Split的使用--------");
-            string str6 = "yzk|ml|sk|wcw|zjy|jk";
+            string str6 = "yzk|ml|||sk|wcw||zjy||jk";
             //09_01_以分隔符分隔字符串
-            string[] str6s = str6.Split(new char[] { '|' });
+            //string[] str6s = str6.Split(new char[] { '|' });
+            //09_02_Bug1_当出现连续分隔符时会出现空白分隔内容_使用RemoveEmptyEntries移除空格
+            string[] str6s = str6.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < str6s.Length; i++)
             {
                 Console.WriteLine(str6s[i]);
