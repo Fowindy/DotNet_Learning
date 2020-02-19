@@ -18,5 +18,10 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_02
             str = ReverseByWord(str);
             Console.WriteLine(str);
         }
+        //07_02_02_封装转换方法
+        private static string ReverseByWord(string str)
+        {
+            
+        }
     }
 }
