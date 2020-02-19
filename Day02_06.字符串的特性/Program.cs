@@ -125,6 +125,10 @@ namespace Day02_06.字符串的特性
             string str10 = "习大大好帅";
             str10 = str10.Replace("习大大", "***");//***好帅
             Console.WriteLine(str10);
+            Console.WriteLine("--------12_格式化字符串Format的使用--------");
+            string name1 = "老马";
+            string name2 = "种哥";
+            Console.WriteLine(string.Format("{0}真的是太帅了,{1}真的好猥琐", name1, name2)); 
             Console.ReadKey();
         }
     }
