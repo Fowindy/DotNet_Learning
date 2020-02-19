@@ -61,6 +61,15 @@ namespace Day02_06.字符串的特性
             person2.Name = "张三";
             //05_02_比较两个对象是否相等_False
             Console.WriteLine("person1和person2是否是同一个对象?{0}",person1.Equals(person2));
+            //05_03_比较两个对象是否相等方法二_person1和person2不是同一个对象
+            if (object.ReferenceEquals(person1,person2))
+            {
+                Console.WriteLine("person1和person2是同一个对象");
+            }
+            else
+            {
+                Console.WriteLine("person1和person2不是同一个对象");
+            }
             Console.ReadKey();
         }
     }
