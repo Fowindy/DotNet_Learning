@@ -92,6 +92,8 @@ namespace Day02_06.字符串的特性
             string str4 = "哈哈,我又变帅了帅";//07_02_如果有多个则返回第一个的下标
             int n = str4.IndexOf('帅');//07_01_如果没有找到则返回-1
             Console.WriteLine(n);//6
+            Console.WriteLine("--------08_Substring的使用--------");
+
             Console.ReadKey();
         }
     }
