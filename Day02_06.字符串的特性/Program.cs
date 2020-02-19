@@ -71,8 +71,10 @@ namespace Day02_06.字符串的特性
                 Console.WriteLine("person1和person2不是同一个对象");
             }
             Console.WriteLine("--------06_将对象变成字符变量--------");
+            //06_03_变形1_将字符串分成两个字符串_是同一个对象
+            string s3 = "张" + "三";
             string s1 = "张三";
-            string s2 = "张三";
+            string s2 = s3;
             //06_01_比较两个字符串变量是否相等方法一_True
             Console.WriteLine(s1.Equals(s2));//True
             //06_02_比较两个字符串变量是否相等方法二_True
