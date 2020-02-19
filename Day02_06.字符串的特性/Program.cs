@@ -100,6 +100,8 @@ namespace Day02_06.字符串的特性
             //08_02_重载二_从下标位置向后截取相应长度字符
             str5 = str5.Substring(1, 2);
             Console.WriteLine(str5);//控萝
+            Console.WriteLine("--------09_Split的使用--------");
+            string str6 = "yzk|ml|sk|wcw|zjy|jk";
             Console.ReadKey();
         }
     }
