@@ -70,6 +70,9 @@ namespace Day02_06.字符串的特性
             {
                 Console.WriteLine("person1和person2不是同一个对象");
             }
+            Console.WriteLine("--------06_将对象变成字符变量--------");
+            string s1 = "张三";
+            string s2 = "张三";
             Console.ReadKey();
         }
     }
