@@ -17,6 +17,8 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_03
             string str = "2012年12月21日";
             //07_03_01_先将字符串用年月日隔开
             string[] strs = str.Split(new char[] { '年', '月', '日' }, StringSplitOptions.RemoveEmptyEntries);
+            //07_03_02_打印到控制台
+            Console.WriteLine("年:{0},月:{1},日:{2}",strs[0],strs[1],strs[2]);
         }
     }
 }
