@@ -128,7 +128,10 @@ namespace Day02_06.字符串的特性
             Console.WriteLine("--------12_格式化字符串Format的使用--------");
             string name1 = "老马";
             string name2 = "种哥";
-            Console.WriteLine(string.Format("{0}真的是太帅了,{1}真的好猥琐", name1, name2)); 
+            Console.WriteLine(string.Format("{0}真的是太帅了,{1}真的好猥琐", name1, name2));
+            Console.WriteLine("--------13_扩展方法_打印对象_打印的是对象的命名空间--------");
+            Person person3 = new Person();
+            Console.WriteLine(person3);//Day02_06.字符串的特性.Person
             Console.ReadKey();
         }
     }
