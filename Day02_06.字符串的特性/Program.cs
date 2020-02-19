@@ -118,7 +118,13 @@ namespace Day02_06.字符串的特性
             Console.WriteLine(str8);
             Console.WriteLine("--------11_Replace的使用--------");
             string str9 = "小杨好猥琐";
-
+            //11_01_Replace可以替换字符串中的部分字符
+            str9 = str9.Replace("小杨", "小刘");//小刘好猥琐
+            Console.WriteLine(str9);
+            //11_02_Replace的应用_敏感字符的星号替换
+            string str10 = "习大大好帅";
+            str10 = str10.Replace("习大大", "***");//***好帅
+            Console.WriteLine(str10);
             Console.ReadKey();
         }
     }
