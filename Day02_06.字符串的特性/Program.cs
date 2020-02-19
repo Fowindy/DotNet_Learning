@@ -59,6 +59,8 @@ namespace Day02_06.字符串的特性
             person1.Name = "张三";
             Person person2 = new Person();
             person2.Name = "张三";
+            //05_02_比较两个对象是否相等_False
+            Console.WriteLine("person1和person2是否是同一个对象?{0}",person1.Equals(person2));
             Console.ReadKey();
         }
     }
