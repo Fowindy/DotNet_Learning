@@ -41,7 +41,8 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_01
                 chs[i] = chs[chs.Length - 1 - i];
                 chs[chs.Length - 1 - i] = temp;
             }
-
+            //07_01_03_04_返回反转后字符数组并转换成字符串
+            return new string(chs);
         }
     }
 }
