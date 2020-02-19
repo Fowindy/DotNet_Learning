@@ -26,6 +26,9 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_02
             //07_02_02_02_遍历每一个单词
             for (int i = 0; i < words.Length; i++)
             {
+                //07_02_02_03_将每一个单词准换成字符数组
+                char[] chs = words[i].ToCharArray();
+
             }
         }
     }
