@@ -24,6 +24,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_07.字符串练习", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_08.大量字符串拼接", "Day02_08.大量字符串拼接\Day02_08.大量字符串拼接.csproj", "{9611DB5B-6C4C-4FBC-ABDA-127003865FE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_09.判断用户输入的是否是邮箱", "Day02_09.判断用户输入的是否是邮箱\Day02_09.判断用户输入的是否是邮箱.csproj", "{4C238FBD-35FB-48BD-B4BA-296C1B885761}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{9611DB5B-6C4C-4FBC-ABDA-127003865FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9611DB5B-6C4C-4FBC-ABDA-127003865FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9611DB5B-6C4C-4FBC-ABDA-127003865FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C238FBD-35FB-48BD-B4BA-296C1B885761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C238FBD-35FB-48BD-B4BA-296C1B885761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C238FBD-35FB-48BD-B4BA-296C1B885761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C238FBD-35FB-48BD-B4BA-296C1B885761}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
