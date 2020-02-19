@@ -23,6 +23,10 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_02
         {
             //07_02_02_01_先用空格截取出每一个单词
             string[] words = str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            //07_02_02_02_遍历每一个单词
+            for (int i = 0; i < words.Length; i++)
+            {
+            }
         }
     }
 }
