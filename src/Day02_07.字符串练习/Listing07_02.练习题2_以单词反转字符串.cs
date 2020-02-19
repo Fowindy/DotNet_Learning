@@ -36,6 +36,8 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_02
                     chs[i] = chs[chs.Length - 1 - i];
                     chs[chs.Length - 1 - i] = temp;
                 }
+                //07_02_02_05_重新赋值给当前单词
+                words[i] = new string(chs);
             }
         }
     }
