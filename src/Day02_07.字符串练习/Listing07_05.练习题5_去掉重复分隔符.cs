@@ -17,7 +17,8 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_05
             string str = "123-456---7---89-----123----2";
             //07_05_01_先去除分隔符得到字符数组
             string[] strs = str.Split(new char[] { '-' }, StringSplitOptions.RemoveEmptyEntries);
-
+            //07_05_02_再在字符数组中加入一个分隔符连接并输出
+            Console.WriteLine(string.Join('-', strs)); //123-456-7-89-123-2
         }
     }
 }
