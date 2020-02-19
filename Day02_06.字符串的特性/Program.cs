@@ -97,6 +97,9 @@ namespace Day02_06.字符串的特性
             //08_01_重载一_从下标位置截取后面所有字符
             str5 = str5.Substring(3);
             Console.WriteLine(str5);//笔控萝莉
+            //08_02_重载二_从下标位置向后截取相应长度字符
+            str5 = str5.Substring(1, 2);
+            Console.WriteLine(str5);//控萝
             Console.ReadKey();
         }
     }
