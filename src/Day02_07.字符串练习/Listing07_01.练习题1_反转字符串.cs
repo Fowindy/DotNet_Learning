@@ -34,6 +34,13 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_01
             char[] chs = str2.ToCharArray();
             ///07_01_03_02_定义一个字符临时变量
             char temp;
+            //07_01_03_03_遍历字符进行交换
+            for (int i = 0; i < chs.Length / 2; i++)
+            {
+                temp = chs[i];
+                chs[i] = chs[chs.Length - 1 - i];
+                chs[chs.Length - 1 - i] = temp;
+            }
 
         }
     }
