@@ -22,7 +22,8 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_01
             #endregion
             #region 07_01_02_第二种方式:声明一个方法进行转换
             Console.WriteLine("----------------07_01_02_第二种方式:声明一个方法进行转换----------------");
-            string str2 = ReverseString(str2);
+            string str2 = "上海自来水来自海上帅";
+            str2 = ReverseString(str2);
             Console.WriteLine(str2);
             #endregion
         }
@@ -31,6 +32,9 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_01
         {
             //07_01_03_01_首先将字符串转换成字符数组
             char[] chs = str2.ToCharArray();
+            ///07_01_03_02_定义一个字符临时变量
+            char temp;
+
         }
     }
 }
