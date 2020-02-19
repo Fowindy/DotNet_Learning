@@ -13,6 +13,13 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_01
     {
         public static void Main()
         {
+            #region 07_01_01_第一种方式:直接反向输出不能重复调用
+            string str1 = "就这样被你征服,帮你洗衣服.";
+            for (int i = str1.Length - 1; i >= 0; i--)
+            {
+                Console.Write(str1[i]);//.服衣洗你帮,服征你被样这就
+            }
+            #endregion
         }
     }
 }
