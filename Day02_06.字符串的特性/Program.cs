@@ -111,6 +111,9 @@ namespace Day02_06.字符串的特性
             {
                 Console.WriteLine(str6s[i]);
             }
+            Console.WriteLine("--------10_Join的使用--------");
+            string[] str7 = { "卡卡西", "黑崎一护", "苍老师", "凤姐" };
+
             Console.ReadKey();
         }
     }
