@@ -113,7 +113,9 @@ namespace Day02_06.字符串的特性
             }
             Console.WriteLine("--------10_Join的使用--------");
             string[] str7 = { "卡卡西", "黑崎一护", "苍老师", "凤姐" };
-
+            //10_01_Join在字符数组中间加入字符连接整个字符串
+            string str8 = string.Join("★", str7);//卡卡西★黑崎一护★苍老师★凤姐
+            Console.WriteLine(str8);
             Console.ReadKey();
         }
     }
