@@ -52,6 +52,8 @@ namespace Day02_06.字符串的特性
             //01_09_比较两个字符串是否相等(忽略大小写)
             string str3 = "";
             str3.Equals(str2);//比较两个字符串是否相等
+            //01_10_比较两个对象是否是同一个对象
+            object.ReferenceEquals();
             Console.ReadKey();
         }
     }
