@@ -29,6 +29,8 @@ namespace Fowindy.Day02_07.字符串练习.Listing07_01
         //07_01_03_反转字符串的方法
         private static string ReverseString(string str2)
         {
+            //07_01_03_01_首先将字符串转换成字符数组
+            char[] chs = str2.ToCharArray();
         }
     }
 }
