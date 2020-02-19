@@ -54,6 +54,11 @@ namespace Day02_06.字符串的特性
             str3.Equals(str2);//比较两个字符串是否相等
             //01_10_比较两个对象是否是同一个对象
             //object.ReferenceEquals();
+            //05_01_实例化person1和person2两个对象并对Name赋同值
+            Person person1 = new Person();
+            person1.Name = "张三";
+            Person person2 = new Person();
+            person2.Name = "张三";
             Console.ReadKey();
         }
     }
