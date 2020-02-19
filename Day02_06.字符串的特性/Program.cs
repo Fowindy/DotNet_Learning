@@ -88,6 +88,10 @@ namespace Day02_06.字符串的特性
             {
                 Console.WriteLine("False");
             }
+            Console.WriteLine("--------07_IndexoOf的使用--------");
+            string str4 = "哈哈,我又变帅了";
+            int n = str4.IndexOf('帅');
+            Console.WriteLine(n);//6
             Console.ReadKey();
         }
     }
