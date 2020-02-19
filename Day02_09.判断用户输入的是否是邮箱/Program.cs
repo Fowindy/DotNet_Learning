@@ -13,6 +13,10 @@ namespace Day02_09.判断用户输入的是否是邮箱
     {
         static void Main(string[] args)
         {
+            //练习1:判断用户输入的是否是邮箱
+            //01_人机交互_请用户输入邮箱
+            Console.Write("请您输入您的邮箱:");
+            string email = Console.ReadLine();
         }
     }
 }
