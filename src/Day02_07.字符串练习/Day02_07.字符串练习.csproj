@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="相关资料\" />
+    <Compile Include="..\..\Shared\Program.cs" Link="Program.cs" />
   </ItemGroup>
 
 </Project>
