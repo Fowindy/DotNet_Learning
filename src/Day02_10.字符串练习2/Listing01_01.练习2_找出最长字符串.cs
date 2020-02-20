@@ -18,7 +18,16 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_01
             //01_01_01_定义长度length和序标index变量
             int length = strs[0].Length;
             int index = 0;
-
+            //01_01_02_循环判断字符数组中每个字符串的长度
+            for (int i = 0; i < strs.Length; i++)
+            {
+                if (strs[i].Length > length)
+                {
+                    length = strs[i].Length;
+                    index = i;
+                }
+            }
+            Console.WriteLine(strs[index]);
         }
     }
 }
