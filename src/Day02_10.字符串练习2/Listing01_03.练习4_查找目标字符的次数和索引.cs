@@ -18,7 +18,11 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_03
             string keyWord = "小杨";
             int index = 0;
             int count = 0;
+            //01_03_02_循环遍历的条件_查找不到indexof返回-1
+            while ((index = str.IndexOf(keyWord, index)) != -1)
+            {
 
+            }
         }
     }
 }
