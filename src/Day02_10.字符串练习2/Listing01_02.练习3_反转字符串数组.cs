@@ -17,6 +17,13 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_02
             //01_01_01_方法一_遍历转换
             string[] states = { "中国", "美国", "巴西", "澳大利亚", "加拿大" };
             string temp = null;
+            //01_01_01_01_遍历反转字符数组
+            for (int i = 0; i < states.Length / 2; i++)
+            {
+                temp = states[i];
+                states[i] = states[states.Length - 1 - i];
+                states[states.Length - 1 - i] = temp;
+            }
 
         }
     }
