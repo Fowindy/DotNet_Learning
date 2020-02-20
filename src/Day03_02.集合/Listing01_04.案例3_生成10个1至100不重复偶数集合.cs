@@ -17,7 +17,8 @@ namespace Fowindy.Day03_02.集合.Listing01_04
             //01_循环终止条件_生成10个数
             while (list.Count < 10)
             {
-
+                //02_调用Random函数生成1-100之间的整数
+                int num = new Random().Next(1, 101);
             }
         }
     }
