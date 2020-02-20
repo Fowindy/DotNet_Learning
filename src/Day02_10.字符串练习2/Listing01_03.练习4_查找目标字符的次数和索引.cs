@@ -25,7 +25,8 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_03
                 count++;
                 //01_03_04打印
                 Console.WriteLine("{0}第{1}次出现,当前索引位置为{2}", keyWord, count, index);
-
+                //01_03_05下一次开始的序标需要加上目标字段的长度
+                index += keyWord.Length;
             }
         }
     }
