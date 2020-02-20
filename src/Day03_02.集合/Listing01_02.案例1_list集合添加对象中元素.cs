@@ -15,4 +15,32 @@ namespace Fowindy.Day03_02.集合.Listing01_02
         {
         }
     }
+    //01_02_01_声明一个Person类并定义相关属性
+    public class Person
+    {
+        private string _name;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        private int _age;
+
+        public int Age
+        {
+            get { return _age; }
+            set { _age = value; }
+        }
+        private char _gender;
+
+        public char Gender
+        {
+            get { return _gender; }
+            set { _gender = value; }
+        }
+
+    }
+
 }
