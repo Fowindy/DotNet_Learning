@@ -28,6 +28,20 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_01
                 }
             }
             Console.WriteLine(strs[index]);
+            //01_01_03_第二种方法_封装方法实现
+            string longName = GetMaxLengthNameByStringArray(strs);
+        }
+        private static string GetMaxLengthNameByStringArray(string[] strs)
+        {
+            string str = strs[0];
+            for (int i = 0; i < strs.Length; i++)
+            {
+                if (strs[i].Length > str.Length)
+                {
+                    str = strs[i];
+                }
+            }
+            return str;
         }
     }
 }
