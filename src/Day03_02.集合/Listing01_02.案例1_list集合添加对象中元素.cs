@@ -21,7 +21,7 @@ namespace Fowindy.Day03_02.集合.Listing01_02
             //01_02_03_打印信息_打印对象默认打印的是对象的命名空间
             for (int i = 0; i < people.Count; i++)
             {
-                Console.WriteLine(people[i]);//Fowindy.Day03_02.集合.Listing01_02.Person
+                Console.WriteLine(people[i]);//姓名:张三,年龄:18,性别:男//Fowindy.Day03_02.集合.Listing01_02.Person
             }
         }
     }
@@ -50,7 +50,11 @@ namespace Fowindy.Day03_02.集合.Listing01_02
             get { return _gender; }
             set { _gender = value; }
         }
-
+        //01_02_04_通过在类中重写ToString方法来实现打印目标信息
+        public override string ToString()
+        {
+            return "姓名:" + Name + "," + "年龄:" + Age + "," + "性别:" + Gender; 
+        }
     }
 
 }
