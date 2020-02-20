@@ -24,7 +24,11 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_02
                 states[i] = states[states.Length - 1 - i];
                 states[states.Length - 1 - i] = temp;
             }
-
+            //01_01_01_02_遍历输出反转后的字符数组
+            for (int i = 0; i < states.Length; i++)
+            {
+                Console.WriteLine(states[i]);
+            }
         }
     }
 }
