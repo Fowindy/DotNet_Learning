@@ -26,7 +26,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_08.大量字符串拼
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_09.判断用户输入的是否是邮箱", "src\Day02_09.判断用户输入的是否是邮箱\Day02_09.判断用户输入的是否是邮箱.csproj", "{D8AB3306-940C-4641-8E5E-643CD886B5E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_10.字符串练习2", "src\Day02_10.字符串练习2\Day02_10.字符串练习2.csproj", "{3F2653A3-8749-4246-B00F-BE29789DDCB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_10.字符串练习2", "src\Day02_10.字符串练习2\Day02_10.字符串练习2.csproj", "{3F2653A3-8749-4246-B00F-BE29789DDCB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_11.ref和out的使用", "src\Day02_11.ref和out的使用\Day02_11.ref和out的使用.csproj", "{DD0592DA-CEB9-4995-8704-F56FA77EF986}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +76,10 @@ Global
 		{3F2653A3-8749-4246-B00F-BE29789DDCB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F2653A3-8749-4246-B00F-BE29789DDCB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F2653A3-8749-4246-B00F-BE29789DDCB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0592DA-CEB9-4995-8704-F56FA77EF986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0592DA-CEB9-4995-8704-F56FA77EF986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0592DA-CEB9-4995-8704-F56FA77EF986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0592DA-CEB9-4995-8704-F56FA77EF986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
