@@ -32,6 +32,8 @@ namespace Fowindy.Day03_02.集合.Listing01_01
             {
                 listAge.Add(i);
             }
+            //09_listAge.Clear()清除集合所有元素
+            listAge.Clear();
             //08_往list集合中添加整型数组
             int[] nums = { 10, 20, 30 };
             listAge.AddRange(nums);
