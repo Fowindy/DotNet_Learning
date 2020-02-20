@@ -20,6 +20,7 @@ namespace Fowindy.Day03_02.集合.Listing01_01
             //03_Hashtable以键值对的方式存值,因为存值是object,取出时必须进行转换
             Hashtable ht = new Hashtable();
             ht.Add("王岳", 17786508658);
+            //04_ArrayList和Hashtable属于非泛型集合_用得比较少
         }
     }
 }
