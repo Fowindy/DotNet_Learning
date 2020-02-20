@@ -23,6 +23,8 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_03
             {
                 //01_03_03_次数加1
                 count++;
+                //01_03_04打印
+                Console.WriteLine("{0}第{1}次出现,当前索引位置为{2}", keyWord, count, index);
 
             }
         }
