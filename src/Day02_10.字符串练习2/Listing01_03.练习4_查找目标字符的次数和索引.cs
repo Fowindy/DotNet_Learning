@@ -21,6 +21,8 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_03
             //01_03_02_循环遍历的条件_查找不到indexof返回-1
             while ((index = str.IndexOf(keyWord, index)) != -1)
             {
+                //01_03_03_次数加1
+                count++;
 
             }
         }
