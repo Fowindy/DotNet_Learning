@@ -14,5 +14,10 @@ namespace Day02_11.ref和out的使用
         static void Main(string[] args)
         {
         }
+        //01_声明一个Add方法
+        public static void Add(int n1)
+        {
+            n1 = 100;
+        }
     }
 }
