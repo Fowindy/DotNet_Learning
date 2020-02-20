@@ -8,7 +8,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5E2628
 		Shared\Program.cs = Shared\Program.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_01.面向对象复习知识点", "Day03_01.面向对象复习知识点\Day03_01.面向对象复习知识点.csproj", "{7D03EBB5-63F2-49CE-B26E-2B3E8A186277}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_01.面向对象复习知识点", "src\Day03_01.面向对象复习知识点\Day03_01.面向对象复习知识点.csproj", "{B9C88F12-CA6E-424E-BA2B-50FB452360AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_02.集合", "src\Day03_02.集合\Day03_02.集合.csproj", "{2A63B7C0-46DB-48DF-B3BA-4605D426643C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +18,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D03EBB5-63F2-49CE-B26E-2B3E8A186277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D03EBB5-63F2-49CE-B26E-2B3E8A186277}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D03EBB5-63F2-49CE-B26E-2B3E8A186277}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D03EBB5-63F2-49CE-B26E-2B3E8A186277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9C88F12-CA6E-424E-BA2B-50FB452360AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9C88F12-CA6E-424E-BA2B-50FB452360AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9C88F12-CA6E-424E-BA2B-50FB452360AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9C88F12-CA6E-424E-BA2B-50FB452360AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A63B7C0-46DB-48DF-B3BA-4605D426643C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A63B7C0-46DB-48DF-B3BA-4605D426643C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A63B7C0-46DB-48DF-B3BA-4605D426643C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A63B7C0-46DB-48DF-B3BA-4605D426643C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
