@@ -29,6 +29,23 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_02
             {
                 Console.WriteLine(states[i]);
             }
+            Console.WriteLine("----------------01_01_02_方法二_封装方法实现-----------------");
+            states = GetReverseStringArray(states);
+            for (int i = 0; i < states.Length; i++)
+            {
+                Console.WriteLine(states[i]);
+            }
+        }
+        private static string[] GetReverseStringArray(string[] states)
+        {
+            string temp;
+            for (int i = 0; i < states.Length/2; i++)
+            {
+                temp = states[i];
+                states[i] = states[states.Length - 1 - i];
+                states[states.Length - 1 - i] = temp;
+            }
+            return states;
         }
     }
 }
