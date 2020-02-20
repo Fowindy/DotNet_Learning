@@ -24,6 +24,18 @@ namespace Fowindy.Day03_02.集合.Listing01_01
             //04_ArrayList和Hashtable属于非泛型集合_用得比较少
             //05_集合规律_一般情况添加元素的时候都会使用add方法 
             #endregion
+
+            #region 泛型集合
+            List<int> listAge = new List<int>();
+            //06_遍历往List集合中添加元素
+            for (int i = 0; i < 10; i++)
+            {
+                listAge.Add(i);
+            }
+            //listAge.Add(2);
+            //List<string> list = new List<string>();
+            //list.Add("ABC");
+            #endregion
         }
     }
 }
