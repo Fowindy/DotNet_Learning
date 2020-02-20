@@ -19,6 +19,11 @@ namespace Fowindy.Day03_02.集合.Listing01_04
             {
                 //02_调用Random函数生成1-100之间的整数
                 int num = new Random().Next(1, 101);
+                //03_判断添加条件_list中不存在_以及偶数
+                if (!list.Contains(num) && num % 2 == 0)
+                {
+                    list.Add(num);
+                }
             }
         }
     }
