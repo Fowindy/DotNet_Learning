@@ -23,10 +23,12 @@ namespace Day02_11.ref和out的使用
             Console.WriteLine(num);//10000//100//1000
             Console.ReadKey();  
         }
+        //07_out和ref可以让一个方法有多个返回值
         //05_声明一个Add方法_带out参数_不能构成重载_因为ref和out作用相似
-        public static void Add(out int num1)
+        public static int Add(out int num1)
         {
             num1 = 10000;
+            return 1;
         }
         //01_声明一个Add方法
         //public static void Add(ref int n1)
