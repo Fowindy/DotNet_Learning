@@ -32,7 +32,9 @@ namespace Fowindy.Day03_02.集合.Listing01_01
             {
                 listAge.Add(i);
             }
-
+            //08_往list集合中添加整型数组
+            int[] nums = { 10, 20, 30 };
+            listAge.AddRange(nums);
             //07_循环遍历从list集合中取出元素
             for (int i = 0; i < listAge.Count; i++)
             {
