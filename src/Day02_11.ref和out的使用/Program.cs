@@ -13,7 +13,7 @@ namespace Day02_11.ref和out的使用
     {
         static void Main(string[] args)
         {
-            //传进ref之前必须进行变量初始化
+            //04_传进ref之前必须进行变量初始化_ref可进可出_可以往通过ref将值传进方法也可以通过ref带出来
             int num = 1000;
             //02_此时调用Add方法_但因为方法作用域的原因_对Main方法并没有影响
             //03_Add方法加入ref参数后_对Main函数有影响_ref可进可出_ref传进的是变量的值在栈空间对应的地址
