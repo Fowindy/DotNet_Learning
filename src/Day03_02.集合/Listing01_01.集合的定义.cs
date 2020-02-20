@@ -32,6 +32,15 @@ namespace Fowindy.Day03_02.集合.Listing01_01
             {
                 listAge.Add(i);
             }
+
+            //07_循环遍历从list集合中取出元素
+            for (int i = 0; i < listAge.Count; i++)
+            {
+                Console.WriteLine(listAge[i]);
+            }
+            //listAge.Add(2);
+            //List<string> list = new List<string>();
+            //list.Add("ABC");
             //listAge.Add(2);
             //List<string> list = new List<string>();
             //list.Add("ABC");
