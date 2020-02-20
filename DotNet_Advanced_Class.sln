@@ -22,9 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_06.字符串的特性
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_07.字符串练习", "src\Day02_07.字符串练习\Day02_07.字符串练习.csproj", "{762F88A5-F6F3-47A4-9BC5-70EEFC7486C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_08.大量字符串拼接", "Day02_08.大量字符串拼接\Day02_08.大量字符串拼接.csproj", "{9611DB5B-6C4C-4FBC-ABDA-127003865FE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_08.大量字符串拼接", "src\Day02_08.大量字符串拼接\Day02_08.大量字符串拼接.csproj", "{25F7A8D3-A304-4D77-B83F-FD16D510A5CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02_09.判断用户输入的是否是邮箱", "Day02_09.判断用户输入的是否是邮箱\Day02_09.判断用户输入的是否是邮箱.csproj", "{4C238FBD-35FB-48BD-B4BA-296C1B885761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02_09.判断用户输入的是否是邮箱", "src\Day02_09.判断用户输入的是否是邮箱\Day02_09.判断用户输入的是否是邮箱.csproj", "{D8AB3306-940C-4641-8E5E-643CD886B5E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,14 +60,14 @@ Global
 		{762F88A5-F6F3-47A4-9BC5-70EEFC7486C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{762F88A5-F6F3-47A4-9BC5-70EEFC7486C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{762F88A5-F6F3-47A4-9BC5-70EEFC7486C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9611DB5B-6C4C-4FBC-ABDA-127003865FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9611DB5B-6C4C-4FBC-ABDA-127003865FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9611DB5B-6C4C-4FBC-ABDA-127003865FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9611DB5B-6C4C-4FBC-ABDA-127003865FE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C238FBD-35FB-48BD-B4BA-296C1B885761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C238FBD-35FB-48BD-B4BA-296C1B885761}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C238FBD-35FB-48BD-B4BA-296C1B885761}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C238FBD-35FB-48BD-B4BA-296C1B885761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F7A8D3-A304-4D77-B83F-FD16D510A5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F7A8D3-A304-4D77-B83F-FD16D510A5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F7A8D3-A304-4D77-B83F-FD16D510A5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F7A8D3-A304-4D77-B83F-FD16D510A5CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8AB3306-940C-4641-8E5E-643CD886B5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8AB3306-940C-4641-8E5E-643CD886B5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8AB3306-940C-4641-8E5E-643CD886B5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8AB3306-940C-4641-8E5E-643CD886B5E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
