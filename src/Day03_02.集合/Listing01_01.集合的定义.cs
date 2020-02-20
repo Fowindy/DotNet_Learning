@@ -36,6 +36,8 @@ namespace Fowindy.Day03_02.集合.Listing01_01
             listAge.Clear();
             //10_listAge.Contains(30)集合中是否包含30这个元素
             listAge.Contains(30);
+            //11_listAge.Insert(2,100)往集合索引为2的位置插入100
+            listAge.Insert(20,100);
             //08_往list集合中添加整型数组
             int[] nums = { 10, 20, 30 };
             listAge.AddRange(nums);
