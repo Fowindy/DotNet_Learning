@@ -25,7 +25,11 @@ namespace Fowindy.Day03_02.集合.Listing01_03
                     list1.Add(list2[i]);
                 }
             }
-
+            //02_遍历打印合并后的集合
+            for (int i = 0; i < list1.Count; i++)
+            {
+                Console.WriteLine(list1[i]);
+            }
         }
     }
 }
