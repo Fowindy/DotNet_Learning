@@ -18,6 +18,11 @@ namespace Fowindy.Day03_02.集合.Listing01_02
             people.Add(new Person() { Name = "张三", Age = 18, Gender = '男' });
             people.Add(new Person() { Name = "李四", Age = 38, Gender = '女' });
             people.Add(new Person() { Name = "王五", Age = 28, Gender = '男' });
+            //01_02_03_打印信息_打印对象默认打印的是对象的命名空间
+            for (int i = 0; i < people.Count; i++)
+            {
+                Console.WriteLine(people[i]);//Fowindy.Day03_02.集合.Listing01_02.Person
+            }
         }
     }
     //01_02_01_声明一个Person类并定义相关属性
