@@ -13,7 +13,12 @@ namespace Fowindy.Day03_02.集合.Listing01_04
     {
         public static void Main()
         {
+            List<int> list = new List<int>();
+            //01_循环终止条件_生成10个数
+            while (list.Count < 10)
+            {
 
+            }
         }
     }
 }
