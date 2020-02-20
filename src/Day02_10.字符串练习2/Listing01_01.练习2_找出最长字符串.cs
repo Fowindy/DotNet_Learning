@@ -13,6 +13,12 @@ namespace Fowindy.Day02_10.字符串练习2.Listing01_01
     {
         public static void Main()
         {
+            //练习2. { "马龙", "迈克尔乔丹", "雷吉米勒", "蒂姆邓肯", "科比布莱恩特" },请输出最长的字符串
+            string[] strs = { "马龙", "迈克尔乔丹", "雷吉米勒", "蒂姆邓肯", "科比布莱恩特" };
+            //01_01_01_定义长度length和序标index变量
+            int length = strs[0].Length;
+            int index = 0;
+
         }
     }
 }
