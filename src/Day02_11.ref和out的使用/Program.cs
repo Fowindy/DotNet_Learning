@@ -13,14 +13,16 @@ namespace Day02_11.ref和out的使用
     {
         static void Main(string[] args)
         {
+            //传进ref之前必须进行变量初始化
             int num = 1000;
             //02_此时调用Add方法_但因为方法作用域的原因_对Main方法并没有影响
-            Add(num);
-            Console.WriteLine(num);//1000
+            //03_Add方法加入ref参数后_对Main函数有影响_ref可进可出_ref传进的是变量的值在栈空间对应的地址
+            Add(ref num);
+            Console.WriteLine(num);//100//1000
             Console.ReadKey();  
         }
         //01_声明一个Add方法
-        public static void Add(int n1)
+        public static void Add(ref int n1)
         {
             n1 = 100;
         }
