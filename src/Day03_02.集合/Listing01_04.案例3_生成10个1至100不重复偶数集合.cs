@@ -25,6 +25,11 @@ namespace Fowindy.Day03_02.集合.Listing01_04
                     list.Add(num);
                 }
             }
+            //04_打印目标集合
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
