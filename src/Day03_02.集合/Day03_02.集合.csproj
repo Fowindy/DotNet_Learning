@@ -10,8 +10,4 @@
     <Compile Include="..\..\Shared\Program.cs" Link="Program.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="相关资料\" />
-  </ItemGroup>
-
 </Project>
