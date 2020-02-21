@@ -23,6 +23,11 @@ namespace Fowindy.Day03_02.集合.Listing01_05
             {
                 Console.WriteLine(item);
             }
+            //03_遍历键值对中所有的值
+            foreach (string item in dic.Values)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
