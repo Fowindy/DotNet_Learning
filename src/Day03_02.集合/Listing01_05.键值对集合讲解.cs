@@ -18,6 +18,8 @@ namespace Fowindy.Day03_02.集合.Listing01_05
             dic.Add("yzk", "杨中科");
             dic.Add("zxh", "赵小虎");
             dic.Add("jk", "姜昆");
+            //05_注意_键不能重复
+            //dic.Add("jk", "剑客");
             //02_遍历键值对中所有的键
             foreach (string item in dic.Keys)
             {
