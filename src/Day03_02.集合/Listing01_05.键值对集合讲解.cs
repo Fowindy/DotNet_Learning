@@ -28,6 +28,11 @@ namespace Fowindy.Day03_02.集合.Listing01_05
             {
                 Console.WriteLine(item);
             }
+            Console.WriteLine("----------------04_遍历键值对中所有的键值对----------------");
+            foreach (KeyValuePair<string,string> item in dic)
+            {
+                Console.WriteLine(item.Key+"==="+item.Value);
+            }
         }
     }
 }
