@@ -15,10 +15,12 @@ namespace Fowindy.Day03_02.集合.Listing01_04
         {
             List<int> list = new List<int>();
             //01_循环终止条件_生成10个数
+            //05_优化_将Random对象实例化放到循环外面避免多次实例化
+            Random random = new Random();
             while (list.Count < 10)
             {
                 //02_调用Random函数生成1-100之间的整数
-                int num = new Random().Next(1, 101);
+                int num = random.Next(1, 101);
                 //03_判断添加条件_list中不存在_以及偶数
                 if (!list.Contains(num) && num % 2 == 0)
                 {
