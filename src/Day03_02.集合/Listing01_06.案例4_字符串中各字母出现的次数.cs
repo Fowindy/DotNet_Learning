@@ -16,7 +16,8 @@ namespace Fowindy.Day03_02.集合.Listing01_06
             string str = "Welcome to  ,China!China Welcomes you.";
             //01_采用Dictionary键值对来添加元素_字母作为Key_次数作为value
             Dictionary<char, int> dic = new Dictionary<char, int>();
-
+            //02_首先将该字符串全部转换为小写
+            str = str.ToLower();
         }
     }
 }
