@@ -21,7 +21,11 @@ namespace Fowindy.Day03_02.集合.Listing01_06
             //03_循环遍历字符串中的字符
             for (int i = 0; i < str.Length; i++)
             {
+                //04_判断该字符是否为字母
+                if (char.IsLetter(str[i]))
+                {
 
+                }
             }
         }
     }
