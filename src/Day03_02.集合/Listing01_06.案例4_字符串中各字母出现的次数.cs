@@ -18,6 +18,11 @@ namespace Fowindy.Day03_02.集合.Listing01_06
             Dictionary<char, int> dic = new Dictionary<char, int>();
             //02_首先将该字符串全部转换为小写
             str = str.ToLower();
+            //03_循环遍历字符串中的字符
+            for (int i = 0; i < str.Length; i++)
+            {
+
+            }
         }
     }
 }
