@@ -36,6 +36,11 @@ namespace Fowindy.Day03_02.集合.Listing01_06
                     }
                 }
             }
+            //07_循环遍历打印各字母出现的次数
+            foreach (KeyValuePair<char,int> item in dic)
+            {
+                Console.WriteLine("字母{0}出现了{1}次",item.Key,item.Value);
+            }
         }
     }
 }
