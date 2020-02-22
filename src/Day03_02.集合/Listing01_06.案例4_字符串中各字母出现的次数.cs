@@ -29,6 +29,11 @@ namespace Fowindy.Day03_02.集合.Listing01_06
                     {
                         dic.Add(str[i], 1);
                     }
+                    //06_如果字典中已经存在该字母_则该字母的值加1
+                    else
+                    {
+                        dic[str[i]]++;
+                    }
                 }
             }
         }
