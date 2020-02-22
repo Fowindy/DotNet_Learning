@@ -24,7 +24,11 @@ namespace Fowindy.Day03_02.集合.Listing01_06
                 //04_判断该字符是否为字母
                 if (char.IsLetter(str[i]))
                 {
-
+                    //05_如果字典中不存在该字母_则将该字母添加到字典中次数为1
+                    if (!dic.ContainsKey(str[i]))
+                    {
+                        dic.Add(str[i], 1);
+                    }
                 }
             }
         }
