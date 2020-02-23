@@ -13,6 +13,12 @@ namespace Fowindy.Day03_02.集合.Listing01_07
     {
         public static void Main()
         {
+            string str = "1壹 2贰 3叁 4肆 5伍 6陆 7柒 8捌 9玖 0零";
+            Console.Write("请输入需要转换的阿拉伯数字:");
+            string input = Console.ReadLine();
+            //01_使用键值对将转换规则添加到字典
+            Dictionary<int, char> dic = new Dictionary<int, char>();
+
         }
     }
 }
