@@ -18,6 +18,8 @@ namespace Fowindy.Day03_02.集合.Listing01_07
             string input = Console.ReadLine();
             //01_使用键值对将转换规则添加到字典
             Dictionary<int, char> dic = new Dictionary<int, char>();
+            //02_对转换规则字符串进行分割成字符串数组处理
+            string[] strNew = str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
         }
     }
