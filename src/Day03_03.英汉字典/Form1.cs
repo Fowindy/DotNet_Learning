@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,9 @@ namespace Day03_03.英汉字典
         private void Form1_Load(object sender, EventArgs e)
         {
             Dictionary<string, string> dic = new Dictionary<string, string>();
+            //02_01_读取字典文件
+            string[] Lines = File.ReadAllLines("../../相关资料/字典.txt", Encoding.Default);
+
         }
     }
 }
