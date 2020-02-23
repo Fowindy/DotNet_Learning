@@ -20,5 +20,11 @@ namespace Day03_03.英汉字典
         {
             InitializeComponent();
         }
+
+        //02_加载界面的时候收录字典
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Dictionary<string, string> dic = new Dictionary<string, string>();
+        }
     }
 }
