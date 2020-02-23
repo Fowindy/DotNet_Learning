@@ -32,6 +32,8 @@ namespace Day03_03.英汉字典
             //02_02_遍历每一行的字符串
             for (int i = 0; i < Lines.Length; i++)
             {
+                //02_02_01_通过分析英文单词和中文翻译之间用空格隔开_可以通过split提取
+                words = Lines[i].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
             }
         }
