@@ -20,6 +20,11 @@ namespace Fowindy.Day03_02.集合.Listing01_07
             Dictionary<int, char> dic = new Dictionary<int, char>();
             //02_对转换规则字符串进行分割成字符串数组处理
             string[] strNew = str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            //03_将字符串数组添加到字典中
+            for (int i = 0; i < strNew.Length; i++)
+            {
+                dic.Add(strNew[i][0], strNew[i][1]);
+            }
 
         }
     }
