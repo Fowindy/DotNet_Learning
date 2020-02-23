@@ -50,5 +50,10 @@ namespace Day03_03.英汉字典
                 }
             }
         }
+        //03_翻译按钮事件
+        private void btnTranslate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

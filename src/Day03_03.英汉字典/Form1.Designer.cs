@@ -57,6 +57,7 @@
             this.btnTranslate.TabIndex = 2;
             this.btnTranslate.Text = "翻译";
             this.btnTranslate.UseVisualStyleBackColor = true;
+            this.btnTranslate.Click += new System.EventHandler(this.btnTranslate_Click);
             // 
             // Form1
             // 
