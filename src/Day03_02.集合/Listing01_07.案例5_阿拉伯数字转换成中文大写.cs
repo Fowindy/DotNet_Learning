@@ -32,7 +32,15 @@ namespace Fowindy.Day03_02.集合.Listing01_07
             //04_从字典检索将输入的阿拉伯数字显示中文大写
             for (int i = 0; i < input.Length; i++)
             {
-                Console.Write(dic[input[i]]);
+                //06_显示之前判断字典中是否有该字符_有则转换_无则直接输出
+                if (dic.ContainsKey(input[i]))
+                {
+                    Console.Write(dic[input[i]]);
+                }
+                else
+                {
+                    Console.Write(input[i]);
+                }
             }
         }
     }
