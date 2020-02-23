@@ -25,7 +25,11 @@ namespace Fowindy.Day03_02.集合.Listing01_07
             {
                 dic.Add(strNew[i][0], strNew[i][1]);
             }
-
+            //04_从字典检索将输入的阿拉伯数字显示中文大写
+            for (int i = 0; i < input.Length; i++)
+            {
+                Console.Write(dic[input[i]]);
+            }
         }
     }
 }
