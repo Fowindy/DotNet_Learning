@@ -39,6 +39,15 @@ namespace Day03_03.英汉字典
                 {
                     words[1] += words[j];
                 }
+                //02_02_03_如果字典中已存在该单词(key)则直接累加汉语翻译_如果不存在则添加到键值对集合中
+                if (!dic.ContainsKey(words[0]))
+                {
+                    dic.Add(words[0], words[1]);
+                }
+                else
+                {
+                    dic[words[0]] += words[1];
+                }
             }
         }
     }
