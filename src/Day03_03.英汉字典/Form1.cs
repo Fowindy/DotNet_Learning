@@ -28,7 +28,12 @@ namespace Day03_03.英汉字典
             Dictionary<string, string> dic = new Dictionary<string, string>();
             //02_01_读取字典文件
             string[] Lines = File.ReadAllLines("../../相关资料/字典.txt", Encoding.Default);
+            string[] words = null;
+            //02_02_遍历每一行的字符串
+            for (int i = 0; i < Lines.Length; i++)
+            {
 
+            }
         }
     }
 }
