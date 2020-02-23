@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_01.面向对象复习
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_02.集合", "src\Day03_02.集合\Day03_02.集合.csproj", "{2A63B7C0-46DB-48DF-B3BA-4605D426643C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_03.英汉字典", "src\Day03_03.英汉字典\Day03_03.英汉字典.csproj", "{2D32C2A4-56F8-44B7-90C3-85E898A53DBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{2A63B7C0-46DB-48DF-B3BA-4605D426643C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A63B7C0-46DB-48DF-B3BA-4605D426643C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A63B7C0-46DB-48DF-B3BA-4605D426643C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D32C2A4-56F8-44B7-90C3-85E898A53DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D32C2A4-56F8-44B7-90C3-85E898A53DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D32C2A4-56F8-44B7-90C3-85E898A53DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D32C2A4-56F8-44B7-90C3-85E898A53DBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
