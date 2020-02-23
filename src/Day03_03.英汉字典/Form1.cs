@@ -34,7 +34,11 @@ namespace Day03_03.英汉字典
             {
                 //02_02_01_通过分析英文单词和中文翻译之间用空格隔开_可以通过split提取
                 words = Lines[i].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
+                //02_02_02_因为可能行中有多个空格_除了第一个空格后面的全部认为是翻译部分合并
+                for (int j = 1; j < words.Length; j++)
+                {
+                    words[1] += words[j];
+                }
             }
         }
     }
