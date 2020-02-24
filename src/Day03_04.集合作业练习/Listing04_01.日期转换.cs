@@ -37,7 +37,11 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
             {
                 dic.Add(ziDians[i][0], ziDians[i][1]);
             }
+            //02_05_对用户字符数组进行判断转换
+            for (int i = 0; i < chs.Length; i++)
+            {
 
+            }
             return sb.ToString();
         }
     }
