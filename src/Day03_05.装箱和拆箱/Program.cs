@@ -13,6 +13,9 @@ namespace Day03_05.装箱和拆箱
     {
         static void Main(string[] args)
         {
+            int num = 10;
+            //01_装箱_值类型隐式转换成引用类型_饼干放盒子里
+            object obj = num;
         }
     }
 }
