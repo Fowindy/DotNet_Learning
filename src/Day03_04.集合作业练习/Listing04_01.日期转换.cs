@@ -18,7 +18,8 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
             string strDate = Console.ReadLine();
             //02_调用方法转换成数字类型的日期
             string date = GetNumberByStrDate(strDate);
-            
+            //03_打印并输出数字日期结果
+            Console.WriteLine(date);
         }
 
         private static string GetNumberByStrDate(string strDate)
