@@ -14,9 +14,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_02.集合", "src\Day0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_03.英汉字典", "src\Day03_03.英汉字典\Day03_03.英汉字典.csproj", "{2D32C2A4-56F8-44B7-90C3-85E898A53DBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_04.集合作业练习", "src\Day03_04.集合作业练习\Day03_04.集合作业练习.csproj", "{6E5C2381-1738-47FF-A316-99E3F12CEBFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_04.集合作业练习", "src\Day03_04.集合作业练习\Day03_04.集合作业练习.csproj", "{6E5C2381-1738-47FF-A316-99E3F12CEBFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_05.装箱和拆箱", "src\Day03_05.装箱和拆箱\Day03_05.装箱和拆箱.csproj", "{57B73CC7-B99D-467E-80B7-180D1CA6F4A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_05.装箱和拆箱", "src\Day03_05.装箱和拆箱\Day03_05.装箱和拆箱.csproj", "{57B73CC7-B99D-467E-80B7-180D1CA6F4A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_06.文件流读文件", "src\Day03_06.文件流读文件\Day03_06.文件流读文件.csproj", "{5587AC2E-4E06-4BA5-A16E-D298481B77DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{57B73CC7-B99D-467E-80B7-180D1CA6F4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57B73CC7-B99D-467E-80B7-180D1CA6F4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57B73CC7-B99D-467E-80B7-180D1CA6F4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5587AC2E-4E06-4BA5-A16E-D298481B77DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5587AC2E-4E06-4BA5-A16E-D298481B77DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5587AC2E-4E06-4BA5-A16E-D298481B77DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5587AC2E-4E06-4BA5-A16E-D298481B77DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
