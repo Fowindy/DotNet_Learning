@@ -18,6 +18,9 @@ namespace Day03_06.文件流读文件
             byte[] buffer = System.Text.Encoding.UTF8.GetBytes(msg);
             //02_将字节数组转换成字符串
             string str = System.Text.Encoding.UTF8.GetString(buffer);
+
+            //03_通过流的方式将字符串写入文本中
+
         }
     }
 }
