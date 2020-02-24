@@ -4,6 +4,7 @@
  * ==============================================================================*/
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Xml;
 
@@ -20,7 +21,8 @@ namespace Day03_06.文件流读文件
             string str = System.Text.Encoding.UTF8.GetString(buffer);
 
             //03_通过流的方式将字符串写入文本中
-
+            //03_01_创建一个文件流对象_文件生成路径_文件模式_文件读写方式
+            FileStream fileStream = new FileStream("../../../相关资料/1.txt",FileMode.Create,FileAccess.Write);
         }
     }
 }
