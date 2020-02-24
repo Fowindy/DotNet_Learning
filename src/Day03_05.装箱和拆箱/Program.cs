@@ -26,6 +26,13 @@ namespace Day03_05.装箱和拆箱
             int num1 = 3;
             object obj1 = num1;
             Console.WriteLine(num1);
+
+            //04_问题_装箱3次拆箱1次
+            int num2 = 10;
+            object obj2 = num2;//第一次装箱
+            num2 = 100;
+            //num2转换成object:第二次装箱;(int)obj2:第一次拆箱;(int)obj2转换成object:第三次装箱
+            Console.WriteLine(num2 + "," + (int)obj2);
         }
     }
 }
