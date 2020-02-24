@@ -46,6 +46,7 @@ namespace Day03_05.装箱和拆箱
             string s3 = "a";
             int num4 = 10;
             double d1 = 99.9;
+            //06_01_第一次装箱_int类型隐式转换成object类型
             object obj3 = 10;
             string s4 = "x";
             string s5 = s3 + num4 + d1 + obj3 + s4;
