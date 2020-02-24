@@ -29,6 +29,8 @@ namespace Day03_06.文件流读文件
             fileStream.Flush();
             //03_04_关闭文件流对象
             fileStream.Close();
+            //03_05_释放文件流空间
+            fileStream.Dispose();
         }
     }
 }
