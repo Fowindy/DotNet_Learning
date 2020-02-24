@@ -21,11 +21,11 @@ namespace Day03_03.英汉字典
         {
             InitializeComponent();
         }
-
+        Dictionary<string, string> dic = new Dictionary<string, string>();
         //02_加载界面的时候收录字典
         private void Form1_Load(object sender, EventArgs e)
         {
-            Dictionary<string, string> dic = new Dictionary<string, string>();
+
             //02_01_读取字典文件
             string[] Lines = File.ReadAllLines("../../相关资料/字典.txt", Encoding.Default);
             string[] words = null;
@@ -46,14 +46,26 @@ namespace Day03_03.英汉字典
                 }
                 else
                 {
-                    dic[words[0]] += words[1];
+                    //去重
+                    if (dic[words[0]] != words[1])
+                    {
+                        dic[words[0]] += words[1];
+                    }
                 }
             }
         }
         //03_翻译按钮事件
         private void btnTranslate_Click(object sender, EventArgs e)
         {
-
+            //03_01_从用户输入文本框中取出英文单词_判断字典中是否存在_存在则翻译
+            if (dic.ContainsKey(txtEnglish.Text.ToLower()))
+            {
+                txtChinese.Text = dic[txtEnglish.Text.ToLower()];
+            }
+            else
+            {
+                txtChinese.Text = "对不起!该单词未收录!";
+            }
         }
     }
 }
