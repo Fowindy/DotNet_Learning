@@ -33,6 +33,15 @@ namespace Day03_06.文件流读文件
             fileStream.Dispose();
             //03_06_提示用户写入文本成功
             Console.WriteLine("写入成功!!!");
+
+            //04_通过流的方式将字符串写入文本中_使用Using便捷释放空间_推荐
+            string msg2 = "一条大河向东流";
+            byte[] buffer2 = System.Text.Encoding.UTF8.GetBytes(msg2);
+            using (FileStream fileStream2 = new FileStream("../../../相关资料/1.txt",FileMode.Create,FileAccess.Write))
+            {
+                fileStream2.Write(buffer2,0,buffer2.Length);
+            }
+            Console.WriteLine("写入文件2成功!!!");
             Console.ReadKey();
         }
     }
