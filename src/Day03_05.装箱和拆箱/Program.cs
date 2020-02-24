@@ -19,6 +19,8 @@ namespace Day03_05.装箱和拆箱
 
             //02_拆箱_引用类型强制转换为值类型_饼干拿出盒子
             int n = (int)obj;
+            //02_01_拆箱失败_int型的引用类型强转成double类型_饼干盒子里拿不出面包
+            double d = (double)obj;
         }
     }
 }
