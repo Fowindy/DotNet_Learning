@@ -50,7 +50,8 @@ namespace Day03_05.装箱和拆箱
             object obj3 = 10;
             string s4 = "x";
             string s5 = s3 + num4 + d1 + obj3 + s4;
-            Console.WriteLine(s3);
+            //06_02_WriteLine方法参数隐式调用object类型_所以num4进行第二次装箱_d1进行第三次装箱
+            Console.WriteLine(s5);
             
         }
     }
