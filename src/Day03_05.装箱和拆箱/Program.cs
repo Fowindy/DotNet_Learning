@@ -53,6 +53,7 @@ namespace Day03_05.装箱和拆箱
             //06_02_WriteLine方法参数隐式调用object类型_所以num4进行第二次装箱_d1进行第三次装箱
             Console.WriteLine(s5);
             
+            //07_学装箱拆箱的目的是为了尽可能避免装箱拆箱_提高效率
         }
     }
 }
