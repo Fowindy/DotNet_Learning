@@ -27,6 +27,8 @@ namespace Day03_06.文件流读文件
             fileStream.Write(buffer, 0, buffer.Length);
             //03_03_清除缓冲区_写入之后再内存中只有清除才能写入文本中
             fileStream.Flush();
+            //03_04_关闭文件流对象
+            fileStream.Close();
         }
     }
 }
