@@ -13,7 +13,9 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
     {
         public static void Main()
         {
-
+            //01_接收用户输入的日期
+            Console.Write("请您输入日期(如二零一二年三月二日):");
+            string strDate = Console.ReadLine();
         }
     }
 }
