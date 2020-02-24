@@ -41,6 +41,16 @@ namespace Day03_05.装箱和拆箱
             //05_02_GetType发生了装箱_因为GetType是Object类下的方法
             string s2 = num3.GetType().ToString();
             Console.WriteLine(s1 + "\t\t\t" + s2);
+
+            //06_问题_装箱3次拆箱0次
+            string s3 = "a";
+            int num4 = 10;
+            double d1 = 99.9;
+            object obj3 = 10;
+            string s4 = "x";
+            string s5 = s3 + num4 + d1 + obj3 + s4;
+            Console.WriteLine(s3);
+            
         }
     }
 }
