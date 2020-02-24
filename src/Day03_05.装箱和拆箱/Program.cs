@@ -36,6 +36,7 @@ namespace Day03_05.装箱和拆箱
 
             //05_问题_装箱1次拆箱0次
             int num3 = 10;
+            //05_01_ToString并没有发生装箱_因为ToString不是Object类下的方法
             string s1 = num3.ToString();
             string s2 = num3.GetType().ToString();
             Console.WriteLine(s1 + "\t\t\t" + s2);
