@@ -26,6 +26,9 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
         {
             //02_01_定义转换标准字符串
             string ziDian = "零0 一1 二2 三3 四4 五5 六6 七7 八8 九9";
+            //02_02_先将用户输入的字符串转换成字符数组
+            char[] chs = strDate.ToCharArray();
+
         }
     }
 }
