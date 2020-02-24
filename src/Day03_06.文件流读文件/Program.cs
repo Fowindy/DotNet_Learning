@@ -47,7 +47,8 @@ namespace Day03_06.文件流读文件
             //05_通过文件流的方式读取文件内容_文件生成路径_文件模式_文件读写方式
             using (FileStream fileStream3 = new FileStream("../../../相关资料/1.txt",FileMode.Open,FileAccess.Read))
             {
-
+                //05_01_创建字节数组缓存区接收读取内容
+                byte[] buffer3 = new byte[fileStream3.Length];
             }
         }
     }
