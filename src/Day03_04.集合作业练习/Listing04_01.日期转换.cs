@@ -58,6 +58,11 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
                     {
                         sb.Append(1);
                     }
+                    //02_05_05_如果钱一个字符不是年月后一个字符是月日_直接转换成0
+                    else if ((chs[i - 1] != '年' && chs[i + 1] == '月') || (chs[i - 1] != '月' && chs[i + 1] == '日'))
+                    {
+                        sb.Append(0);
+                    }
                 }
                 else
                 {
