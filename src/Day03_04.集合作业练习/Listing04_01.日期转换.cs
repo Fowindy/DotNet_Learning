@@ -45,7 +45,14 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
                 {
                     sb.Append(dic[chs[i]]);
                 }
-
+                //02_05_02_判断当前字符是否是十_不是则直接追加_是则继续判断处理
+                else if (chs[i] == '十')
+                {
+                }
+                else
+                {
+                    sb.Append(chs[i]);
+                }
             }
             return sb.ToString();
         }
