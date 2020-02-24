@@ -16,6 +16,14 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
             //01_接收用户输入的日期
             Console.Write("请您输入日期(如二零一二年三月二日):");
             string strDate = Console.ReadLine();
+            //02_调用方法转换成数字类型的日期
+            string date = GetNumberByStrDate(strDate);
+            
+        }
+
+        private static string GetNumberByStrDate(string strDate)
+        {
+            throw new NotImplementedException();
         }
     }
 }
