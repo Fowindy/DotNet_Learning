@@ -13,6 +13,9 @@ namespace Day03_06.文件流读文件
     {
         static void Main(string[] args)
         {
+            string msg = "锄禾日当午,地雷埋下土,老马走过去,炸成二百五";
+            //01_将字符串转换成字节数组
+            byte[] buffer = System.Text.Encoding.UTF8.GetBytes(msg);
         }
     }
 }
