@@ -24,7 +24,8 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
 
         private static string GetNumberByStrDate(string strDate)
         {
-            throw new NotImplementedException();
+            //02_01_定义转换标准字符串
+            string ziDian = "零0 一1 二2 三3 四4 五5 六6 七7 八8 九9";
         }
     }
 }
