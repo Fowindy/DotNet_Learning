@@ -33,6 +33,12 @@ namespace Day03_05.装箱和拆箱
             num2 = 100;
             //num2转换成object:第二次装箱;(int)obj2:第一次拆箱;(int)obj2转换成object:第三次装箱
             Console.WriteLine(num2 + "," + (int)obj2);
+
+            //05_问题_装箱1次拆箱0次
+            int num3 = 10;
+            string s1 = num3.ToString();
+            string s2 = num3.GetType().ToString();
+            Console.WriteLine(s1 + "\t\t\t" + s2);
         }
     }
 }
