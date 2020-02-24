@@ -30,6 +30,13 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
             char[] chs = strDate.ToCharArray();
             //02_03_使用StringBuilder来存储字符串
             StringBuilder sb = new StringBuilder();
+            //02_04_将转换标准字符串加载到字典集合中
+            Dictionary<char, char> dic = new Dictionary<char, char>();
+            string[] ziDians = ziDian.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            for (int i = 0; i < ziDians.Length; i++)
+            {
+                dic.Add(ziDians[i][0], ziDians[i][1]);
+            }
 
             return sb.ToString();
         }
