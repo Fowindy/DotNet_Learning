@@ -40,6 +40,11 @@ namespace Fowindy.Day03_04.集合作业练习.Listing04_01
             //02_05_对用户字符数组进行判断转换
             for (int i = 0; i < chs.Length; i++)
             {
+                //02_05_01_判断字典中是否存在该字符_存在则直接追加
+                if (dic.ContainsKey(chs[i]))
+                {
+                    sb.Append(dic[chs[i]]);
+                }
 
             }
             return sb.ToString();
