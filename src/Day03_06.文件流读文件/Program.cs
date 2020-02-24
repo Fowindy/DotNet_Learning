@@ -31,6 +31,9 @@ namespace Day03_06.文件流读文件
             fileStream.Close();
             //03_05_释放文件流空间
             fileStream.Dispose();
+            //03_06_提示用户写入文本成功
+            Console.WriteLine("写入成功!!!");
+            Console.ReadKey();
         }
     }
 }
