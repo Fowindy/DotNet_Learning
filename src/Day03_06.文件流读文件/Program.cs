@@ -25,6 +25,8 @@ namespace Day03_06.文件流读文件
             FileStream fileStream = new FileStream("../../../相关资料/1.txt",FileMode.Create,FileAccess.Write);
             //03_02_调用文件流写入方法_字节数组方式_从0开始读取_读取字节数组长度
             fileStream.Write(buffer, 0, buffer.Length);
+            //03_03_清除缓冲区_写入之后再内存中只有清除才能写入文本中
+            fileStream.Flush();
         }
     }
 }
