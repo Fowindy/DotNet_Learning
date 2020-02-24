@@ -21,6 +21,11 @@ namespace Day03_05.装箱和拆箱
             int n = (int)obj;
             //02_01_拆箱失败_int型的引用类型强转成double类型_饼干盒子里拿不出面包
             double d = (double)obj;
+
+            //03_装箱和拆箱效率低_因为中间进行了object转换
+            int num1 = 3;
+            object obj1 = num1;
+            Console.WriteLine(num1);
         }
     }
 }
