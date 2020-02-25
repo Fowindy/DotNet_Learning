@@ -42,7 +42,6 @@ namespace Day03_06.文件流读文件
                 fileStream2.Write(buffer2,0,buffer2.Length);
             }
             Console.WriteLine("写入文件2成功!!!");
-            Console.ReadKey();
 
             //05_通过文件流的方式读取文件内容_文件生成路径_文件模式_文件读写方式
             using (FileStream fileStream3 = new FileStream("../../../相关资料/1.txt",FileMode.Open,FileAccess.Read))
@@ -53,7 +52,10 @@ namespace Day03_06.文件流读文件
                 fileStream3.Read(buffer3, 0, buffer3.Length);
                 //05_03_将读取的字节数组转换为字符串
                 string str1 = System.Text.Encoding.UTF8.GetString(buffer3);
+                //05_04_控制台显示读取的内容
+                Console.WriteLine(str1);
             }
+            Console.ReadKey();
         }
     }
 }
