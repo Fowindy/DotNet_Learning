@@ -36,6 +36,8 @@ namespace Day03_07.复制视频文件
                         //02_01_03_02_循环则继续读取
                         r = fsRead.Read(buffer, 0, buffer.Length);
                     }
+                    //02_01_04_控制台显示正在复制
+                    Console.WriteLine("复制中...");
                 }
             }
         }
