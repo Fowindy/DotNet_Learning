@@ -4,6 +4,7 @@
  * ==============================================================================*/
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Xml;
@@ -25,6 +26,8 @@ namespace Day03_07.复制视频文件
                 {
                     //02_01_01_定义读取文件字节缓冲数组_用于存储每次读取5M的内容
                     byte[] buffer = new byte[1024 * 1024 * 5];
+                    //02_01_02_读取字节缓冲数组并获取每次真实读取的字节长度
+                    int r = fsRead.Read(buffer, 0, buffer.Length);
                 }
             }
         }
