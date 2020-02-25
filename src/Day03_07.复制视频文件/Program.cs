@@ -28,6 +28,12 @@ namespace Day03_07.复制视频文件
                     byte[] buffer = new byte[1024 * 1024 * 5];
                     //02_01_02_读取字节缓冲数组并获取每次真实读取的字节长度
                     int r = fsRead.Read(buffer, 0, buffer.Length);
+                    //02_01_03_文件没有读取完则循环读取
+                    while (r > 0)
+                    {
+
+                    }
+
                 }
             }
         }
