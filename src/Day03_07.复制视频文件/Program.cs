@@ -20,7 +20,11 @@ namespace Day03_07.复制视频文件
             //02_创建读取文件流对象
             using (FileStream fsRead = new FileStream(sourcePath,FileMode.Open,FileAccess.Read))
             {
+                //02_01_创建写入文件流对象
+                using (FileStream fsWrite = new FileStream(targetPath,FileMode.Create,FileAccess.Write))
+                {
 
+                }
             }
         }
     }
