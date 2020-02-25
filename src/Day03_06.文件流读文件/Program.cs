@@ -49,6 +49,8 @@ namespace Day03_06.文件流读文件
             {
                 //05_01_创建字节数组缓存区接收读取内容
                 byte[] buffer3 = new byte[fileStream3.Length];
+                //05_02_调用文件流读取方法_读取字节缓存数组_从0开始读取_读取字节数组长度
+                fileStream3.Read(buffer3, 0, buffer3.Length);
             }
         }
     }
