@@ -33,6 +33,8 @@ namespace Day03_07.复制视频文件
                     {
                         //02_01_03_01_将读取到的内容通过文件写入流写入
                         fsWrite.Write(buffer, 0, r);
+                        //02_01_03_02_循环则继续读取
+                        r = fsRead.Read(buffer, 0, buffer.Length);
                     }
                 }
             }
