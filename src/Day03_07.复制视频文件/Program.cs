@@ -4,6 +4,7 @@
  * ==============================================================================*/
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Xml;
 
@@ -16,6 +17,11 @@ namespace Day03_07.复制视频文件
             //01_定义源路径和目标路径
             string sourcePath = "../../../相关资料/创建和客户端通信的Socket.mp4";
             string targetPath = "../../../相关资料/Socket.mp4";
+            //02_创建读取文件流对象
+            using (FileStream fsRead = new FileStream(sourcePath,FileMode.Open,FileAccess.Read))
+            {
+
+            }
         }
     }
 }
