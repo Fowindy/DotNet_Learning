@@ -20,6 +20,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_05.装箱和拆箱", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_06.文件流读文件", "src\Day03_06.文件流读文件\Day03_06.文件流读文件.csproj", "{5587AC2E-4E06-4BA5-A16E-D298481B77DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_07.复制视频文件", "src\Day03_07.复制视频文件\Day03_07.复制视频文件.csproj", "{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{5587AC2E-4E06-4BA5-A16E-D298481B77DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5587AC2E-4E06-4BA5-A16E-D298481B77DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5587AC2E-4E06-4BA5-A16E-D298481B77DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
