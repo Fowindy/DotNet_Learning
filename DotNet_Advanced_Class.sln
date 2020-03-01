@@ -18,9 +18,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_04.集合作业练习
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_05.装箱和拆箱", "src\Day03_05.装箱和拆箱\Day03_05.装箱和拆箱.csproj", "{57B73CC7-B99D-467E-80B7-180D1CA6F4A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_06.文件流读文件", "src\Day03_06.文件流读文件\Day03_06.文件流读文件.csproj", "{5587AC2E-4E06-4BA5-A16E-D298481B77DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_06.文件流读文件", "src\Day03_06.文件流读文件\Day03_06.文件流读文件.csproj", "{5587AC2E-4E06-4BA5-A16E-D298481B77DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_07.复制视频文件", "src\Day03_07.复制视频文件\Day03_07.复制视频文件.csproj", "{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_07.复制视频文件", "src\Day03_07.复制视频文件\Day03_07.复制视频文件.csproj", "{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_08.StreamReader和StreamWriter", "src\Day03_08.StreamReader和StreamWriter\Day03_08.StreamReader和StreamWriter.csproj", "{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
