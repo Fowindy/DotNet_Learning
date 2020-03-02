@@ -20,8 +20,14 @@ namespace Day03_08.StreamReader和StreamWriter
                 //01_01_Read方法貌似在读_但是返回不了需要的内容_弃用
                 //sr.Read()
                 //01_02_使用ReadLine方法读取_能获取内容_只能读取单行_解决乱码问题_推荐
-                string line = sr.ReadLine();
-                Console.WriteLine(line);
+                //string line = sr.ReadLine();
+                //Console.WriteLine(line);
+                //01_03_读取多行完整内容_读取不为空则循环读取_推荐
+                string line = null;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(line);
+                }
             }
             Console.ReadKey();
         }
