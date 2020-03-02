@@ -24,10 +24,13 @@ namespace Day03_08.StreamReader和StreamWriter
                 //Console.WriteLine(line);
                 //01_03_读取多行完整内容_读取不为空则循环读取_推荐
                 string line = null;
-                while ((line = sr.ReadLine()) != null)
-                {
-                    Console.WriteLine(line);
-                }
+                //while ((line = sr.ReadLine()) != null)
+                //{
+                //    Console.WriteLine(line);
+                //}
+                Console.WriteLine("----------------01_04_第三种读取方式_读取流直到末尾----------------");
+                line = sr.ReadToEnd();
+                Console.WriteLine(line);
             }
             Console.ReadKey();
         }
