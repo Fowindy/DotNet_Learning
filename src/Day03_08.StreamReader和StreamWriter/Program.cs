@@ -17,8 +17,10 @@ namespace Day03_08.StreamReader和StreamWriter
             //01_创建一个StreamReader对象读取目标文件
             using (StreamReader sr = new StreamReader("../../../相关资料/1.txt"))
             {
-                 
+                //01_01_Read方法貌似在读_但是返回不了需要的内容_弃用
+                //sr.Read()
             }
+            Console.ReadKey();
         }
     }
 }
