@@ -15,10 +15,13 @@ namespace Day03_08.StreamReader和StreamWriter
         static void Main(string[] args)
         {
             //01_创建一个StreamReader对象读取目标文件
-            using (StreamReader sr = new StreamReader("../../../相关资料/1.txt"))
+            using (StreamReader sr = new StreamReader("../../../相关资料/1.txt",Encoding.Default))
             {
                 //01_01_Read方法貌似在读_但是返回不了需要的内容_弃用
                 //sr.Read()
+                //01_02_使用ReadLine方法读取_能获取内容_只能读取单行_解决乱码问题_推荐
+                string line = sr.ReadLine();
+                Console.WriteLine(line);
             }
             Console.ReadKey();
         }
