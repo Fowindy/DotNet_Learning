@@ -14,7 +14,8 @@ namespace Day03_08.StreamReader和StreamWriter
     {
         static void Main(string[] args)
         {
-            using (StreamReader sr = new StreamReader())
+            //01_创建一个StreamReader对象读取目标文件
+            using (StreamReader sr = new StreamReader("../../../相关资料/1.txt"))
             {
                  
             }
