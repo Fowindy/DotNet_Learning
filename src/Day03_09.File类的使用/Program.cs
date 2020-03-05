@@ -31,6 +31,8 @@ namespace Day03_09.File类的使用
             string line = File.ReadAllText("../../../相关资料/2.txt");
             //08_WriteAllLines往文件中写入字符串数组_覆盖
             File.WriteAllLines("../../../相关资料/1.txt", lines);
+            //09_WriteAllText往文件中写入字符串_覆盖
+            File.WriteAllText("../../../相关资料/1.txt", line);
             Console.ReadKey();
         }
     }
