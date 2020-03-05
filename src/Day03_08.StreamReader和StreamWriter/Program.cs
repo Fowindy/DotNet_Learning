@@ -39,6 +39,7 @@ namespace Day03_08.StreamReader和StreamWriter
                 sw.Write("哈哈,出师未捷身先死,长使英雄泪满襟");
             }
             //03_读写文件方式总结
+            //03_01_小文件的读写使用File
             Console.ReadKey();
         }
     }
