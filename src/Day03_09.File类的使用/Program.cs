@@ -14,6 +14,8 @@ namespace Day03_09.File类的使用
     {
         static void Main(string[] args)
         {
+            //01_AppendAllText_向文本中追加内容
+            File.AppendAllText("../../../相关资料/1.txt","哈哈哈");
         }
     }
 }
