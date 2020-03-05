@@ -38,6 +38,7 @@ namespace Day03_08.StreamReader和StreamWriter
                 //02_01_文本中写入字符
                 sw.Write("哈哈,出师未捷身先死,长使英雄泪满襟");
             }
+            //03_读写文件方式总结
             Console.ReadKey();
         }
     }
