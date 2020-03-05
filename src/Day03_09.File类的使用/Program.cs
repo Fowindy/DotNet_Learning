@@ -16,6 +16,9 @@ namespace Day03_09.File类的使用
         {
             //01_AppendAllText_向文本中追加内容
             File.AppendAllText("../../../相关资料/1.txt","哈哈哈");
+            //02_Create_创建文件_等同于FileStream对象
+            File.Create("../../../相关资料/t.txt");
+            //FileStream fileStream = new FileStream("../../../相关资料/t.txt", FileMode.Create, FileAccess.ReadWrite);
         }
     }
 }
