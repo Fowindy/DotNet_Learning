@@ -22,7 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_06.文件流读文件
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_07.复制视频文件", "src\Day03_07.复制视频文件\Day03_07.复制视频文件.csproj", "{518CDA60-61AA-40C4-9E71-16A92CB0AFB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_08.StreamReader和StreamWriter", "src\Day03_08.StreamReader和StreamWriter\Day03_08.StreamReader和StreamWriter.csproj", "{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_08.StreamReader和StreamWriter", "src\Day03_08.StreamReader和StreamWriter\Day03_08.StreamReader和StreamWriter.csproj", "{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_09.File类的使用", "src\Day03_09.File类的使用\Day03_09.File类的使用.csproj", "{2566B228-CD23-4616-9D12-E9553A1DCDD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B94E070B-54A1-465C-8DFB-8D7ECB1B3F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2566B228-CD23-4616-9D12-E9553A1DCDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2566B228-CD23-4616-9D12-E9553A1DCDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2566B228-CD23-4616-9D12-E9553A1DCDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2566B228-CD23-4616-9D12-E9553A1DCDD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
