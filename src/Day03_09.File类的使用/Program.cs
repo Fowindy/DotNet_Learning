@@ -23,6 +23,8 @@ namespace Day03_09.File类的使用
             File.Delete("../../../相关资料/t.txt");
             //04_Exists判断文件是否存在_返回bool类型
             Console.WriteLine(File.Exists("../../../相关资料/1.txt"));
+            //05_Move移动文件_相当于剪切
+            File.Move("../../../相关资料/1.txt", "../../../相关资料/2.txt");
             Console.ReadKey();
         }
     }
