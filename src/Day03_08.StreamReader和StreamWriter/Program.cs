@@ -41,6 +41,7 @@ namespace Day03_08.StreamReader和StreamWriter
             //03_读写文件方式总结
             //03_01_小文件的读写使用File
             //03_02_大文件的读写使用FileStream_较复杂
+            //03_03_大文件的读写使用StreamReader或StreamWriter_推荐
             Console.ReadKey();
         }
     }
