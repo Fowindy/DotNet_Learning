@@ -29,6 +29,8 @@ namespace Day03_09.File类的使用
             string[] lines = File.ReadAllLines("../../../相关资料/2.txt");
             //07_ReadAllText读取每一行并返回字符串
             string line = File.ReadAllText("../../../相关资料/2.txt");
+            //08_WriteAllLines往文件中写入字符串数组_覆盖
+            File.WriteAllLines("../../../相关资料/1.txt", lines);
             Console.ReadKey();
         }
     }
