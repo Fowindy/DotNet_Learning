@@ -21,6 +21,9 @@ namespace Day03_09.File类的使用
             //FileStream fileStream = new FileStream("../../../相关资料/t.txt", FileMode.Create, FileAccess.ReadWrite);
             //03_Delete删除文件_如文件不存在不报异常
             File.Delete("../../../相关资料/t.txt");
+            //04_Exists判断文件是否存在_返回bool类型
+            Console.WriteLine(File.Exists("../../../相关资料/1.txt"));
+            Console.ReadKey();
         }
     }
 }
