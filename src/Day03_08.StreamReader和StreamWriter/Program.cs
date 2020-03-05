@@ -33,9 +33,10 @@ namespace Day03_08.StreamReader和StreamWriter
                 Console.WriteLine(line);
             }
             //02_创建一个StreamWriter写入文件流对象
-            using (StreamWriter sw = new StreamWriter("../../../相关文件/1.txt"))
+            using (StreamWriter sw = new StreamWriter("../../../相关资料/2.txt"))
             {
-
+                //02_01_文本中写入字符
+                sw.Write("哈哈,出师未捷身先死,长使英雄泪满襟");
             }
             Console.ReadKey();
         }
