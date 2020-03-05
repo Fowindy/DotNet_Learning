@@ -27,6 +27,8 @@ namespace Day03_09.File类的使用
             //File.Move("../../../相关资料/1.txt", "../../../相关资料/2.txt");
             //06_ReadAllLines读取每一行并返回行数组
             string[] lines = File.ReadAllLines("../../../相关资料/2.txt");
+            //07_ReadAllText读取每一行并返回字符串
+            string line = File.ReadAllText("../../../相关资料/2.txt");
             Console.ReadKey();
         }
     }
