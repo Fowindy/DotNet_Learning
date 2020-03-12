@@ -14,6 +14,11 @@ namespace Day03_10.Path类的使用
     {
         static void Main(string[] args)
         {
+            //01_ChangeExtension更改路径字符串的后缀名
+            string path = @"c:\1.exe";
+            path = Path.ChangeExtension(path, ".txt");
+            Console.WriteLine(path);
+            Console.ReadKey();
         }
     }
 }
