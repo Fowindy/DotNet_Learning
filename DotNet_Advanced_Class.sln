@@ -28,6 +28,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day03_09.File类的使用",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_10.Path类的使用", "src\Day03_10.Path类的使用\Day03_10.Path类的使用.csproj", "{A2DE9286-C003-438A-9DC2-1495B881FD8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day03_11.Directory类的使用", "src\Day03_11.Directory类的使用\Day03_11.Directory类的使用.csproj", "{1C589479-212A-49E2-98C0-C8261A38A5D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{A2DE9286-C003-438A-9DC2-1495B881FD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2DE9286-C003-438A-9DC2-1495B881FD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2DE9286-C003-438A-9DC2-1495B881FD8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C589479-212A-49E2-98C0-C8261A38A5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C589479-212A-49E2-98C0-C8261A38A5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C589479-212A-49E2-98C0-C8261A38A5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C589479-212A-49E2-98C0-C8261A38A5D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
