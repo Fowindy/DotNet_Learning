@@ -18,6 +18,10 @@ namespace Day03_11.Directory类的使用
             Directory.CreateDirectory(@"../../../相关资料/1");
             //02_Delete_删除当前文件夹_bool重载删除该文件夹的子文件夹
             Directory.Delete(@"../../../相关资料/1");
+            //03_Exists_判断该文件夹是否存在
+            Console.WriteLine(Directory.Exists(@"../../../相关资料/1"));
+            //@03_False
+            Console.ReadKey();
         }
     }
 }
