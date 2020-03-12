@@ -14,6 +14,8 @@ namespace Day03_11.Directory类的使用
     {
         static void Main(string[] args)
         {
+            //01_CreateDirectory_在该目录下创建一个文件夹
+            Directory.CreateDirectory(@"../../../相关资料/1");
         }
     }
 }
