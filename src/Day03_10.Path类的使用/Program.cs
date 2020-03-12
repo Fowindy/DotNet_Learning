@@ -28,7 +28,9 @@ namespace Day03_10.Path类的使用
             //06_GetExtension_获取后缀名
             //path = Path.GetExtension(path);
             //07_GetFullPath_获取绝对路径
-            path = Path.GetFullPath(path);
+            //path = Path.GetFullPath(path);
+            //08_GetTempFileName_获取临时文件路径
+            path = Path.GetTempFileName(); 
             Console.WriteLine(path);
             //@01_c:\1.txt
             //@02_c:\电影\视频\1.txt
@@ -37,6 +39,7 @@ namespace Day03_10.Path类的使用
             //@05_1
             //@06_.exe
             //@07_c:\1.exe
+            //@08_C:\Users\Administrator\AppData\Local\Temp\tmp87AE.tmp
             Console.ReadKey();
         }
     }
