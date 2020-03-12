@@ -20,11 +20,14 @@ namespace Day03_10.Path类的使用
             //02_Combine合并路径的_反射的时候会使用到
             //path = Path.Combine(@"c:\电影", @"视频\1.txt");
             //03_GetDirectoryName_获取该文件的路径(没有文件名和后缀名)
-            path = Path.GetDirectoryName(path);
+            //path = Path.GetDirectoryName(path);
+            //04_GetFileName_获取文件名(含后缀)
+            path = Path.GetFileName(path);
             Console.WriteLine(path);
             //@01_c:\1.txt
             //@02_c:\电影\视频\1.txt
             //@03_c:\
+            //@04_1.exe
             Console.ReadKey();
         }
     }
