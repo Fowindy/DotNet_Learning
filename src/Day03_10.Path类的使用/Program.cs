@@ -24,13 +24,16 @@ namespace Day03_10.Path类的使用
             //04_GetFileName_获取文件名(含后缀)
             //path = Path.GetFileName(path);
             //05_GetFileNameWithoutExtension_获取文件名(不含后缀)
-            path = Path.GetFileNameWithoutExtension(path); 
+            //path = Path.GetFileNameWithoutExtension(path); 
+            //06_GetExtension_获取后缀名
+            path = Path.GetExtension(path);
             Console.WriteLine(path);
             //@01_c:\1.txt
             //@02_c:\电影\视频\1.txt
             //@03_c:\
             //@04_1.exe
             //@05_1
+            //@06_.exe
             Console.ReadKey();
         }
     }
