@@ -45,7 +45,7 @@ namespace Fowindy.Shared
                 Type target = assembly.GetTypes().First(type => (type.FullName.Contains("Listing" + listing + "." + "Listing" + listing)) || (type.FullName.Contains("Listing" + listing + "." + "Program")));
                 var method = (MethodInfo)target.GetMember("Main").First();
 
-                object[] arguments; 
+                object[] arguments;
                 if (!method.GetParameters().Any())
                 {
                     arguments = null;
@@ -180,11 +180,13 @@ namespace Fowindy.Shared
                            + ((index + 1 != chapterListing.Length) ? "." : "");
             }
 
-            string[] parts = listing.Split('.'); // 02.01.02.06
-            if (parts.Length > 2)
-            {
-                listing = $"{parts[0]}.{parts[1]}To{string.Join('.', parts.Skip(3))}";
-            }
+            #region ÎŞĞèÅĞ¶Ï_200603_Fowindy
+            //string[] parts = listing.Split('.'); // 02.01.02.06
+            //if (parts.Length > 2)
+            //{
+            //    listing = $"{parts[0]}.{parts[1]}To{string.Join(".", parts.Skip(3))}";
+            //} 
+            #endregion
 
             return listing.Replace('.', '_');
         }
