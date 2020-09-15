@@ -1,0 +1,37 @@
+﻿/* ==============================================================================
+ * 创 建 者：Fowindy
+ * 创建日期：2020年2月20日 星期四 23:58:43
+ * ==============================================================================*/
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Xml;
+
+namespace Fowindy.Day03_02.集合.Listing01_04
+{
+    public class Listing01_04
+    {
+        public static void Main()
+        {
+            List<int> list = new List<int>();
+            //01_循环终止条件_生成10个数
+            //05_优化_将Random对象实例化放到循环外面避免多次实例化
+            Random random = new Random();
+            while (list.Count < 10)
+            {
+                //02_调用Random函数生成1-100之间的整数
+                int num = random.Next(1, 101);
+                //03_判断添加条件_list中不存在_以及偶数
+                if (!list.Contains(num) && num % 2 == 0)
+                {
+                    list.Add(num);
+                }
+            }
+            //04_打印目标集合
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+}
