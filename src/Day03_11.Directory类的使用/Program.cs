@@ -34,6 +34,8 @@ namespace Day03_11.Directory类的使用
                  //../../../ 相关资料\3
                  // ../../../ 相关资料\4
             }
+            //05_Directory.GetFiles_获取该文件夹中所有的文件
+            //Directory.GetFiles(path);
             Console.ReadKey();
         }
     }
