@@ -36,6 +36,8 @@ namespace Day03_11.Directory类的使用
             }
             //05_Directory.GetFiles_获取该文件夹中所有的文件
             //Directory.GetFiles(path);
+            //06_Directory.Move("源","目标")_不同路径移动文件
+            Directory.Move("源","目标");
             Console.ReadKey();
         }
     }
