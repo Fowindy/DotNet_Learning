@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_01.节点树控件介
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_02.资料管理器", "src\Day04_02.资料管理器\Day04_02.资料管理器.csproj", "{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_03.正则表达式", "src\Day04_03.正则表达式\Day04_03.正则表达式.csproj", "{BC240A00-72FC-44A2-A36F-B09F14AF02EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC240A00-72FC-44A2-A36F-B09F14AF02EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC240A00-72FC-44A2-A36F-B09F14AF02EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC240A00-72FC-44A2-A36F-B09F14AF02EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC240A00-72FC-44A2-A36F-B09F14AF02EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
