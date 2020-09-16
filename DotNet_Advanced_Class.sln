@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5E2628
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_01.节点树控件介绍", "src\Day04_01.节点树控件介绍\Day04_01.节点树控件介绍.csproj", "{7014B94D-97A6-43B4-A3C2-DF61FE5F159F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_02.资料管理器", "src\Day04_02.资料管理器\Day04_02.资料管理器.csproj", "{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{7014B94D-97A6-43B4-A3C2-DF61FE5F159F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7014B94D-97A6-43B4-A3C2-DF61FE5F159F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7014B94D-97A6-43B4-A3C2-DF61FE5F159F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
