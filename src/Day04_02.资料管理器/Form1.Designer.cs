@@ -30,10 +30,10 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.bPathLoad = new System.Windows.Forms.Button();
             this.tbPathLoad = new System.Windows.Forms.TextBox();
             this.tv = new System.Windows.Forms.TreeView();
             this.tbShowDetail = new System.Windows.Forms.TextBox();
-            this.bPathLoad = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -81,6 +81,17 @@
             this.splitContainer2.SplitterDistance = 25;
             this.splitContainer2.TabIndex = 0;
             // 
+            // bPathLoad
+            // 
+            this.bPathLoad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bPathLoad.Location = new System.Drawing.Point(204, 0);
+            this.bPathLoad.Name = "bPathLoad";
+            this.bPathLoad.Size = new System.Drawing.Size(62, 25);
+            this.bPathLoad.TabIndex = 1;
+            this.bPathLoad.Text = "...";
+            this.bPathLoad.UseVisualStyleBackColor = true;
+            this.bPathLoad.Click += new System.EventHandler(this.bPathLoad_Click);
+            // 
             // tbPathLoad
             // 
             this.tbPathLoad.Dock = System.Windows.Forms.DockStyle.Left;
@@ -97,6 +108,7 @@
             this.tv.Name = "tv";
             this.tv.Size = new System.Drawing.Size(266, 421);
             this.tv.TabIndex = 0;
+            this.tv.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tv_NodeMouseDoubleClick);
             // 
             // tbShowDetail
             // 
@@ -106,17 +118,6 @@
             this.tbShowDetail.Name = "tbShowDetail";
             this.tbShowDetail.Size = new System.Drawing.Size(530, 450);
             this.tbShowDetail.TabIndex = 0;
-            // 
-            // bPathLoad
-            // 
-            this.bPathLoad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bPathLoad.Location = new System.Drawing.Point(204, 0);
-            this.bPathLoad.Name = "bPathLoad";
-            this.bPathLoad.Size = new System.Drawing.Size(62, 25);
-            this.bPathLoad.TabIndex = 1;
-            this.bPathLoad.Text = "...";
-            this.bPathLoad.UseVisualStyleBackColor = true;
-            this.bPathLoad.Click += new System.EventHandler(this.bPathLoad_Click);
             // 
             // Form1
             // 

@@ -53,6 +53,8 @@ namespace Day04_02.资料管理器
                     TreeNode treeNodeFile = nodes.Add(fileName);
                     //递归遍历的实现
                     LoadFileAndDirectory(files[i], treeNodeFile.Nodes);
+                    //把文件的路径绑定在tag属性上
+                    treeNodeFile.Tag = files[i];
                 }
             }
             catch
@@ -72,6 +74,14 @@ namespace Day04_02.资料管理器
                 {
                     LoadFileAndDirectory(path, tv.Nodes);
                 }
+            }
+        }
+        private void tv_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            //双击节点显示内容_采用e事件调用_推荐
+            if (e.Node.Tag != null)
+            {
+                tbShowDetail.Text = File.ReadAllText(e.Node.Tag.ToString(), Encoding.Default);
             }
         }
     }
