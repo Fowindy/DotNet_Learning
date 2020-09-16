@@ -21,5 +21,23 @@ namespace Day04_01.节点树控件介绍
         {
             InitializeComponent();
         }
+
+        private void bAddRootNode_Click(object sender, EventArgs e)
+        {
+            //添加根节点
+            tv.Nodes.Add(tbRootNode.Text);
+        }
+
+        private void bAddChildNode_Click(object sender, EventArgs e)
+        {
+            //往选中节点中添加子节点
+            tv.SelectedNode.Nodes.Add(tbChildNode.Text);
+        }
+
+        private void bRemoveCurNode_Click(object sender, EventArgs e)
+        {
+            //删除当前选中节点(含子节点)
+            tv.SelectedNode.Remove();
+        }
     }
 }
