@@ -8,7 +8,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5E2628
 		Shared\Program.cs = Shared\Program.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_01.节点树控件介绍", "src\Day04_01.节点树控件介绍\Day04_01.节点树控件介绍.csproj", "{7014B94D-97A6-43B4-A3C2-DF61FE5F159F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7014B94D-97A6-43B4-A3C2-DF61FE5F159F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7014B94D-97A6-43B4-A3C2-DF61FE5F159F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7014B94D-97A6-43B4-A3C2-DF61FE5F159F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7014B94D-97A6-43B4-A3C2-DF61FE5F159F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
