@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -72,12 +75,32 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="相关资料\demo\资料\html\新建 Microsoft PowerPoint 演示文稿.ppt" />
+    <None Include="相关资料\demo\资料\html\新建 Microsoft Word 文档.doc" />
+    <None Include="相关资料\demo\资料\html\新建 WinRAR ZIP 压缩文件.zip" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="相关资料\" />
+    <Folder Include="相关资料\demo\资料\php\1\尤溪\" />
+    <Folder Include="相关资料\demo\资料\php\2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="相关资料\demo\资料\c#\NET Framework 概念概述.txt" />
+    <Content Include="相关资料\demo\资料\c#\公共语言运行库概述.txt" />
+    <Content Include="相关资料\demo\资料\html\1.txt" />
+    <Content Include="相关资料\demo\资料\html\2.txt" />
+    <Content Include="相关资料\demo\资料\html\h\lalala.txt" />
+    <Content Include="相关资料\demo\资料\html\复件 %282%29 2.txt" />
+    <Content Include="相关资料\demo\资料\html\复件 %283%29 2.txt" />
+    <Content Include="相关资料\demo\资料\html\复件 2.txt" />
+    <Content Include="相关资料\demo\资料\html\新建 BMP 图像.bmp" />
+    <Content Include="相关资料\demo\资料\html\新建 KMP - Windows Audio File.wav" />
+    <Content Include="相关资料\demo\资料\java\托管执行过程.txt" />
+    <Content Include="相关资料\demo\资料\java\提问的智慧.txt" />
+    <Content Include="相关资料\demo\资料\java\新建 文本文档.txt" />
+    <Content Include="相关资料\demo\资料\java\运行代码.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
