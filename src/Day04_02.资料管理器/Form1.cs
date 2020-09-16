@@ -79,9 +79,15 @@ namespace Day04_02.资料管理器
         private void tv_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
             //双击节点显示内容_采用e事件调用_推荐
-            if (e.Node.Tag != null)
+            //if (e.Node.Tag != null)
+            //{
+            //    tbShowDetail.Text = File.ReadAllText(e.Node.Tag.ToString(), Encoding.Default);
+            //}
+
+            //双击节点显示内容_采用树事件调用
+            if (tv.SelectedNode.Tag != null)
             {
-                tbShowDetail.Text = File.ReadAllText(e.Node.Tag.ToString(), Encoding.Default);
+                tbShowDetail.Text = File.ReadAllText(tv.SelectedNode.Tag.ToString(), Encoding.Default);
             }
         }
     }
