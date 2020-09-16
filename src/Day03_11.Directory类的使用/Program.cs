@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml;
 using System.IO;
+using System.Collections;
 
 namespace Day03_11.Directory类的使用
 {
@@ -33,6 +34,15 @@ namespace Day03_11.Directory类的使用
                  //../../../ 相关资料\2
                  //../../../ 相关资料\3
                  // ../../../ 相关资料\4
+            }
+            //05_Directory.GetFiles_获取该文件夹中所有的文件
+            //Directory.GetFiles(path);
+            //06_Directory.Move("源","目标")_不同路径移动文件
+            Directory.Move("源","目标");
+            //07_Hashtable的遍历
+            Hashtable ht = new Hashtable();
+            foreach (DictionaryEntry item in ht)
+            {
             }
             Console.ReadKey();
         }
