@@ -33,14 +33,33 @@ namespace Day04_02.资料管理器
 
         private void LoadFileAndDirectory(string path, TreeNodeCollection nodes)
         {
-            string[] dirs = Directory.GetDirectories(path);
-            foreach (var dir in dirs)
+            try
             {
-                string dirName = Path.GetFileName(dir);
-                TreeNode treeNode = nodes.Add(dirName);
-                //递归遍历的实现
-                LoadFileAndDirectory(dir, treeNode.Nodes);
+                string[] dirs = Directory.GetDirectories(path);
+                foreach (var dir in dirs)
+                {
+                    string dirName = Path.GetFileName(dir);
+                    TreeNode treeNode = nodes.Add(dirName);
+                    //递归遍历的实现
+                    LoadFileAndDirectory(dir, treeNode.Nodes);
+                }
+
+                //获取路径下的所有文件路径
+                string[] files = Directory.GetFiles(path);
+                //根据这个路径获取该路径下的所有文件名字
+                for (int i = 0; i < files.Length; i++)
+                {
+                    string fileName = Path.GetFileNameWithoutExtension(files[i]);
+                    TreeNode treeNodeFile = nodes.Add(fileName);
+                    //递归遍历的实现
+                    LoadFileAndDirectory(files[i], treeNodeFile.Nodes);
+                }
             }
+            catch
+            {
+
+            }
+
         }
 
         private void bPathLoad_Click(object sender, EventArgs e)
