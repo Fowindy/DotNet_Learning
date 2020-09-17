@@ -185,7 +185,7 @@ namespace Fowindy.Shared
             //if (parts.Length > 2)
             //{
             //    listing = $"{parts[0]}.{parts[1]}To{string.Join(".", parts.Skip(3))}";
-            //} 
+            //}
             #endregion
 
             return listing.Replace('.', '_');
