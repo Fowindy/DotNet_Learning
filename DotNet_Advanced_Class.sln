@@ -12,7 +12,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_01.节点树控件介
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_02.资料管理器", "src\Day04_02.资料管理器\Day04_02.资料管理器.csproj", "{92491FF4-3A81-4CF8-8F14-A9555DC8FD3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_03.正则表达式", "src\Day04_03.正则表达式\Day04_03.正则表达式.csproj", "{E854266C-E90F-48D0-B44E-6C182EC72063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day04_03.正则表达式", "src\Day04_03.正则表达式\Day04_03.正则表达式.csproj", "{E854266C-E90F-48D0-B44E-6C182EC72063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_04.爬取天气数据", "src\Day04_04.爬取天气数据\Day04_04.爬取天气数据.csproj", "{9B781F1A-832F-49CA-A93F-C03A97CDFEDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{E854266C-E90F-48D0-B44E-6C182EC72063}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E854266C-E90F-48D0-B44E-6C182EC72063}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E854266C-E90F-48D0-B44E-6C182EC72063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B781F1A-832F-49CA-A93F-C03A97CDFEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B781F1A-832F-49CA-A93F-C03A97CDFEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B781F1A-832F-49CA-A93F-C03A97CDFEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B781F1A-832F-49CA-A93F-C03A97CDFEDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
