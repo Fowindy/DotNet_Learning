@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace Day04_04.爬取天气数据.cn.com.webxml.www {
+namespace Day04_04.爬取天气数据.Weather {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -44,7 +44,7 @@ namespace Day04_04.爬取天气数据.cn.com.webxml.www {
         
         /// <remarks/>
         public WeatherWebService() {
-            this.Url = global::Day04_04.爬取天气数据.Properties.Settings.Default.Day04_04_爬取天气数据_cn_com_webxml_www_WeatherWebService;
+            this.Url = global::Day04_04.爬取天气数据.Properties.Settings.Default.Day04_04_爬取天气数据_Weather;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;

@@ -44,7 +44,7 @@ namespace Day04_04.爬取天气数据
         {
             UpdateGV(dataTable);
         }
-        cn.com.webxml.www.WeatherWebService weather = new cn.com.webxml.www.WeatherWebService();
+        Weather.WeatherWebService weather = new Weather.WeatherWebService();
         private void bQueryWeather_Click(object sender, EventArgs e)
         {
             string cityName = cbCityName.Text;//获取当前城市

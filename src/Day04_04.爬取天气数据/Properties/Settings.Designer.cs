@@ -27,9 +27,9 @@ namespace Day04_04.爬取天气数据.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
         [global::System.Configuration.DefaultSettingValueAttribute("http://www.webxml.com.cn/WebServices/WeatherWebService.asmx")]
-        public string Day04_04_爬取天气数据_cn_com_webxml_www_WeatherWebService {
+        public string Day04_04_爬取天气数据_Weather {
             get {
-                return ((string)(this["Day04_04_爬取天气数据_cn_com_webxml_www_WeatherWebService"]));
+                return ((string)(this["Day04_04_爬取天气数据_Weather"]));
             }
         }
     }
