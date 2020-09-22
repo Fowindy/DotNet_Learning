@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_04.爬取天气数据
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_04_01.爬取天气数据_API_GET方式", "src\Day04_04_01.爬取天气数据_API_GET方式\Day04_04_01.爬取天气数据_API_GET方式.csproj", "{B56B5F57-3215-4590-9F5D-7A89A143D594}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_05.获取目标网页所有页面邮箱", "src\Day04_05.获取目标网页所有页面邮箱\Day04_05.获取目标网页所有页面邮箱.csproj", "{4A705432-368E-41D7-821B-917324374082}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{B56B5F57-3215-4590-9F5D-7A89A143D594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56B5F57-3215-4590-9F5D-7A89A143D594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B56B5F57-3215-4590-9F5D-7A89A143D594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A705432-368E-41D7-821B-917324374082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A705432-368E-41D7-821B-917324374082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A705432-368E-41D7-821B-917324374082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A705432-368E-41D7-821B-917324374082}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
