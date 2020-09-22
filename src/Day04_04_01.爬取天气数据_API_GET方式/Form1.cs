@@ -41,6 +41,8 @@ namespace Day04_04_01.爬取天气数据_API_GET方式
             PropertyInfo pi = dgvType.GetProperty("DoubleBuffered",
                 BindingFlags.Instance | BindingFlags.NonPublic);
             pi.SetValue(this.dataGridView1, true, null);
+
+            CheckForIllegalCrossThreadCalls = false;
         }
         /// <summary>
         /// 查询目标城市7天天气
@@ -56,6 +58,8 @@ namespace Day04_04_01.爬取天气数据_API_GET方式
             {
                 //调用查询天气函数
                 QueryWeatherByCity(cityName);
+                //列宽自适应
+                AutoSizeColumn(dataGridView1);
             }
             else
             {
@@ -132,11 +136,9 @@ namespace Day04_04_01.爬取天气数据_API_GET方式
                 dr["空气质量"] = rt.data[i].air_level;
                 dr["更新时间"] = rt.update_time;
                 dataTable.Rows.Add(dr);
-                //列宽自适应
-                AutoSizeColumn(dataGridView1);
-                //单行刷新
-                dataGridView1.Refresh();
             }
+            //单行刷新
+            //dataGridView1.Refresh();
         }
         /// <summary>
         /// 按次序查询指定数量城市7天天气
@@ -146,12 +148,31 @@ namespace Day04_04_01.爬取天气数据_API_GET方式
         private void bQueryWeatherAll_Click(object sender, EventArgs e)
         {
             tbAPIInterface.ReadOnly = true;
+            Thread thread = new Thread(QueryWeatherByCities);
+            thread.IsBackground = true;
+            thread.Start();
+            #region 第二种多线程的方式
+            //new Thread(() =>
+            //{             //遍历批量查询
+            //    for (int i = 0; i < nudCityCount.Value; i++)
+            //    {
+            //        QueryWeatherByCity(list[i]);
+            //    }
+            //}).Start(); 
+            #endregion
+        }
+
+        private void QueryWeatherByCities()
+        {
             //遍历批量查询
             for (int i = 0; i < nudCityCount.Value; i++)
             {
                 QueryWeatherByCity(list[i]);
             }
+            //列宽自适应
+            AutoSizeColumn(dataGridView1);
         }
+
         /// <summary>
         /// 查询城市名称代号(正则表达式爬虫实现)
         /// </summary>
