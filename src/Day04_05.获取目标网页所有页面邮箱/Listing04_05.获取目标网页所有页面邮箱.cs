@@ -17,6 +17,7 @@ using System.Text;
 using System.Xml;
 using System.IO;
 using System.Net;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Fowindy.Day04_05.获取目标网页所有页面邮箱.Listing04_05
@@ -25,6 +26,8 @@ namespace Fowindy.Day04_05.获取目标网页所有页面邮箱.Listing04_05
     {
         public static void Main()
         {
+            //2.7.1 先定义所有页数为0
+            int pageCount = 0;
             #region 1.实例化WebClient对象来初步解析网页数据
             //1.1 实例化WebClient对象用于解析网页数据
             WebClient client = new WebClient();
@@ -37,7 +40,7 @@ namespace Fowindy.Day04_05.获取目标网页所有页面邮箱.Listing04_05
                 //http://bbs.tianya.cn/post-english-129176-1.shtml
                 //https://bbs.bianzhirensheng.com/thread-864299-1-1.html
                 //https://www.jb51.net/list/list_85_1.htm
-            string url1 = "http://bbs.gongkong.com/D/200411/57812/57812_1.shtml";
+            string url1 = "http://bbs.tianya.cn/post-english-129176-1.shtml";
             //1.4 下载目标网页字符串
             string html = client.DownloadString(url1);
             //1.5 正则表达式获取目标网页真实解码格式
@@ -78,8 +81,6 @@ namespace Fowindy.Day04_05.获取目标网页所有页面邮箱.Listing04_05
             //2.7 同理,获取首页和末页的所有页矩
             try
             {
-                //2.7.1 先定义所有页数为0
-                int pageCount = 0;
                 //2.7.2 正则解析获取html中含有尾页或末页的语句
                     //href="57812_8.shtml" class="last_pager psy" >尾页
                 string tempMax = Regex.Match(html, @"href=[\S\s]{1,70}(末页|尾页)").Value.Substring(Regex.Match(html, @"href=[\S\s]{1,70}(末页|尾页)").Value.LastIndexOf("href"));
@@ -99,7 +100,99 @@ namespace Fowindy.Day04_05.获取目标网页所有页面邮箱.Listing04_05
             {
             }
             #endregion
-
+            #region 3.解析获取目标数据
+            //3.1 定义新的网址变量
+            string url2 = null;
+            //3.2 实例化正则匹配对象
+            MatchCollection matches = null;
+            //3.3 实例化存储email的集合
+            List<string> allEmail = new List<string>();
+            //3.4 定义email的个数
+            int count = 0;
+            //3.5 判断是否解析到总页数
+            if (pageCount != 0)
+            {
+                //解析到,则获取页数
+                for (int j = 0; j < pageCount / stepCount; j++)
+                {
+                    if (divide != null)
+                    {
+                        //如果有分隔符,则拼接进去组成新网址
+                        url2 = j == 0 ? url1 : url1.Substring(0, index) + divide + (j * stepCount).ToString() + url1.Substring(index);
+                    }
+                    else
+                    {
+                        //没有分隔符则直接拼接新的网址
+                        url2 = url1.Substring(0, index) + ((j + 1) * stepCount).ToString() + url1.Substring(index + 1);
+                    }
+                    //下载新网址字符
+                    html = client.DownloadString(url2);
+                    //正则匹配email
+                    matches = Regex.Matches(html, "([0-9a-zA-Z_.-]+)@([a-zA-Z0-9]+([.][a-zA-Z]+){1,2})");
+                    foreach (Match item in matches)
+                    {
+                        if (item.Success)
+                        {
+                            //匹配成功打印用户名和域名
+                            Console.WriteLine(item.Groups[1].Value + "==" + item.Groups[2].Value);//所有的邮箱显示出来了
+                        }
+                        //去掉email重复
+                        if (!allEmail.Contains(item.Value))
+                        {
+                            //并将email存储到集合---重点:matches结合转list集合方法
+                            allEmail.AddRange(matches.Cast<Match>().Select(m => m.Value).ToList());
+                        }
+                    }
+                    //email数递增
+                    count += matches.Count;
+                }
+            }
+            else
+            {
+                //下面是当总页数无法获取使用while循环处理的情况,代码绝大部分与上面相同
+                int i = 0;
+                while (true)
+                {
+                    if (divide != null)
+                    {
+                        url2 = i == 0 ? url1 : url1.Substring(0, index) + divide + (i * stepCount).ToString() + url1.Substring(index);
+                    }
+                    else
+                    {
+                        url2 = url1.Substring(0, index) + ((i + 1) * stepCount).ToString() + url1.Substring(index + 1);
+                    }
+                    str1 = url2.Substring(url2.LastIndexOf(str2.Substring(0, 6)));
+                    html = client.DownloadString(url2);
+                    matches = Regex.Matches(html, "([0-9a-zA-Z_.-]+)@([a-zA-Z0-9]+([.][a-zA-Z]+){1,2})");
+                    foreach (Match item in matches)
+                    {
+                        //判断一下是否成功,这行代码可以不用写,最好写上,不会出问题
+                        if (item.Success)
+                        {
+                            Console.WriteLine(item.Groups[1].Value + "==" + item.Groups[2].Value);//所有的邮箱显示出来了
+                        }
+                        if (!allEmail.Contains(item.Value))
+                        {
+                            allEmail.AddRange(matches.Cast<Match>().Select(m => m.Value).ToList());
+                        }
+                    }
+                    count += matches.Count;
+                    i++;
+                    //循环终止条件,网页中不含可按钮的下?页
+                    if (!Regex.IsMatch(html, @"下[\S\s]?页</a>"))
+                    {
+                        break;
+                    }
+                }
+            }
+            //遍历打印获取到的邮箱
+            foreach (var item in allEmail)
+            {
+                Console.WriteLine(item);
+            }
+            //打印邮箱数
+            Console.WriteLine(count);
+            #endregion
         }
         /// <summary>
         /// 字符串比较不同
