@@ -18,7 +18,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_04.爬取天气数据
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_04_01.爬取天气数据_API_GET方式", "src\Day04_04_01.爬取天气数据_API_GET方式\Day04_04_01.爬取天气数据_API_GET方式.csproj", "{B56B5F57-3215-4590-9F5D-7A89A143D594}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_05.获取目标网页所有页面邮箱", "src\Day04_05.获取目标网页所有页面邮箱\Day04_05.获取目标网页所有页面邮箱.csproj", "{4A705432-368E-41D7-821B-917324374082}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day04_05.获取目标网页所有页面邮箱", "src\Day04_05.获取目标网页所有页面邮箱\Day04_05.获取目标网页所有页面邮箱.csproj", "{4A705432-368E-41D7-821B-917324374082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_06.抓取网页的img_src带参数的图片链接_并下载", "src\Day04_06.抓取网页的img_src带参数的图片链接_并下载\Day04_06.抓取网页的img_src带参数的图片链接_并下载.csproj", "{3710049E-8912-4C63-958D-E91279A2F38E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{4A705432-368E-41D7-821B-917324374082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A705432-368E-41D7-821B-917324374082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A705432-368E-41D7-821B-917324374082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3710049E-8912-4C63-958D-E91279A2F38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3710049E-8912-4C63-958D-E91279A2F38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3710049E-8912-4C63-958D-E91279A2F38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3710049E-8912-4C63-958D-E91279A2F38E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
