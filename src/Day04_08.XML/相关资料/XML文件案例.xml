@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<school>
+  <class>
+    <student id ="101">
+      <name>杰西卡</name>
+      <gender>女</gender>
+      <age>32</age>
+    </student>
+    <student id ="102">
+      <name>马云</name>
+      <gender>男</gender>
+      <age>54</age>
+    </student>
+    <student id ="103">
+      <name>王岳</name>
+      <gender>男</gender>
+      <age>31</age>
+    </student>
+  </class>
+</school>
