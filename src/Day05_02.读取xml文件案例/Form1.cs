@@ -21,15 +21,31 @@ namespace Day05_02.读取xml文件案例
         {
             InitializeComponent();
         }
+        string path = null;
         /// <summary>
-        /// 读取xml并生成树按钮事件
+        /// 导入xml文件并生成树事件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void bXmlToTree_Click(object sender, EventArgs e)
+        private void bLoadXmlToTree_Click(object sender, EventArgs e)
         {
-            //1.实例化xml文件对象并加载xml文件
-
+            path = tbXmlPath.Text.Trim();
+            if (string.IsNullOrEmpty(path))
+            {
+                if (FolderDialog.ShowDialog() == DialogResult.OK)
+                {
+                    path = FolderDialog.SelectedPath;
+                    if (string.IsNullOrEmpty(path))
+                    {
+                        MessageBox.Show("路径为空!请先导入xml文件!!!");
+                        return;
+                    }
+                    else
+                    {
+                        tbXmlPath.Text = path;
+                    }
+                }
+            }
         }
     }
 }
