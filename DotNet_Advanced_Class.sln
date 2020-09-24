@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day04_05.获取目标网页
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_06.抓取网页的img_src带参数的图片链接_并下载", "src\Day04_06.抓取网页的img_src带参数的图片链接_并下载\Day04_06.抓取网页的img_src带参数的图片链接_并下载.csproj", "{3710049E-8912-4C63-958D-E91279A2F38E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04_07.敏感词处理", "src\Day04_07.敏感词处理\Day04_07.敏感词处理.csproj", "{6DD01054-81BE-42FC-9ECD-DA68D23F5303}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{3710049E-8912-4C63-958D-E91279A2F38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3710049E-8912-4C63-958D-E91279A2F38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3710049E-8912-4C63-958D-E91279A2F38E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD01054-81BE-42FC-9ECD-DA68D23F5303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD01054-81BE-42FC-9ECD-DA68D23F5303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD01054-81BE-42FC-9ECD-DA68D23F5303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD01054-81BE-42FC-9ECD-DA68D23F5303}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
