@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day05_01.写xml文件", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day05_02.读取xml文件案例", "src\Day05_02.读取xml文件案例\Day05_02.读取xml文件案例.csproj", "{35FEC935-F711-4AF1-928D-3E0BE3624845}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day05_03.xml文件登录", "src\Day05_03.xml文件登录\Day05_03.xml文件登录.csproj", "{BEE67C8D-671E-49BE-9B2A-B6191648EE12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{35FEC935-F711-4AF1-928D-3E0BE3624845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35FEC935-F711-4AF1-928D-3E0BE3624845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35FEC935-F711-4AF1-928D-3E0BE3624845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE67C8D-671E-49BE-9B2A-B6191648EE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE67C8D-671E-49BE-9B2A-B6191648EE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE67C8D-671E-49BE-9B2A-B6191648EE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE67C8D-671E-49BE-9B2A-B6191648EE12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
