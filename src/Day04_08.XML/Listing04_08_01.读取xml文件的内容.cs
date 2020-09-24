@@ -31,6 +31,11 @@ namespace Fowindy.Day04_08.XML.Listing04_08_01
             //获取xml的根元素(相当于整个xml内容)
             Console.WriteLine(xml.Root);
             Console.WriteLine("---------------------------------");
+            //实例化根元素
+            XElement xele = xml.Root;
+            //获取根元素的名字
+            Console.WriteLine(xele.Name);
+            Console.WriteLine("---------------------------------");
         }
     }
 }
