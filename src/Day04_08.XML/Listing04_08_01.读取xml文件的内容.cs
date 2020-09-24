@@ -34,8 +34,28 @@ namespace Fowindy.Day04_08.XML.Listing04_08_01
             //实例化根元素
             XElement xele = xml.Root;
             //获取根元素的名字
-            Console.WriteLine(xele.Name);
+            Console.WriteLine(xele.Name);//school
             Console.WriteLine("---------------------------------");
+            //获取根元素下第一级所有子元素
+            IEnumerable<XElement> xeles =  xele.Elements();
+            foreach (XElement eleClass in xeles)
+            {
+                Console.WriteLine(eleClass.Name);//class1   class2
+                foreach (XElement eleStudent in eleClass.Elements())
+                {
+                    //获取class元素下student元素的名字
+                    Console.WriteLine(eleStudent.Name);
+                    //获取class元素下student元素的属性id值
+                    Console.WriteLine(eleStudent.Attribute("id").Value);
+                    //获取class元素下student元素下name元素的值
+                    Console.WriteLine(eleStudent.Element("name").Value);
+                    //获取class元素下student元素下gender元素的值
+                    Console.WriteLine(eleStudent.Element("gender").Value);
+                    //获取class元素下student元素下age元素的值
+                    Console.WriteLine(eleStudent.Element("age").Value);
+                }
+                Console.WriteLine("---------------------------------");
+            }
         }
     }
 }
