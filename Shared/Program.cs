@@ -13,9 +13,13 @@ namespace Fowindy.Shared
         {
             var assembly = Assembly.GetEntryAssembly();
 
-            string regexMatch = Regex.Match(assembly.GetName().Name, "\\d{1,2}").Value;
-
-            int chapterNumber = int.Parse(regexMatch);
+            string regexMatch = Regex.Match(assembly.GetName().Name, @"([0-9_-]+).").Groups[1].Value;
+            if (Regex.IsMatch(regexMatch, @"[^\d]"))
+            {
+                regexMatch = regexMatch.Replace(Regex.Match(regexMatch, @"[^\d]").Value, ".");
+                regexMatch = regexMatch.Replace(Regex.Match(regexMatch, @"(.[0]+)[1-9]").Groups[1].Value, ".");
+            }
+            double chapterNumber = double.Parse(regexMatch);
             string listing;
             IEnumerable<string> stringArguments = null;
             if (args.Length == 0)
