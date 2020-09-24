@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Xml.Linq;
 
 namespace Day05_02.读取xml文件案例
 {
@@ -46,6 +47,12 @@ namespace Day05_02.读取xml文件案例
                     }
                 }
             }
+            //1.实例化xml文件对象并读取xml文件
+            XDocument xdoc = XDocument.Load(path);
+            //2.实例化root元素来存储xml文件的root元素
+            XElement root = xdoc.Root;
+            //3.将根元素的名字显示到节点树上
+            treeView.Nodes.Add(root.Name.ToString());
         }
     }
 }

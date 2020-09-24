@@ -47,6 +47,7 @@
             this.tbXmlPath.Name = "tbXmlPath";
             this.tbXmlPath.Size = new System.Drawing.Size(396, 21);
             this.tbXmlPath.TabIndex = 2;
+            this.tbXmlPath.Text = "..\\..\\相关资料\\首页菜单.xml";
             // 
             // bLoadXmlToTree
             // 
