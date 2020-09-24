@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Xml.Linq;
+using System.Threading;
 
 namespace Day05_02.读取xml文件案例
 {
@@ -53,6 +54,34 @@ namespace Day05_02.读取xml文件案例
             XElement root = xdoc.Root;
             //3.将根元素的名字显示到节点树上
             treeView.Nodes.Add(root.Name.ToString());
+            //4.开启线程加载其余节点==>4.1 加载子元素到树
+            //不能使用thread线程
+            //Thread thread = new Thread(() => LoadXelementToTree(root, treeView.Nodes)) { IsBackground = true };
+            //thread.Start();
+            treeView.Invoke(new Action(() => LoadXelementToTree(root,treeView.Nodes)));
+        }
+        /// <summary>
+        /// 4.1 加载子元素到树
+        /// </summary>
+        /// <param name="root">子元素</param>
+        /// <param name="nodes">树节点集合</param>
+        private void LoadXelementToTree(XElement root, TreeNodeCollection nodes)
+        {
+            //遍历根元素下所有隶属的子元素
+            foreach (XElement item in root.Elements())
+            {
+                //判断该子元素下是否还有子元素
+                if (item.Elements().Count() > 0)
+                {
+                    TreeNode treeNode = nodes.Add(item.Name.ToString());
+                    LoadXelementToTree(item, treeNode.Nodes);
+                }
+                else
+                {
+                    //把当前的这个子元素值存放到节点树中
+                    nodes.Add(item.Name.ToString());
+                }
+            }
         }
     }
 }
