@@ -8,7 +8,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5E2628
 		Shared\Program.cs = Shared\Program.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day05_01.写xml文件", "src\Day05_01.写xml文件\Day05_01.写xml文件.csproj", "{798EAB2B-0AFC-4CF8-8538-5BED7FD0DE59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day05_01.写xml文件", "src\Day05_01.写xml文件\Day05_01.写xml文件.csproj", "{798EAB2B-0AFC-4CF8-8538-5BED7FD0DE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day05_02.读取xml文件案例", "src\Day05_02.读取xml文件案例\Day05_02.读取xml文件案例.csproj", "{35FEC935-F711-4AF1-928D-3E0BE3624845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{798EAB2B-0AFC-4CF8-8538-5BED7FD0DE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{798EAB2B-0AFC-4CF8-8538-5BED7FD0DE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{798EAB2B-0AFC-4CF8-8538-5BED7FD0DE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35FEC935-F711-4AF1-928D-3E0BE3624845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35FEC935-F711-4AF1-928D-3E0BE3624845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35FEC935-F711-4AF1-928D-3E0BE3624845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35FEC935-F711-4AF1-928D-3E0BE3624845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

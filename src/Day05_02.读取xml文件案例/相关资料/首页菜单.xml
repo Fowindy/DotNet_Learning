@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="240,800" roundcorner="4,4" >
+
+  <List name="profile_menu_list" bkcolor="#FFFDFDFD" header="hidden" itemselectedbkcolor="#FFF0F0F0" itembkcolor="#FFFDFDFD" itemhotbkcolor="#FFF5F6F7" itemdisabledbkcolor="#FFFDFDFD" itemtextpadding="18,0,18,0" itemfont="11" >
+    <ListContainerElement height="74" tag="1" enabled="false">
+      <HBox>
+        <VBox inset="18,10,18,0">
+          <Control />
+          <EmojiButton valign="top" name="nickName" align="left" text="" height="25" font="10" textpadding="0,0,0,0" hottextcolor="#FF5FBDFF" textcolor="#FF191F25" />
+          <HBox childvalign="vcenter" height="18">
+            <EmotionLabel name="work_status_icon" maxwidth="18" font="12" textcolor="#FFA3A4A6" bkcolor="#FFFFFFFF"/>
+            <EmojiButton name="work_status_text" align="left" font="12" textcolor="#FFA3A4A6" disabledtextcolor="#FF5FBDFF"/>
+          </HBox>
+          <Control />
+        </VBox>
+        <EmojiIcon padding="0,14,18,18" name="avatar" visible="true" width="42" height="42" bkcolor="#FFFDFDFD" >
+          <Button name="avatarBtn" tag="1" />
+        </EmojiIcon>
+      </HBox>
+    </ListContainerElement>
+    <Control height="1" padding="0,9,0,8" bkcolor="#FFE4E4E4" />
+    <ListContainerElement height="30" tag="200" visible="false" >
+      <HBox mouse="false" disable="false" >
+        <Label name="lable_dingsync_switch" mouse="false" disable="false" text="%{pc_dingsync_enable_switch}" textpadding="18,0,0,0" font="11" />
+        <Control />
+        <Label visible="false" name="lable_dingsync_switch_read_point" font="5" text="&#xe71f;" textpadding="0,0,18,0" mouse="false" disable="false" textcolor="#FFFF0000"/>
+      </HBox>
+    </ListContainerElement>
+    <Control height="1" padding="0,9,0,8" tag="200" bkcolor="#FFE4E4E4" visible="false" />
+    <ListContainerElement name="profilemenu_system_setting" height="30" tag="4">
+      <HBox mouse="false" disable="false">
+        <Label mouse="false" disable="false" textpadding="18,0,0,0" font="11" text="%{pc_profilemenu_systemsetting}"/>
+        <Control mouse="false" disable="false" />
+        <Label name="redpoint" font="5" text="&#xe71f;" textpadding="0,0,18,0" mouse="false" disable="false" visible="false" textcolor="#FFFF0000"/>
+      </HBox>
+    </ListContainerElement>
+    <ListLabelElement name="profilemenu_change_avatar" text="%{dt_profile_update_avator}" height="30" tag="3" />
+    <ListLabelElement name="profilemenu_change_password" text="%{pc_profilemenu_changepwd}" height="30" tag="2" />
+    <ListContainerElement name="profilemenu_safe_setting" height="30" tag="15" visible="false">
+      <VBox>
+        <HBox mouse="false" disable="false">
+            <Label mouse="false" disable="false" font="11" textpadding="18,0,0,0" text="%{dt_security_settings}"/>
+            <Control mouse="false" disable="false" />
+            <Label name="safe_setting_redpoint" font="5" text="&#xe71f;" textpadding="0,0,18,0" mouse="false" disable="false" visible="true" textcolor="#FFFB602D"/>
+        </HBox>	
+        <HBox name="profilemenu_safe_setting_tips_del" mouse="false" disable="false" visible="false" height="20">
+            <Label mouse="false" disable="false" font="12" textpadding="18,0,0,0" textcolor="#FFFB602D" text="%{dt_security_setting_tips}"/>	  
+        </HBox>
+      </VBox>
+    </ListContainerElement>
+    <Control height="1" padding="0,9,0,8" bkcolor="#FFE4E4E4" />
+    <ListContainerElement height="30" tag="16">
+      <HBox mouse="false" disable="false">
+        <Label mouse="false" disable="false" text="%{pc_customer_service_current_organization}" textpadding="18,0,0,0" font="11" />
+        <Label font="7" text="&#xe71a;" textpadding="8,3,0,0" mouse="false" disable="false" />
+      </HBox>
+	  </ListContainerElement>
+    <ListContainerElement height="30" tag="17">
+      <HBox mouse="false" disable="false">
+        <Label mouse="false" disable="false" text="%{pc_customer_service_status}" textpadding="18,0,0,0" font="11" />
+        <Label font="7" text="&#xe71a;" textpadding="8,3,0,0" mouse="false" disable="false" />
+      </HBox>
+	  </ListContainerElement>
+    <Control height="1" padding="0,9,0,8" bkcolor="#FFE4E4E4" tag="11" />
+    <ListLabelElement text="%{pc_profilemenu_robotmgr}" height="30" tag="10" />
+    <ListContainerElement height="30" tag="13">
+      <HBox mouse="false" disable="false">
+        <Label mouse="false" disable="false" text="%{pc_profilemenu_feedback}" textpadding="18,0,0,0" font="11" />
+        <Label font="7" text="&#xe71a;" textpadding="8,3,0,0" mouse="false" disable="false" />
+      </HBox>
+    </ListContainerElement>
+    <ListLabelElement text="%{pc_profilemenu_customer_service}" height="30" tag="20" />
+    <ListLabelElement text="%{pc_profilemenu_downloadmobilever}" height="30" tag="6" />
+    <ListLabelElement text="%{pc_profilemenu_bbs}" height="30" tag="12" />
+    <ListLabelElement name="profilemenu_about" text="%{pc_profilemenu_about}" height="30" tag="9" />
+    <Control height="1" padding="0,9,0,8" bkcolor="#FFE4E4E4" />
+    <ListLabelElement text="切换日常|预发|线上环境" height="30" tag="100" />
+    <Control height="1" padding="0,9,0,8" bkcolor="#FFE4E4E4" tag="101"/>
+    <ListLabelElement text="查询灰度key" height="30" tag="102" />
+    <ListLabelElement name="profilemenu_exit" text="%{pc_profilemenu_exit}" height="30" tag="7" />
+    <ListLabelElement name="profilemenu_shutdown" text="%{pc_profilemenu_shutdown}" height="30" tag="14" />
+    <Control height="0" padding="0,9,0,0" bkcolor="#FFE4E4E4" />
+  </List>
+
+</Window>
