@@ -75,6 +75,7 @@
             this.bLogin.TabIndex = 4;
             this.bLogin.Text = "登录";
             this.bLogin.UseVisualStyleBackColor = true;
+            this.bLogin.Click += new System.EventHandler(this.bLogin_Click);
             // 
             // Form1
             // 
