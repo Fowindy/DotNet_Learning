@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml;
 using System.IO;
+using System.Xml.Linq;
 
 namespace Fowindy.Day04_08.XML.Listing04_08_01
 {
@@ -23,6 +24,13 @@ namespace Fowindy.Day04_08.XML.Listing04_08_01
     {
         public static void Main()
         {
+            //xml文件存储的位置
+            string path = @"..\..\..\相关资料\XML文件案例.xml";
+            //实例化xml对象加载文件---using System.Xml.Linq;
+            XDocument xml = XDocument.Load(path);
+            //获取xml的根元素(相当于整个xml内容)
+            Console.WriteLine(xml.Root);
+            Console.WriteLine("---------------------------------");
         }
     }
 }
