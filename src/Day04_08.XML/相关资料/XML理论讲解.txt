@@ -1,0 +1,8 @@
+﻿XML: eXtensible Markup Language
+	标记:文档中任何不想被打印输出的部分;
+	标记的作用:传递了关于文档本身以外的额外信息;
+常见标记语言:
+	SGML,HTML,XML
+HTML与XML的区别:
+	HTML:侧重数据展示;标签固定;
+	XML:侧重数据存储;标签不固定;
