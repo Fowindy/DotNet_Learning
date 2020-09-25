@@ -159,7 +159,32 @@ namespace Day05_04.Xml模拟数据库的增删改查
         /// <param name="e"></param>
         private void bUpdate_Click(object sender, EventArgs e)
         {
-
+            //获取用户选中的行id
+            string id = tbUpdateID.Text;
+            //获取id根元素
+            XElement xele = xdoc.Root.Elements("user").Where(x => x.Attribute("id").Value == id).Single();
+            //修改后的用户名和密码不为空
+            if (!string.IsNullOrEmpty(tbUpdateName.Text.Trim()) && !string.IsNullOrEmpty(tbUpdatePassWord.Text.Trim()))
+            {
+                //修改根元素的子项(学号不允许更改)
+                xele.SetElementValue("name", tbUpdateName.Text.Trim());
+                xele.SetElementValue("password", tbUpdatePassWord.Text.Trim());
+                //保存xml
+                xdoc.Save("UserData.xml");
+                //成功提示
+                MessageBox.Show("修改成功!");
+                //界面刷新显示
+                LoadXmlToDgv();
+                //修改成功,清空文本框
+                tbUpdatePassWord.Clear();
+                tbUpdateName.Clear();
+                tbUpdateID.Clear();
+            }
+            else
+            {
+                //失败提示
+                MessageBox.Show("修改失败!用户名和密码为空!请确认!");
+            }
         }
         /// <summary>
         /// 5.1.目标行被选中则将对象信息导入到文本框中待修改

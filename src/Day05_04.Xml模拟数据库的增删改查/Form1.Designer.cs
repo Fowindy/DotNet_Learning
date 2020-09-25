@@ -239,6 +239,7 @@
             this.tbUpdateID.Name = "tbUpdateID";
             this.tbUpdateID.Size = new System.Drawing.Size(100, 21);
             this.tbUpdateID.TabIndex = 3;
+            this.tbUpdateID.Visible = false;
             // 
             // label4
             // 
@@ -266,6 +267,7 @@
             this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 0;
             this.label6.Text = "学号[ID]";
+            this.label6.Visible = false;
             // 
             // groupBox3
             // 
