@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day05_03.xml文件登录", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day05_04.Xml模拟数据库的增删改查", "src\Day05_04.Xml模拟数据库的增删改查\Day05_04.Xml模拟数据库的增删改查.csproj", "{313BDDB4-A3CA-4B15-BCEE-F39C657D6675}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day05_05.委托", "src\Day05_05.委托\Day05_05.委托.csproj", "{6CED3C41-D21D-454E-AB97-4F388DFB65AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{313BDDB4-A3CA-4B15-BCEE-F39C657D6675}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{313BDDB4-A3CA-4B15-BCEE-F39C657D6675}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{313BDDB4-A3CA-4B15-BCEE-F39C657D6675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CED3C41-D21D-454E-AB97-4F388DFB65AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CED3C41-D21D-454E-AB97-4F388DFB65AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CED3C41-D21D-454E-AB97-4F388DFB65AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CED3C41-D21D-454E-AB97-4F388DFB65AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
