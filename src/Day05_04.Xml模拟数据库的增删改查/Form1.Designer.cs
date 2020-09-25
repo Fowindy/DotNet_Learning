@@ -34,13 +34,13 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbAddID = new System.Windows.Forms.TextBox();
-            this.tbAddName = new System.Windows.Forms.TextBox();
-            this.tbAddPassWord = new System.Windows.Forms.TextBox();
             this.bRegister = new System.Windows.Forms.Button();
+            this.tbAddPassWord = new System.Windows.Forms.TextBox();
+            this.tbAddName = new System.Windows.Forms.TextBox();
+            this.tbAddID = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bUpdate = new System.Windows.Forms.Button();
             this.tbUpdatePassWord = new System.Windows.Forms.TextBox();
@@ -76,24 +76,29 @@
             this.dgv.Location = new System.Drawing.Point(12, 71);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
+            this.dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgv.RowTemplate.Height = 23;
             this.dgv.Size = new System.Drawing.Size(344, 150);
             this.dgv.TabIndex = 0;
+            this.dgv.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dgv_RowStateChanged);
             // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "Id";
             this.Column1.HeaderText = "学号";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
+            this.Column2.DataPropertyName = "Name";
             this.Column2.HeaderText = "姓名";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
+            this.Column3.DataPropertyName = "PassWord";
             this.Column3.HeaderText = "密码";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
@@ -114,23 +119,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "注册[增加]";
             // 
-            // label1
+            // bRegister
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "学号[ID]";
+            this.bRegister.Location = new System.Drawing.Point(182, 75);
+            this.bRegister.Name = "bRegister";
+            this.bRegister.Size = new System.Drawing.Size(67, 23);
+            this.bRegister.TabIndex = 6;
+            this.bRegister.Text = "注册";
+            this.bRegister.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // tbAddPassWord
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "姓名";
+            this.tbAddPassWord.Location = new System.Drawing.Point(66, 71);
+            this.tbAddPassWord.Name = "tbAddPassWord";
+            this.tbAddPassWord.Size = new System.Drawing.Size(100, 21);
+            this.tbAddPassWord.TabIndex = 5;
+            // 
+            // tbAddName
+            // 
+            this.tbAddName.Location = new System.Drawing.Point(66, 44);
+            this.tbAddName.Name = "tbAddName";
+            this.tbAddName.Size = new System.Drawing.Size(100, 21);
+            this.tbAddName.TabIndex = 4;
+            // 
+            // tbAddID
+            // 
+            this.tbAddID.Location = new System.Drawing.Point(66, 18);
+            this.tbAddID.Name = "tbAddID";
+            this.tbAddID.Size = new System.Drawing.Size(100, 21);
+            this.tbAddID.TabIndex = 3;
             // 
             // label3
             // 
@@ -141,35 +158,23 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "密码";
             // 
-            // tbAddID
+            // label2
             // 
-            this.tbAddID.Location = new System.Drawing.Point(66, 18);
-            this.tbAddID.Name = "tbAddID";
-            this.tbAddID.Size = new System.Drawing.Size(100, 21);
-            this.tbAddID.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "姓名";
             // 
-            // tbAddName
+            // label1
             // 
-            this.tbAddName.Location = new System.Drawing.Point(66, 44);
-            this.tbAddName.Name = "tbAddName";
-            this.tbAddName.Size = new System.Drawing.Size(100, 21);
-            this.tbAddName.TabIndex = 4;
-            // 
-            // tbAddPassWord
-            // 
-            this.tbAddPassWord.Location = new System.Drawing.Point(66, 71);
-            this.tbAddPassWord.Name = "tbAddPassWord";
-            this.tbAddPassWord.Size = new System.Drawing.Size(100, 21);
-            this.tbAddPassWord.TabIndex = 5;
-            // 
-            // bRegister
-            // 
-            this.bRegister.Location = new System.Drawing.Point(182, 75);
-            this.bRegister.Name = "bRegister";
-            this.bRegister.Size = new System.Drawing.Size(67, 23);
-            this.bRegister.TabIndex = 6;
-            this.bRegister.Text = "注册";
-            this.bRegister.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "学号[ID]";
             // 
             // groupBox2
             // 
@@ -339,9 +344,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button bRegister;
         private System.Windows.Forms.TextBox tbAddPassWord;
@@ -366,6 +368,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
 
