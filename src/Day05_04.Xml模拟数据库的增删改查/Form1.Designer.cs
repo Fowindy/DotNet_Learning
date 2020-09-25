@@ -53,10 +53,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.bSearch = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbSearchByName = new System.Windows.Forms.TextBox();
+            this.tbSearchByID = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.tbSearchByPassWord = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -271,40 +273,43 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.tbSearchByPassWord);
+            this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.bSearch);
-            this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.tbSearchByName);
+            this.groupBox3.Controls.Add(this.tbSearchByID);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Location = new System.Drawing.Point(363, 254);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(255, 77);
+            this.groupBox3.Size = new System.Drawing.Size(255, 108);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "查询";
             // 
             // bSearch
             // 
-            this.bSearch.Location = new System.Drawing.Point(182, 47);
+            this.bSearch.Location = new System.Drawing.Point(182, 64);
             this.bSearch.Name = "bSearch";
             this.bSearch.Size = new System.Drawing.Size(67, 23);
             this.bSearch.TabIndex = 6;
             this.bSearch.Text = "查询";
             this.bSearch.UseVisualStyleBackColor = true;
+            this.bSearch.Click += new System.EventHandler(this.bSearch_Click);
             // 
-            // textBox2
+            // tbSearchByName
             // 
-            this.textBox2.Location = new System.Drawing.Point(66, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 4;
+            this.tbSearchByName.Location = new System.Drawing.Point(66, 44);
+            this.tbSearchByName.Name = "tbSearchByName";
+            this.tbSearchByName.Size = new System.Drawing.Size(100, 21);
+            this.tbSearchByName.TabIndex = 4;
             // 
-            // textBox3
+            // tbSearchByID
             // 
-            this.textBox3.Location = new System.Drawing.Point(66, 18);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 21);
-            this.textBox3.TabIndex = 3;
+            this.tbSearchByID.Location = new System.Drawing.Point(66, 18);
+            this.tbSearchByID.Name = "tbSearchByID";
+            this.tbSearchByID.Size = new System.Drawing.Size(100, 21);
+            this.tbSearchByID.TabIndex = 3;
             // 
             // label8
             // 
@@ -324,11 +329,27 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "学号[ID]";
             // 
+            // tbSearchByPassWord
+            // 
+            this.tbSearchByPassWord.Location = new System.Drawing.Point(66, 71);
+            this.tbSearchByPassWord.Name = "tbSearchByPassWord";
+            this.tbSearchByPassWord.Size = new System.Drawing.Size(100, 21);
+            this.tbSearchByPassWord.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 75);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "密码";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 334);
+            this.ClientSize = new System.Drawing.Size(626, 374);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -369,8 +390,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button bSearch;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbSearchByName;
+        private System.Windows.Forms.TextBox tbSearchByID;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
@@ -378,6 +399,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.TextBox tbSearchByPassWord;
+        private System.Windows.Forms.Label label7;
     }
 }
 

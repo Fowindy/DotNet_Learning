@@ -128,7 +128,7 @@ namespace Day05_04.Xml模拟数据库的增删改查
         private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DataGridViewSelectedRowCollection selectedRows = dgv.SelectedRows;
-            if (dgv.SelectedRows.Count>0)
+            if (dgv.SelectedRows.Count > 0)
             {
                 DialogResult result = MessageBox.Show("你确定要删除选定行的数据吗?", "删除数据", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
@@ -149,8 +149,14 @@ namespace Day05_04.Xml模拟数据库的增删改查
                     //保存
                     xdoc.Save("UserData.xml");
                     //LoadXmlToDgv();<<2>>
+                    MessageBox.Show("删除成功!");
                 }
+                tbUpdateID.Clear();
+                tbUpdateName.Clear();
+                tbUpdatePassWord.Clear();
             }
+            else
+                MessageBox.Show("未选中行!不能删除!");
         }
         /// <summary>
         /// 5.更新[修改]按钮事件
@@ -193,7 +199,7 @@ namespace Day05_04.Xml模拟数据库的增删改查
         /// <param name="e"></param>
         private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgv.SelectedRows.Count>0)//有被选中的行
+            if (dgv.SelectedRows.Count > 0)//有被选中的行
             {
                 //获取学号
                 tbUpdateID.Text = dgv.SelectedRows[0].Cells[0].Value.ToString();
@@ -201,6 +207,47 @@ namespace Day05_04.Xml模拟数据库的增删改查
                 tbUpdateName.Text = dgv.SelectedRows[0].Cells[1].Value.ToString();
                 //获取密码
                 tbUpdatePassWord.Text = dgv.SelectedRows[0].Cells[2].Value.ToString();
+            }
+        }
+        /// <summary>
+        /// 6.查询按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bSearch_Click(object sender, EventArgs e)
+        {
+            //清空选中行的状态
+            dgv.ClearSelection();
+            #region 获取输入信息
+            string id = tbSearchByID.Text.Trim();
+            string name = tbSearchByName.Text.Trim();
+            string password = tbSearchByPassWord.Text.Trim();
+            #endregion
+            int count = 0;
+            //将获取的信息加载进数组
+            string[] user = new string[] { id, name, password };
+            for (int i = 0; i < user.Length; i++)
+            {
+                //输入信息不为空
+                if (!string.IsNullOrEmpty(user[i]))
+                {
+                    //遍历每一行
+                    foreach (DataGridViewRow row in dgv.Rows)
+                    {
+                        //相等则选中行
+                        if (string.Equals(row.Cells[i].Value.ToString(), user[i]))
+                        {
+                            row.Selected = true;
+                            count++;
+                        }
+                    }
+                    //找到则提示跳出
+                    if (count > 0)
+                        MessageBox.Show($"根据{user[i]}查询到{count}条数据!");
+                    break;
+                }
+                else if (i == user.Length-1)
+                    MessageBox.Show("未查到相关匹配数据!");
             }
         }
     }
