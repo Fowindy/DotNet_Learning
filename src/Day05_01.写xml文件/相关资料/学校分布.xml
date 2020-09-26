@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<school>
+  <grade1 gradeNum="1">
+    <class1 classNum="2">
+      <student1 id="101">
+        <name>刘备</name>
+        <gender>男</gender>
+        <age>16</age>
+      </student1>
+      <student2 id="102">
+        <name>关羽</name>
+        <gender>男</gender>
+        <age>18</age>
+      </student2>
+    </class1>
+  </grade1>
+</school>
