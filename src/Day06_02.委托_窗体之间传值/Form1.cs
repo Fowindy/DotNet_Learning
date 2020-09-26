@@ -31,5 +31,20 @@ namespace Day06_02.委托_窗体之间传值
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// 传值去第二个窗体
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            //获取输入框中的内容
+            string input = tb1.Text.Trim();
+            #region 1-1.1.第一种传值的方式_不推荐
+            //显示窗体2
+            Form2 form2 = new Form2(input);
+            form2.Show();
+            #endregion
+        }
     }
 }

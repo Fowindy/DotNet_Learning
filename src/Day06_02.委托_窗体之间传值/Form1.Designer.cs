@@ -40,6 +40,7 @@
             this.btn1.TabIndex = 3;
             this.btn1.Text = "传值去第二个窗体";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // tb1
             // 

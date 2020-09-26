@@ -16,5 +16,10 @@ namespace Day06_02.委托_窗体之间传值
         {
             InitializeComponent();
         }
+        //1-1.2.在窗体2中新建有参数的构造函数,并继承无参数狗在函数的初始化
+        public Form2(string input):this()
+        {
+            tb2.Text = input;
+        }
     }
 }
