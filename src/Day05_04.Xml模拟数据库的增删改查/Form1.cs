@@ -148,7 +148,8 @@ namespace Day05_04.Xml模拟数据库的增删改查
                     }
                     //保存
                     xdoc.Save("UserData.xml");
-                    //LoadXmlToDgv();<<2>>
+                    //<<2>>
+                    LoadXmlToDgv();
                     MessageBox.Show("删除成功!");
                 }
                 tbUpdateID.Clear();
@@ -177,10 +178,10 @@ namespace Day05_04.Xml模拟数据库的增删改查
                 xele.SetElementValue("password", tbUpdatePassWord.Text.Trim());
                 //保存xml
                 xdoc.Save("UserData.xml");
-                //成功提示
-                MessageBox.Show("修改成功!");
                 //界面刷新显示
                 LoadXmlToDgv();
+                //成功提示
+                MessageBox.Show("修改成功!");
                 //修改成功,清空文本框
                 tbUpdatePassWord.Clear();
                 tbUpdateName.Clear();
@@ -243,8 +244,10 @@ namespace Day05_04.Xml模拟数据库的增删改查
                     }
                     //找到则提示跳出
                     if (count > 0)
+                    {
                         MessageBox.Show($"根据{user[i]}查询到{count}条数据!");
-                    break;
+                        break;
+                    }
                 }
                 else if (i == user.Length-1)
                     MessageBox.Show("未查到相关匹配数据!");
