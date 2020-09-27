@@ -10,43 +10,33 @@ using System.Windows.Forms;
 
 namespace Day06_02.委托_窗体之间传值
 {
-    public delegate void MyDel2(string txt);
     public partial class Form2 : Form
     {
-        public static MyDel2 _myDel2;
-        #region 单例模式
-        private static Form2 form2;
-        public static Form2 CreatForm(string input, MyDel2 myDel2)
-        {
-            if (form2 == null || form2.IsDisposed == true)
-            {
-                form2 = new Form2(input);
-                _myDel2 = myDel2;
-            }
-            else
-            {
-                _myDel2 = myDel2;
-            }
-            return form2;
-        }
-        #endregion
-        public Form2()
+        //5.子窗体中定义公有的子窗体委托变量,用以把子窗体的实例方法传到父窗体
+        public MyDel form2Del = null;
+        //6.子窗口中定义父窗口委托变量,用于接收从父窗口委托过来的实例方法
+        private MyDel form1Del = null;
+        //7.构造函数参数拿到了父窗体传过来的实例方法
+        public Form2(MyDel myDel)
         {
             InitializeComponent();
+            //8.将父窗体的实例方法赋值给父窗口委托变量
+            form1Del = myDel;
+            //9.将子窗体的实例方法赋值给子窗体的委托变量
+            form2Del = SetValue;
         }
-        //1-1.2.在窗体2中新建有参数的构造函数,并继承无参数狗在函数的初始化
-        public Form2(string input):this()
+        /// <summary>
+        /// 10.子窗体的实例方法
+        /// </summary>
+        /// <param name="input"></param>
+        public void SetValue(string input)
         {
             tb2.Text = input;
         }
-        public void SetValue12(string input)
-        {
-            tb2.Text = input;
-        }
-
         private void btn2_Click(object sender, EventArgs e)
         {
-            _myDel2(tb2.Text);
+            //15.用父窗体的委托变量向在父窗体传值
+            form1Del(tb2.Text);
         }
     }
 }
