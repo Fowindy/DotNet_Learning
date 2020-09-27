@@ -25,8 +25,10 @@ using System.Xml.Linq;
 
 namespace Day06_02.委托_窗体之间传值
 {
+    public delegate void MyDel1(string input);
     public partial class Form1 : Form
     {
+        public static MyDel1 _myDel1;
         public Form1()
         {
             InitializeComponent();
@@ -42,9 +44,15 @@ namespace Day06_02.委托_窗体之间传值
             string input = tb1.Text.Trim();
             #region 1-1.1.第一种传值的方式_不推荐
             //显示窗体2
-            Form2 form2 = new Form2(input);
+            //Form2 form2 = new Form2(input);
+            Form2 form2 = Form2.CreatForm(input, SetValue21);
             form2.Show();
             #endregion
+        }
+
+        public void SetValue21(string input)
+        {
+            tb1.Text = input;
         }
     }
 }
