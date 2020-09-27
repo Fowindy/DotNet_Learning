@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_02.委托_窗体之�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_03.单例模式保证只打开一个窗口", "src\Day06_03.单例模式保证只打开一个窗口\Day06_03.单例模式保证只打开一个窗口.csproj", "{B6F719E0-D0AA-4FAA-A206-23C15131B450}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_04.模态化传值", "src\Day06_04.模态化传值\Day06_04.模态化传值.csproj", "{44D03912-BFC5-4E96-B306-7A308E451AAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{B6F719E0-D0AA-4FAA-A206-23C15131B450}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6F719E0-D0AA-4FAA-A206-23C15131B450}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6F719E0-D0AA-4FAA-A206-23C15131B450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44D03912-BFC5-4E96-B306-7A308E451AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44D03912-BFC5-4E96-B306-7A308E451AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44D03912-BFC5-4E96-B306-7A308E451AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44D03912-BFC5-4E96-B306-7A308E451AAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
