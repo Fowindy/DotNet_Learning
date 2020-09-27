@@ -26,12 +26,16 @@ namespace Fowindy.Day06_06.匿名方法_Lamda表达式.Listing06_06_02
     /// </summary>
     /// <param name="str"></param>
     public delegate void MyDel(string str);
+    public delegate string MyDel1(string str);
     public class Listing06_06_02
     {
         public static void Main()
         {
             MyDel myDel = (string str) => { Console.WriteLine(str); };
             myDel("世间情动，不过盛夏白瓷梅子汤。碎冰撞壁叮当响");
+            Console.WriteLine("----------------第二种方式----------------");
+            MyDel1 myDel1 = x => x + "好帅";
+            Console.WriteLine(myDel1("小杨"));    //小杨好帅
         }
     }
 }
