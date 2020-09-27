@@ -40,6 +40,7 @@
             this.bSingle.TabIndex = 3;
             this.bSingle.Text = "传值到父窗体";
             this.bSingle.UseVisualStyleBackColor = true;
+            this.bSingle.Click += new System.EventHandler(this.bSingle_Click);
             // 
             // tbSingle
             // 

@@ -47,6 +47,7 @@
             this.bMain.TabIndex = 1;
             this.bMain.Text = "传值到子窗体";
             this.bMain.UseVisualStyleBackColor = true;
+            this.bMain.Click += new System.EventHandler(this.bMain_Click);
             // 
             // FrmMain
             // 
