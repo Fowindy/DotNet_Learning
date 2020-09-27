@@ -32,6 +32,11 @@ namespace Fowindy.Day06_05.匿名方法.Listing06_05_01
             //在静态方法里面,委托可以不为静态,但实例方法必须为静态
             MyDel myDel = Show;
             myDel();
+
+            Console.WriteLine("----------------更改为匿名方法----------------");
+            //匿名方法相当于把实例方法中的"public static void Show"更改为"delegate"后合成,最后大括号后面加分号
+            myDel = delegate () { Console.WriteLine("枫叶缓缓落,我只在乎你"); };
+            myDel();
         }
         /// <summary>
         /// 定义实例方法
