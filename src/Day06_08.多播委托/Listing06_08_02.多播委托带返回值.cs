@@ -33,7 +33,8 @@ namespace Fowindy.Day06_08.多播委托.Listing06_08_02
             myDel += M2;
             myDel += M3;
             myDel -= M3;
-            Console.WriteLine(myDel());//2
+            //也可以使用Invoke
+            Console.WriteLine(myDel.Invoke());//2
         }
         public static int M1()
         {
