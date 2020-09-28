@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_07.Lamda表达式_系
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_08.多播委托", "src\Day06_08.多播委托\Day06_08.多播委托.csproj", "{CD01CC6F-3BAD-44B6-9900-E73DCB2B8CB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_09.委托三连击", "src\Day06_09.委托三连击\Day06_09.委托三连击.csproj", "{F714420D-27CC-49FA-BDDD-CB2A868DA5BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{CD01CC6F-3BAD-44B6-9900-E73DCB2B8CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD01CC6F-3BAD-44B6-9900-E73DCB2B8CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD01CC6F-3BAD-44B6-9900-E73DCB2B8CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F714420D-27CC-49FA-BDDD-CB2A868DA5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F714420D-27CC-49FA-BDDD-CB2A868DA5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F714420D-27CC-49FA-BDDD-CB2A868DA5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F714420D-27CC-49FA-BDDD-CB2A868DA5BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
