@@ -27,6 +27,7 @@ namespace Day06_09.委托三连击
             n++;
             if (n == 3)
             {
+                n = 0;
                 if (this._mdl != null)
                 {
                     this._mdl();
