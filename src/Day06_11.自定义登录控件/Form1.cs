@@ -31,5 +31,25 @@ namespace Day06_11.自定义登录控件
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //模拟系统事件
+            MyUserLogin.evt += MyUserLogin_evt;
+        }
+
+        private void MyUserLogin_evt(object sender, EventArgs e)
+        {
+            //父类转子类对象
+            MyEventArgs mea = e as MyEventArgs;
+            if (mea.Name == "admin" && mea.Password == "123456")
+            {
+                mea.Result = true;
+            }
+            else
+            {
+                mea.Result = false;
+            }
+        }
     }
 }
