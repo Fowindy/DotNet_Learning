@@ -26,6 +26,9 @@ namespace Fowindy.Day06_12.程序集.Listing06_12_01
     {
         public static void Main()
         {
+            #region 另一种拿到类对象Type的方法typeof
+            Type ty = typeof(Person);
+            #endregion
             Person person = new Person();
             //获取person的Type
             Type type = person.GetType();
