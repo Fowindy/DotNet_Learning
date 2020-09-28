@@ -31,5 +31,30 @@ namespace Day06_10.委托三连击_事件实现
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MyClick1._mdl += DoSomething;
+        }
+
+        private void DoSomething()
+        {
+            MessageBox.Show("点击三次才执行");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //事件与委托的区别1:
+            //委托可以直接调用,事件不可以直接调用
+            //MyClick1._mdl();
+            MyClick1._mdl += Say;
+            //点击此按钮。只是将实例方法。加载到事件中。点击一下执行一次;真正显示还是得用户自定义的控件点击三下后
+            //先显示用户控件点击的方法后再按要求的次数执行Say方法
+        }
+
+        private void Say()
+        {
+            MessageBox.Show("哈哈哈");
+        }
     }
 }
