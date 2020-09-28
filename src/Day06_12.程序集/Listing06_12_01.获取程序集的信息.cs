@@ -37,6 +37,13 @@ namespace Fowindy.Day06_12.程序集.Listing06_12_01
                 //打印方法的名字
                 Console.WriteLine(meths[i].Name);
             }
+            //获取所有的公共属性
+            PropertyInfo[] pros = type.GetProperties();
+            //遍历所有的公共属性
+            for (int i = 0; i < pros.Length; i++)
+            {
+                Console.WriteLine(pros[i].Name);
+            }
         }
     }
     public class Person
