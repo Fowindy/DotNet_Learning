@@ -47,5 +47,12 @@ namespace Day06_09.委托三连击
         {
             MessageBox.Show("我也是点三下显示的");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //委托控件方法的弊端3
+            //点击此按钮只要点击一次即可执行
+            utc._mdl();
+        }
     }
 }
