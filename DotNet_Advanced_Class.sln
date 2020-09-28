@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_05.匿名方法", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_06.匿名方法_Lamda表达式", "src\Day06_06.匿名方法_Lamda表达式\Day06_06.匿名方法_Lamda表达式.csproj", "{35154F6B-62C7-4762-A202-2B83A1482D77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_07.Lamda表达式_系统委托", "src\Day06_07.Lamda表达式_系统委托\Day06_07.Lamda表达式_系统委托.csproj", "{750F31ED-DC35-468C-BF2B-854C7EA945D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{35154F6B-62C7-4762-A202-2B83A1482D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35154F6B-62C7-4762-A202-2B83A1482D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35154F6B-62C7-4762-A202-2B83A1482D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750F31ED-DC35-468C-BF2B-854C7EA945D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750F31ED-DC35-468C-BF2B-854C7EA945D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750F31ED-DC35-468C-BF2B-854C7EA945D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750F31ED-DC35-468C-BF2B-854C7EA945D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

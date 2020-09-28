@@ -20,6 +20,8 @@ namespace Day06_02_01.窗体传值_委托和单例综合应用_重要_
         /// 10.子窗体中定义静态父委托成员变量(用以接收构造传过来的父实例)
         /// </summary>
         private static MyDel _myDelFu;
+        //加锁
+        private static readonly object syslocker = new object();
         #region 2.子窗体实现单例模式
         //2.1.定义一个子窗体类型的私有静态成员变量---外部不能访问,确保唯一实例
         private static FrmSingle frmSingle;
@@ -29,16 +31,21 @@ namespace Day06_02_01.窗体传值_委托和单例综合应用_重要_
             //2.3.判断当前实例是否为空或者已经释放资源
             if (frmSingle == null || frmSingle.IsDisposed == true)
             {
-                //2.4.如果为空或已释放,则重新实例化
-                frmSingle = new FrmSingle();
-                //11.父委托成员变量接收父实例方法;
-                _myDelFu = myDelFu;
+                //加锁
+                lock (syslocker)
+                {
+                    //2.4.如果为空或已释放,则重新实例化
+                    frmSingle = new FrmSingle();
+                    //11.父委托成员变量接收父实例方法;
+                    _myDelFu = myDelFu; 
+                }
             }
             //2.5.反之或最终直接返回当前实例
             return frmSingle;
         }
         #endregion
-        public FrmSingle()
+        //单例模式最好把构造函数私有化并加锁
+        private FrmSingle()
         {
             InitializeComponent();
             //12.子委托变量赋值子实例方法
