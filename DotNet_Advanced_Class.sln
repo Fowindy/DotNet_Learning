@@ -18,15 +18,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_04.模态化传值", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_02_01.窗体传值_委托和单例综合应用[重要]", "src\Day06_02_01.窗体传值_委托和单例综合应用[重要]\Day06_02_01.窗体传值_委托和单例综合应用[重要].csproj", "{FFF8793A-7120-49DA-B6C8-F1D278727A43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_05.匿名方法", "src\Day06_05.匿名方法\Day06_05.匿名方法.csproj", "{B89EEE5D-5246-45B9-BB62-1071339A0952}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day06_05.匿名方法", "src\Day06_05.匿名方法\Day06_05.匿名方法.csproj", "{B89EEE5D-5246-45B9-BB62-1071339A0952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_06.匿名方法_Lamda表达式", "src\Day06_06.匿名方法_Lamda表达式\Day06_06.匿名方法_Lamda表达式.csproj", "{35154F6B-62C7-4762-A202-2B83A1482D77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day06_06.匿名方法_Lamda表达式", "src\Day06_06.匿名方法_Lamda表达式\Day06_06.匿名方法_Lamda表达式.csproj", "{35154F6B-62C7-4762-A202-2B83A1482D77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_07.Lamda表达式_系统委托", "src\Day06_07.Lamda表达式_系统委托\Day06_07.Lamda表达式_系统委托.csproj", "{750F31ED-DC35-468C-BF2B-854C7EA945D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day06_07.Lamda表达式_系统委托", "src\Day06_07.Lamda表达式_系统委托\Day06_07.Lamda表达式_系统委托.csproj", "{750F31ED-DC35-468C-BF2B-854C7EA945D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_08.多播委托", "src\Day06_08.多播委托\Day06_08.多播委托.csproj", "{CD01CC6F-3BAD-44B6-9900-E73DCB2B8CB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day06_08.多播委托", "src\Day06_08.多播委托\Day06_08.多播委托.csproj", "{CD01CC6F-3BAD-44B6-9900-E73DCB2B8CB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_09.委托三连击", "src\Day06_09.委托三连击\Day06_09.委托三连击.csproj", "{F714420D-27CC-49FA-BDDD-CB2A868DA5BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_10.委托三连击_事件实现", "src\Day06_10.委托三连击_事件实现\Day06_10.委托三连击_事件实现.csproj", "{15DD6E2C-824D-4D11-8109-F1CFF1D2B458}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +76,10 @@ Global
 		{F714420D-27CC-49FA-BDDD-CB2A868DA5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F714420D-27CC-49FA-BDDD-CB2A868DA5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F714420D-27CC-49FA-BDDD-CB2A868DA5BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15DD6E2C-824D-4D11-8109-F1CFF1D2B458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DD6E2C-824D-4D11-8109-F1CFF1D2B458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15DD6E2C-824D-4D11-8109-F1CFF1D2B458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15DD6E2C-824D-4D11-8109-F1CFF1D2B458}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
