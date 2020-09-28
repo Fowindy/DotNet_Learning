@@ -44,6 +44,13 @@ namespace Fowindy.Day06_12.程序集.Listing06_12_01
             {
                 Console.WriteLine(pros[i].Name);
             }
+            //类中可有哪些成员?
+            //1.属性
+            //2.字段
+            //3.方法
+            //4.事件
+            //5.接口 等等
+            //都可以通过这种方式获取
         }
     }
     public class Person
