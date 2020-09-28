@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_09.委托三连击", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_10.委托三连击_事件实现", "src\Day06_10.委托三连击_事件实现\Day06_10.委托三连击_事件实现.csproj", "{15DD6E2C-824D-4D11-8109-F1CFF1D2B458}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_11.自定义登录控件", "src\Day06_11.自定义登录控件\Day06_11.自定义登录控件.csproj", "{02C93A0F-5230-4A52-8E5B-76AEC464FB1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{15DD6E2C-824D-4D11-8109-F1CFF1D2B458}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15DD6E2C-824D-4D11-8109-F1CFF1D2B458}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15DD6E2C-824D-4D11-8109-F1CFF1D2B458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C93A0F-5230-4A52-8E5B-76AEC464FB1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C93A0F-5230-4A52-8E5B-76AEC464FB1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C93A0F-5230-4A52-8E5B-76AEC464FB1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C93A0F-5230-4A52-8E5B-76AEC464FB1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
