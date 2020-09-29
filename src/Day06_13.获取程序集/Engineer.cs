@@ -27,5 +27,9 @@ namespace Day06_13.获取程序集
         {
             Console.WriteLine($"我叫{name},是一名软件工程师");
         }
+        public void ShowInfo(int age)
+        {
+            Console.WriteLine($"我是一名软件工程师,今年{age}岁");
+        }
     }
 }

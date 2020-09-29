@@ -47,9 +47,13 @@ namespace Fowindy.Day06_15.反射的应用.Listing06_15_01
 
             //反射获取dll中方法内容_带参数
             Type typeEng = ass.GetType("Day06_13.获取程序集.Engineer");
-            MethodInfo methodEng = typeEng.GetMethod("ShowInfo");
+            MethodInfo methodEng = typeEng.GetMethod("ShowInfo", new Type[] { typeof(string) });
             object objEng = Activator.CreateInstance(typeEng);
             methodEng.Invoke(objEng, new object[] { "王岳" });
+            Console.WriteLine("----------------反射获取dll中方法内容_带参数_重载----------------");
+            MethodInfo methodEng1 = typeEng.GetMethod("ShowInfo",new Type[] { typeof(int)});
+            object objEng1 = Activator.CreateInstance(typeEng);
+            methodEng1.Invoke(objEng, new object[] { 23 });
         }
     }
 }
