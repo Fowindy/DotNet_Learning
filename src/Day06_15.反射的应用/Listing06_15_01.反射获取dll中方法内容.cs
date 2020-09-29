@@ -41,7 +41,7 @@ namespace Fowindy.Day06_15.反射的应用.Listing06_15_01
             }
             Type typeStu = ass.GetType("Day06_13.获取程序集.Student");
             //代表调用Show方法=>也可以设置参数类型
-            MethodInfo methodStu = typeStu.GetMethod("Show");
+            MethodInfo methodStu = typeStu.GetMethod("Show",System.Type.EmptyTypes);
             object objStu = Activator.CreateInstance(typeStu);
             methodStu.Invoke(objStu, null);//该方法无参数=>设置参数
 
