@@ -36,6 +36,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day06_12.程序集", "src\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_13.获取程序集", "src\Day06_13.获取程序集\Day06_13.获取程序集.csproj", "{1719A93A-F8F1-4C75-AA0C-1C32CCADB13C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_14.通过反射获取程序集中的所有的类", "src\Day06_14.通过反射获取程序集中的所有的类\Day06_14.通过反射获取程序集中的所有的类.csproj", "{0037223F-29E6-40D7-8275-E41BBB8B5F5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,10 @@ Global
 		{1719A93A-F8F1-4C75-AA0C-1C32CCADB13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1719A93A-F8F1-4C75-AA0C-1C32CCADB13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1719A93A-F8F1-4C75-AA0C-1C32CCADB13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0037223F-29E6-40D7-8275-E41BBB8B5F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0037223F-29E6-40D7-8275-E41BBB8B5F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0037223F-29E6-40D7-8275-E41BBB8B5F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0037223F-29E6-40D7-8275-E41BBB8B5F5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
