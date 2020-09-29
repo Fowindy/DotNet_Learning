@@ -65,8 +65,11 @@ namespace Fowindy.Day06_14.通过反射获取程序集中的所有的类.Listing
             object obj = Activator.CreateInstance(typeStu);
             //判断obj是不是typePer的实例---true
             Console.WriteLine(typePer.IsInstanceOfType(obj));
-            //判断typeStu是不是typePer的子类
+            //判断typeStu是不是typePer的子类---true
             Console.WriteLine(typeStu.IsSubclassOf(typePer));
+            Type typeAni = ass.GetType("Day06_13.获取程序集.Animal");
+            //判断typeAni是否为抽象类---True
+            Console.WriteLine(typeAni.IsAbstract);
         }
     }
 }
