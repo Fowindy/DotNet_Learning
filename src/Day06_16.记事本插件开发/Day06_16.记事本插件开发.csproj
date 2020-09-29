@@ -82,5 +82,11 @@
   <ItemGroup>
     <Folder Include="相关资料\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Day06_17.IEditPlus接口\Day06_17.IEditPlus接口.csproj">
+      <Project>{EE1853A9-05FD-4E6E-9235-504419585790}</Project>
+      <Name>Day06_17.IEditPlus接口</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
