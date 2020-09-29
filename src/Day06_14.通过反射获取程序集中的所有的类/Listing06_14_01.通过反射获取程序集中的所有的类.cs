@@ -45,6 +45,20 @@ namespace Fowindy.Day06_14.通过反射获取程序集中的所有的类.Listing
                 Console.WriteLine(types[i].Namespace);//所有类的命名空间
                 Console.WriteLine("---------------------------------");
             }
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("---------------------------------");
+            #region 获取指定命名空间中的公共类
+            //获取指定命名空间中的公共类
+            Type typePer = ass.GetType("Day06_13.获取程序集.Person");
+            //获取所有的方法
+            MethodInfo[] methods = typePer.GetMethods();
+            //获取方法名
+            for (int i = 0; i < methods.Length; i++)
+            {
+                Console.WriteLine(methods[i].Name);
+            }
+            #endregion
         }
     }
 }
