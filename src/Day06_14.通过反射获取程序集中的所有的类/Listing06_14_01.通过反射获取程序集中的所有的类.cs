@@ -60,8 +60,13 @@ namespace Fowindy.Day06_14.通过反射获取程序集中的所有的类.Listing
             }
             #endregion
             Type typeStu = ass.GetType("Day06_13.获取程序集.Student");
-            //判断typePer可不可以接受typeStu赋值
+            //判断typePer可不可以接受typeStu赋值---true
             Console.WriteLine(typePer.IsAssignableFrom(typeStu));
+            object obj = Activator.CreateInstance(typeStu);
+            //判断obj是不是typePer的实例---true
+            Console.WriteLine(typePer.IsInstanceOfType(obj));
+            //判断typeStu是不是typePer的子类
+            Console.WriteLine(typeStu.IsSubclassOf(typePer));
         }
     }
 }
