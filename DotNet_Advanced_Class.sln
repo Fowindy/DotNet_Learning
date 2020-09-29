@@ -38,7 +38,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_13.获取程序集", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day06_14.通过反射获取程序集中的所有的类", "src\Day06_14.通过反射获取程序集中的所有的类\Day06_14.通过反射获取程序集中的所有的类.csproj", "{0037223F-29E6-40D7-8275-E41BBB8B5F5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_15.反射的应用", "src\Day06_15.反射的应用\Day06_15.反射的应用.csproj", "{1BC9C95A-0284-4996-A2EA-FCA6424D4148}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day06_15.反射的应用", "src\Day06_15.反射的应用\Day06_15.反射的应用.csproj", "{1BC9C95A-0284-4996-A2EA-FCA6424D4148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_16.记事本插件开发", "src\Day06_16.记事本插件开发\Day06_16.记事本插件开发.csproj", "{7FBC1215-A658-42F9-AF67-FA088358398F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,6 +112,10 @@ Global
 		{1BC9C95A-0284-4996-A2EA-FCA6424D4148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BC9C95A-0284-4996-A2EA-FCA6424D4148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BC9C95A-0284-4996-A2EA-FCA6424D4148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FBC1215-A658-42F9-AF67-FA088358398F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBC1215-A658-42F9-AF67-FA088358398F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBC1215-A658-42F9-AF67-FA088358398F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBC1215-A658-42F9-AF67-FA088358398F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
