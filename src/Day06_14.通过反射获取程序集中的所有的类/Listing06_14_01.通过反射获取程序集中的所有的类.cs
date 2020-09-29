@@ -70,6 +70,9 @@ namespace Fowindy.Day06_14.通过反射获取程序集中的所有的类.Listing
             Type typeAni = ass.GetType("Day06_13.获取程序集.Animal");
             //判断typeAni是否为抽象类---True
             Console.WriteLine(typeAni.IsAbstract);
+            Type typeIfl = ass.GetType("Day06_13.获取程序集.IFly");
+            //判断typeIfl是否为接口---true
+            Console.WriteLine(typeIfl.IsInterface);
         }
     }
 }
