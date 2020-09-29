@@ -32,7 +32,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_10.委托三连击_�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_11.自定义登录控件", "src\Day06_11.自定义登录控件\Day06_11.自定义登录控件.csproj", "{02C93A0F-5230-4A52-8E5B-76AEC464FB1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_12.程序集", "src\Day06_12.程序集\Day06_12.程序集.csproj", "{3CD44BE8-F650-422F-A0FC-6D9CFD4A7FC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day06_12.程序集", "src\Day06_12.程序集\Day06_12.程序集.csproj", "{3CD44BE8-F650-422F-A0FC-6D9CFD4A7FC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_13.获取程序集", "src\Day06_13.获取程序集\Day06_13.获取程序集.csproj", "{1719A93A-F8F1-4C75-AA0C-1C32CCADB13C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +94,10 @@ Global
 		{3CD44BE8-F650-422F-A0FC-6D9CFD4A7FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CD44BE8-F650-422F-A0FC-6D9CFD4A7FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CD44BE8-F650-422F-A0FC-6D9CFD4A7FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1719A93A-F8F1-4C75-AA0C-1C32CCADB13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1719A93A-F8F1-4C75-AA0C-1C32CCADB13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1719A93A-F8F1-4C75-AA0C-1C32CCADB13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1719A93A-F8F1-4C75-AA0C-1C32CCADB13C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
