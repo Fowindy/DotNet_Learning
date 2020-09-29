@@ -59,6 +59,9 @@ namespace Fowindy.Day06_14.通过反射获取程序集中的所有的类.Listing
                 Console.WriteLine(methods[i].Name);
             }
             #endregion
+            Type typeStu = ass.GetType("Day06_13.获取程序集.Student");
+            //判断typePer可不可以接受typeStu赋值
+            Console.WriteLine(typePer.IsAssignableFrom(typeStu));
         }
     }
 }
