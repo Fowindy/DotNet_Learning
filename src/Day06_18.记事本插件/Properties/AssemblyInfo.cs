@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Day06_18.字母转大写插件")]
+[assembly: AssemblyTitle("Day06_18.记事本插件")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Day06_18.字母转大写插件")]
+[assembly: AssemblyProduct("Day06_18.记事本插件")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("1ea8447b-bb00-465e-b16d-8eceddf6a949")]
+[assembly: Guid("d7c53b9f-098e-44ab-aeb5-64a758d75d32")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

@@ -59,6 +59,7 @@ namespace Day06_16.记事本插件开发
                 //1.3.5.再遍历插件中所有的类,判断是否遵循主程序的接口规范
                 for (int j = 0; j < types.Length; j++)
                 {
+                    MethodInfo[] methods = types[i].GetMethods();
                     //1.3.6.如果插件类继承接口类并且不是抽象类
                     if (iEdi.IsAssignableFrom(types[i]) && !types[j].IsAbstract)
                     {
@@ -86,8 +87,21 @@ namespace Day06_16.记事本插件开发
             ToolStripItem tsp = sender as ToolStripItem;
             //1.4.2.把插件对象转换成接口分类对象
             IEditPlus iep = tsp.Tag as IEditPlus;
-            //1.4.3.把插件处理后的结果显示在界面中
-            tbContent.Text = iep.StringFormat(tbContent);
+            //1.4.3.根据枚举方法执行相应功能
+            switch (iep.methodEnum)
+            {
+                case MethodEnum.StringFormat:
+                    rtbContent.Text = iep.StringFormat(rtbContent);
+                    break;
+                case MethodEnum.StringCount:
+                    MessageBox.Show($"字符数为:{iep.StringCount(rtbContent)}");
+                    break;
+                case MethodEnum.SetColor:
+                    iep.SetColor(rtbContent);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

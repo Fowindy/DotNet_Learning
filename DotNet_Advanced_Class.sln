@@ -44,7 +44,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_16.记事本插件开
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_17.IEditPlus接口", "src\Day06_17.IEditPlus接口\Day06_17.IEditPlus接口.csproj", "{EE1853A9-05FD-4E6E-9235-504419585790}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_18.字母转大写插件", "src\Day06_18.字母转大写插件\Day06_18.字母转大写插件.csproj", "{1EA8447B-BB00-465E-B16D-8ECEDDF6A949}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06_18.记事本插件", "src\Day06_18.记事本插件\Day06_18.记事本插件.csproj", "{D7C53B9F-098E-44AB-AEB5-64A758D75D32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -124,10 +124,10 @@ Global
 		{EE1853A9-05FD-4E6E-9235-504419585790}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE1853A9-05FD-4E6E-9235-504419585790}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE1853A9-05FD-4E6E-9235-504419585790}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EA8447B-BB00-465E-B16D-8ECEDDF6A949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EA8447B-BB00-465E-B16D-8ECEDDF6A949}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EA8447B-BB00-465E-B16D-8ECEDDF6A949}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EA8447B-BB00-465E-B16D-8ECEDDF6A949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C53B9F-098E-44AB-AEB5-64A758D75D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C53B9F-098E-44AB-AEB5-64A758D75D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C53B9F-098E-44AB-AEB5-64A758D75D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C53B9F-098E-44AB-AEB5-64A758D75D32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
