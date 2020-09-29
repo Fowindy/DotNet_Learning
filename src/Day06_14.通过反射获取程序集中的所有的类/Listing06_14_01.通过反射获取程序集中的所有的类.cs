@@ -35,6 +35,16 @@ namespace Fowindy.Day06_14.通过反射获取程序集中的所有的类.Listing
                 Console.WriteLine(types[i].Namespace);//所有类的命名空间
                 Console.WriteLine("---------------------------------");
             }
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("---------------------------------");
+            Type[] type1 = ass.GetExportedTypes();//获取所有的Type
+            for (int i = 0; i < type1.Length; i++)
+            {
+                Console.WriteLine(types[i].Name);//所有类的名字
+                Console.WriteLine(types[i].Namespace);//所有类的命名空间
+                Console.WriteLine("---------------------------------");
+            }
         }
     }
 }
