@@ -17,7 +17,13 @@ namespace Fowindy.Shared
             if (Regex.IsMatch(regexMatch, @"[^\d]"))
             {
                 regexMatch = regexMatch.Replace(Regex.Match(regexMatch, @"[^\d]").Value, ".");
-                regexMatch = regexMatch.Replace(Regex.Match(regexMatch, @"(.[0]+)[1-9]").Groups[1].Value, ".");
+                try
+                {
+                    regexMatch = regexMatch.Replace(Regex.Match(regexMatch, @"(.[0]+)[1-9]").Groups[1].Value, ".");
+                }
+                catch
+                {
+                }
             }
             double chapterNumber = double.Parse(regexMatch);
             string listing;
